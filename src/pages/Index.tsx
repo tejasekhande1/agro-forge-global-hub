@@ -1,9 +1,8 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Leaf, Wrench, Globe, Users, Award, Mail, Phone, MapPin, CheckCircle, ArrowRight, Truck, Factory, Zap, Shield } from "lucide-react";
-import ProductCard from "@/components/ProductCard";
-import { agroProducts, engineeringProducts } from "@/data/products";
 
 const Index = () => {
   return (
@@ -212,42 +211,119 @@ const Index = () => {
             </p>
           </div>
 
-          {/* Agricultural Products */}
-          <div className="mb-20">
-            <div className="flex items-center mb-12">
-              <div className="w-12 h-12 bg-gradient-to-r from-primary to-green-600 rounded-2xl flex items-center justify-center mr-4">
-                <Leaf className="h-6 w-6 text-white" />
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Agro Exports */}
+            <Card className="hover:shadow-2xl transition-all duration-500 border-0 overflow-hidden group">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  alt="Fresh Agricultural Products Export" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4">
+                  <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                    <Leaf className="h-6 w-6 text-white" />
+                  </div>
+                </div>
               </div>
-              <div>
-                <h3 className="text-3xl font-bold text-foreground">Premium Agro Exports</h3>
+              <CardHeader>
+                <CardTitle className="text-2xl text-foreground">Premium Agro Exports</CardTitle>
                 <p className="text-muted-foreground text-lg">Farm-fresh products from certified Indian growers</p>
-              </div>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-              {agroProducts.map((product) => (
-                <ProductCard key={product.id} {...product} />
-              ))}
-            </div>
-          </div>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-primary">Fresh Vegetables</h4>
+                    <div className="grid grid-cols-2 gap-3">
+                      {["Ginger", "Onion", "Maize", "Moringa", "Green Chilli", "Potato", "Tomato", "Okra"].map((item) => (
+                        <Card key={item} className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-primary group cursor-pointer">
+                          <div className="flex items-center space-x-2">
+                            <div className="w-2 h-2 bg-primary rounded-full group-hover:scale-150 transition-transform"></div>
+                            <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">{item}</span>
+                          </div>
+                        </Card>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-primary">Premium Fruits</h4>
+                    <div className="grid grid-cols-2 gap-3">
+                      {["Banana", "Mangoes", "Pomegranate", "Guava", "Grapes", "Pineapple"].map((item) => (
+                        <Card key={item} className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-green-500 group cursor-pointer">
+                          <div className="flex items-center space-x-2">
+                            <div className="w-2 h-2 bg-green-500 rounded-full group-hover:scale-150 transition-transform"></div>
+                            <span className="text-sm font-medium text-muted-foreground group-hover:text-green-600 transition-colors">{item}</span>
+                          </div>
+                        </Card>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-primary">Millets & Pulses</h4>
+                    <div className="grid grid-cols-2 gap-3">
+                      {["Wheat", "Jowar", "Bajra", "Ragi/Nachni"].map((item) => (
+                        <Card key={item} className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-orange-500 group cursor-pointer">
+                          <div className="flex items-center space-x-2">
+                            <div className="w-2 h-2 bg-orange-500 rounded-full group-hover:scale-150 transition-transform"></div>
+                            <span className="text-sm font-medium text-muted-foreground group-hover:text-orange-600 transition-colors">{item}</span>
+                          </div>
+                        </Card>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
 
-          {/* Engineering Products */}
-          <div>
-            <div className="flex items-center mb-12">
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center mr-4">
-                <Wrench className="h-6 w-6 text-white" />
+            {/* Engineering Solutions */}
+            <Card className="hover:shadow-2xl transition-all duration-500 border-0 overflow-hidden group">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  alt="Precision Engineering Solutions" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4">
+                  <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                    <Wrench className="h-6 w-6 text-white" />
+                  </div>
+                </div>
               </div>
-              <div>
-                <h3 className="text-3xl font-bold text-foreground">Engineering Solutions</h3>
+              <CardHeader>
+                <CardTitle className="text-2xl text-foreground">Engineering Solutions</CardTitle>
                 <p className="text-muted-foreground text-lg">Precision engineered for global standards</p>
-              </div>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-              {engineeringProducts.map((product) => (
-                <ProductCard key={product.id} {...product} />
-              ))}
-            </div>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  {[
+                    { icon: Zap, text: "Special Purpose Machines (SPMs)", color: "blue" },
+                    { icon: Shield, text: "Dies & Toolings", color: "purple" },
+                    { icon: Wrench, text: "PLC & Robotics Automation", color: "indigo" },
+                    { icon: Factory, text: "Tubular Components", color: "gray" },
+                    { icon: Zap, text: "High-precision Laser Cutting Services", color: "yellow" }
+                  ].map((service, index) => (
+                    <Card key={index} className="p-4 hover:shadow-lg transition-all duration-300 group cursor-pointer border-l-4 border-l-primary">
+                      <div className="flex items-center space-x-4">
+                        <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                          <service.icon className="h-6 w-6 text-primary group-hover:text-white transition-colors" />
+                        </div>
+                        <div className="flex-1">
+                          <span className="text-muted-foreground font-medium group-hover:text-primary transition-colors">{service.text}</span>
+                        </div>
+                        <ArrowRight className="h-5 w-5 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
+                      </div>
+                    </Card>
+                  ))}
+                </div>
+                <div className="mt-6 p-6 bg-gradient-to-r from-primary/5 to-green-50 rounded-xl border border-primary/10">
+                  <p className="text-muted-foreground font-medium">
+                    Built for global industrial standards with complete customization options and 24/7 support.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
