@@ -115,7 +115,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
             <div>
               <img 
-                src="./about.jpg"
+                src="./about2.jpg"
                 alt="Modern Agricultural Technology" 
                 className="rounded-2xl shadow-2xl"
               />
@@ -161,7 +161,7 @@ const Index = () => {
                   <div className="p-4 bg-white rounded-xl shadow-sm">
                     <p className="font-semibold text-lg text-foreground">Mr. Vijay J. Shirke</p>
                     <p className="text-primary font-medium">Engineering & Automation Expert</p>
-                    <p className="text-sm text-muted-foreground mt-1">25+ years in precision engineering solutions</p>
+                    <p className="text-sm text-muted-foreground mt-1">25+ years in automotive & SPM manufacturing</p>
                   </div>
                 </div>
               </CardContent>
@@ -179,15 +179,15 @@ const Index = () => {
                   <div>
                     <h4 className="font-bold text-primary mb-3 text-lg">Vision</h4>
                     <p className="text-muted-foreground leading-relaxed">
-                      To be a globally trusted export partner, delivering India's finest agricultural produce and precision engineered solutions.
-                    </p>
+                      To be a globally trusted export partner, delivering India's finest agricultural produce and precision
+                      engineered solutions with integrity, innovation, and sustainability.                    </p>
                   </div>
                   <div>
                     <h4 className="font-bold text-primary mb-3 text-lg">Mission</h4>
                     <ul className="space-y-2">
                       {[
                         "Connect Indian producers with global buyers",
-                        "Offer internationally compliant products",
+                        "Offer high-quality, internationally compliant products",
                         "Build ethical, long-term partnerships"
                       ].map((item, index) => (
                         <li key={index} className="flex items-center space-x-2">
@@ -211,7 +211,8 @@ const Index = () => {
             <Badge className="bg-primary/10 text-primary border-primary/20 mb-4">Products & Services</Badge>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Premium Solutions</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              From farm-fresh agricultural exports to precision-engineered industrial solutions
+              We offer a wide range of export-quality, farm-fresh products
+              sourced directly from Indian growers:
             </p>
           </div>
 
@@ -232,7 +233,7 @@ const Index = () => {
                 </div>
               </div>
               <CardHeader>
-                <CardTitle className="text-2xl text-foreground">Premium Agro Exports</CardTitle>
+                <CardTitle className="text-2xl text-foreground">Agro Exports</CardTitle>
                 <p className="text-muted-foreground text-lg">Farm-fresh products from certified Indian growers</p>
               </CardHeader>
               <CardContent>
