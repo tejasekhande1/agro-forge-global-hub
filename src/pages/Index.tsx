@@ -15,7 +15,7 @@ const Index = () => {
               <div className="w-10 h-10 bg-gradient-to-r from-primary to-green-600 rounded-xl flex items-center justify-center shadow-lg">
                 <Leaf className="h-6 w-6 text-white" />
               </div>
-              <span className="font-bold text-xl text-foreground">ENJO-SAK GLOBAL</span>
+              <span className="font-bold text-xl text-foreground">ENJO-SAK GLOBAL PRIVATE LIMITED</span>
             </div>
             <div className="hidden md:flex space-x-8">
               <a href="#about" className="text-muted-foreground hover:text-primary transition-colors font-medium">About</a>
@@ -241,7 +241,7 @@ const Index = () => {
                   <div>
                     <h4 className="font-semibold mb-3 text-primary">Fresh Vegetables</h4>
                     <div className="grid grid-cols-2 gap-3">
-                      {["Ginger", "Onion", "Maize", "Moringa", "Green Chilli", "Potato", "Tomato", "Okra"].map((item) => (
+                      {["Ginger (Hydrated & Dehydrated)", "Onion", "Maize", "Moringa Powder", "Green Chilli", "Potato", "Tomato", "Okra", "Moringa"].map((item) => (
                         <Card key={item} className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-primary group cursor-pointer">
                           <div className="flex items-center space-x-2">
                             <div className="w-2 h-2 bg-primary rounded-full group-hover:scale-150 transition-transform"></div>
@@ -254,20 +254,24 @@ const Index = () => {
                   <div>
                     <h4 className="font-semibold mb-3 text-primary">Premium Fruits</h4>
                     <div className="grid grid-cols-2 gap-3">
-                      {["Banana", "Mangoes", "Pomegranate", "Guava", "Grapes", "Pineapple"].map((item) => (
-                        <Card key={item} className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-green-500 group cursor-pointer">
-                          <div className="flex items-center space-x-2">
-                            <div className="w-2 h-2 bg-green-500 rounded-full group-hover:scale-150 transition-transform"></div>
-                            <span className="text-sm font-medium text-muted-foreground group-hover:text-green-600 transition-colors">{item}</span>
-                          </div>
-                        </Card>
+                      {["Banana", "Mangoes", "Pomegranate", "Guava", "Grapes", "Watermelon", "Muskmelon (Cantaloupe)", "Sweet Lime (Mosambi)", "Lemon", "Sapota (Chikoo)", "Custard\n" +
+                      "Apple (Sitaphal)", "Jackfruit", "Pineapple"].map((item) => (
+                          <Card key={item}
+                                className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-green-500 group cursor-pointer">
+                            <div className="flex items-center space-x-2">
+                              <div
+                                  className="w-2 h-2 bg-green-500 rounded-full group-hover:scale-150 transition-transform"></div>
+                              <span
+                                  className="text-sm font-medium text-muted-foreground group-hover:text-green-600 transition-colors">{item}</span>
+                            </div>
+                          </Card>
                       ))}
                     </div>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-3 text-primary">Millets & Pulses</h4>
                     <div className="grid grid-cols-2 gap-3">
-                      {["Wheat", "Jowar", "Bajra", "Ragi/Nachni"].map((item) => (
+                      {["Wheat", "Jowar (Sorghum)", "Bajra (Pearl Millet)", "Ragi/Nachni"].map((item) => (
                         <Card key={item} className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-orange-500 group cursor-pointer">
                           <div className="flex items-center space-x-2">
                             <div className="w-2 h-2 bg-orange-500 rounded-full group-hover:scale-150 transition-transform"></div>
@@ -324,8 +328,7 @@ const Index = () => {
                 </div>
                 <div className="mt-6 p-6 bg-gradient-to-r from-primary/5 to-green-50 rounded-xl border border-primary/10">
                   <p className="text-muted-foreground font-medium">
-                    Built for global industrial standards with complete customization options and 24/7 support.
-                  </p>
+                    Built to meet global industrial standards, with tailored design and development.                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -337,18 +340,16 @@ const Index = () => {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <Badge className="bg-primary/10 text-primary border-primary/20 mb-4">Why Choose ENJO-SAK</Badge>
+            <Badge className="bg-primary/10 text-primary border-primary/20 mb-4">Why Choose ENJO-SAK GLOBAL PRIVATE LIMITED</Badge>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Trusted by Global Leaders</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-4 gap-8">
             {[
-              { icon: Globe, title: "Direct-from-Source Pricing", desc: "No middlemen, maximum value for your investment" },
-              { icon: Factory, title: "Advanced Infrastructure", desc: "State-of-the-art facilities for agro & engineering" },
-              { icon: Users, title: "Expert Leadership", desc: "25+ years of combined industry expertise" },
-              { icon: Leaf, title: "Sustainable Sourcing", desc: "Ethical practices that benefit everyone" },
-              { icon: Award, title: "Quality Certified", desc: "International standards and certifications" },
-              { icon: Truck, title: "Global Network", desc: "Trusted partnerships across 25+ countries" }
+              { icon: Factory, title: "Advanced Engineering & Agro Infrastructure"},
+              { icon: Globe, title: "Direct-from-source Pricing"},
+              { icon: Users, title: "Experienced Management & Advisory"},
+              { icon: Truck, title: "Strong Network across Farming and Industrial Ecosystems"}
             ].map((benefit, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-gray-50 hover:from-primary/5 hover:to-green-50">
                 <CardContent className="p-8 text-center">
@@ -356,7 +357,6 @@ const Index = () => {
                     <benefit.icon className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">{benefit.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{benefit.desc}</p>
                 </CardContent>
               </Card>
             ))}
