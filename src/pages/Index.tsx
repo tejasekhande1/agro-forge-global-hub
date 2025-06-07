@@ -372,7 +372,11 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Committed to a Greener Future
             </h2>
-            <p className="text-xl text-green-600 font-semibold">Building tomorrow's sustainable world today 🌱</p>
+            <p className="text-md text-green-600 font-semibold">
+              At ENJO-SAK GLOBAL PRIVATE LIMITED, sustainability is not just a practice—it’s a principle that
+              guides everything we do. Whether we're exporting farm-fresh produce or designing precision
+              engineering systems, we strive to minimize our environmental impact and empower communities. 🌱
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -381,21 +385,23 @@ const Index = () => {
                 <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
                   <Leaf className="h-6 w-6 text-green-600" />
                 </div>
-                <CardTitle className="text-green-700">Agricultural Sustainability</CardTitle>
+                <CardTitle className="text-green-700">Sustainable Agriculture</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start space-x-2">
                     <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>Ethical farmer partnerships</span>
+                    <span>
+                      <strong>Ethical Sourcing:</strong> We work directly with farmers and cooperatives who follow good agricultural practices (GAP).
+                    </span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>Residue-free and organic-friendly inputs</span>
+                    <span><strong>Natural Inputs:</strong> Prioritizing the use of organic-friendly and residue-free crop protection solutions.</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>Water-efficient technologies</span>
+                    <span><strong>Water Management:</strong> Supporting farmers who use drip irrigation and other water-saving technologies.</span>
                   </li>
                 </ul>
               </CardContent>
@@ -406,21 +412,25 @@ const Index = () => {
                 <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
                   <Wrench className="h-6 w-6 text-blue-600" />
                 </div>
-                <CardTitle className="text-blue-700">Engineering Sustainability</CardTitle>
+                <CardTitle className="text-blue-700">Sustainable Engineering</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start space-x-2">
-                    <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0" />
-                    <span>Energy-efficient machines</span>
+                    <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0"/>
+                    <span><strong>Energy-Efficient Machines:</strong> Designing SPMs and automation systems that reduce energy consumption in production.</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0" />
-                    <span>Waste & scrap metal recycling</span>
+                    <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0"/>
+                    <span><strong>Material Optimization:</strong> Using high-quality materials that reduce waste and extend machine life.</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0" />
-                    <span>Global eco-compliance</span>
+                    <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0"/>
+                    <span><strong>Eco-Friendly Processes:</strong> Adopting cleaner manufacturing techniques in line with global environmental norms.</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0"/>
+                    <span><strong>Waste Management:</strong> Recycling scrap metals and minimizing industrial waste in our production facilities.</span>
                   </li>
                 </ul>
               </CardContent>
@@ -437,15 +447,15 @@ const Index = () => {
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start space-x-2">
                     <CheckCircle className="h-5 w-5 text-purple-500 mt-0.5 flex-shrink-0" />
-                    <span>Fair pricing & training for farmers</span>
+                    <span><strong>Farmer Empowerment:</strong> Providing fair prices, consistent demand, and training to small and marginal farmers.</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <CheckCircle className="h-5 w-5 text-purple-500 mt-0.5 flex-shrink-0" />
-                    <span>Rural job creation</span>
+                    <span><strong>Skilled Employment:</strong> Generating skilled jobs in rural and semi-urban regions through our engineering and agro units.</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <CheckCircle className="h-5 w-5 text-purple-500 mt-0.5 flex-shrink-0" />
-                    <span>Support for women & youth-led businesses</span>
+                    <span><strong>Inclusive Growth:</strong> Ensuring value chains are inclusive, supporting women farmers, local vendors, and youth-led businesses.</span>
                   </li>
                 </ul>
               </CardContent>
