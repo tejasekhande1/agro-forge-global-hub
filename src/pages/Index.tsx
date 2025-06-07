@@ -1,7 +1,8 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Leaf, Wrench, Globe, Users, Award, Mail, Phone, MapPin, CheckCircle, ArrowRight, Truck, Factory, Zap, Shield } from "lucide-react";
+import { Leaf, Wrench, Globe, Users, Award, Mail, Phone, MapPin, CheckCircle, ArrowRight, Truck, Factory, Zap, Shield, Play } from "lucide-react";
 
 const Index = () => {
   return (
@@ -28,11 +29,11 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
+        {/* Background Image - Agricultural themed */}
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -72,6 +73,102 @@ const Index = () => {
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-8 h-12 border-2 border-white rounded-full flex justify-center">
             <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Agricultural Videos Section */}
+      <section className="py-24 bg-gradient-to-br from-green-50 to-emerald-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <Badge className="bg-green-100 text-green-700 border-green-200 mb-4">Agricultural Excellence</Badge>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">See Our Agriculture in Action</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Experience the journey from farm to global markets through our agricultural processes
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            {/* Video 1 - Modern Farming */}
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-0">
+              <div className="relative">
+                <img 
+                  src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  alt="Modern Agricultural Farming"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-black/30 flex items-center justify-center group hover:bg-black/40 transition-colors">
+                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform cursor-pointer">
+                    <Play className="h-8 w-8 text-white ml-1" fill="white" />
+                  </div>
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-foreground mb-3">Modern Farming Techniques</h3>
+                <p className="text-muted-foreground">
+                  Advanced agricultural practices ensuring optimal crop yield and sustainable farming methods.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Video 2 - Harvest Process */}
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-0">
+              <div className="relative">
+                <img 
+                  src="https://images.unsplash.com/photo-1592982631449-4c24ce2ecc82?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  alt="Agricultural Harvest Process"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-black/30 flex items-center justify-center group hover:bg-black/40 transition-colors">
+                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform cursor-pointer">
+                    <Play className="h-8 w-8 text-white ml-1" fill="white" />
+                  </div>
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-foreground mb-3">Harvest & Processing</h3>
+                <p className="text-muted-foreground">
+                  From field to processing facilities, ensuring quality and freshness of our agricultural products.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Agricultural Gallery */}
+          <div className="grid md:grid-cols-4 gap-6">
+            {[
+              {
+                image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+                title: "Fresh Vegetables"
+              },
+              {
+                image: "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+                title: "Premium Grains"
+              },
+              {
+                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+                title: "Sustainable Farming"
+              },
+              {
+                image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+                title: "Global Export"
+              }
+            ].map((item, index) => (
+              <div key={index} className="group cursor-pointer">
+                <div className="relative overflow-hidden rounded-xl shadow-lg">
+                  <img 
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute bottom-4 left-4">
+                      <h4 className="text-white font-semibold text-lg">{item.title}</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
