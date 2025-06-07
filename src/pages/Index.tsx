@@ -100,7 +100,7 @@ const Index = () => {
       </section>*/}
 
       {/* About Us */}
-      <section id="about" className="pt-12 pb-24 bg-white">
+      <section id="about" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <Badge className="bg-primary/10 text-primary border-primary/20 mb-4">About ENJO-SAK GLOBAL PRIVATE LIMITED</Badge>
@@ -115,7 +115,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                src="./about.jpg"
                 alt="Modern Agricultural Technology" 
                 className="rounded-2xl shadow-2xl"
               />
