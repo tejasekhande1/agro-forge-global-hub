@@ -100,13 +100,15 @@ const Index = () => {
       </section>*/}
 
       {/* About Us */}
-      <section id="about" className="py-24 bg-white">
+      <section id="about" className="pt-12 pb-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <Badge className="bg-primary/10 text-primary border-primary/20 mb-4">About ENJO-SAK</Badge>
+            <Badge className="bg-primary/10 text-primary border-primary/20 mb-4">About ENJO-SAK GLOBAL PRIVATE LIMITED</Badge>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Built on Excellence & Trust</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Founded by industry veterans with deep roots in agriculture and engineering, we're transforming how India connects with global markets.
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              ENJO-SAK GLOBAL PRIVATE LIMITED is a dynamic Indian export company delivering world-class
+              agricultural products and engineering solutions. With decades of industry experience and global
+              market access, we serve as your reliable partner in quality, sustainability, and innovation.
             </p>
           </div>
 
@@ -121,8 +123,10 @@ const Index = () => {
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-foreground">Our Story</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Built on expertise, trust, and a global vision. We leverage India's natural resources and advanced manufacturing capabilities to deliver consistent, world-class solutions that meet international standards.
-              </p>
+                Founded by industry veterans with deep roots in agriculture and engineering, ENJO-SAK GLOBAL is
+                built on expertise, trust, and a global vision. With access to India’s rich natural resources and
+                advanced manufacturing infrastructure, we ensure every shipment meets the highest global
+                standards.              </p>
               <div className="space-y-4">
                 {[
                   "25+ years of combined industry expertise",
