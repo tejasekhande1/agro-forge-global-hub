@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Leaf, Wrench, Globe, Users, Award, Mail, Phone, MapPin, CheckCircle, ArrowRight, Truck, Factory, Zap, Shield, Play } from "lucide-react";
+import { Leaf, Wrench, Globe, Users, Award, Mail, Phone, MapPin, CheckCircle, ArrowRight, Truck, Factory, Zap, Shield } from "lucide-react";
 
 const Index = () => {
   return (
@@ -77,102 +77,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Agricultural Videos Section */}
-      <section className="py-24 bg-gradient-to-br from-green-50 to-emerald-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <Badge className="bg-green-100 text-green-700 border-green-200 mb-4">Agricultural Excellence</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">See Our Agriculture in Action</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Experience the journey from farm to global markets through our agricultural processes
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            {/* Video 1 - Modern Farming */}
-            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-0">
-              <div className="relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                  alt="Modern Agricultural Farming"
-                  className="w-full h-64 object-cover"
-                />
-                <div className="absolute inset-0 bg-black/30 flex items-center justify-center group hover:bg-black/40 transition-colors">
-                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform cursor-pointer">
-                    <Play className="h-8 w-8 text-white ml-1" fill="white" />
-                  </div>
-                </div>
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-3">Modern Farming Techniques</h3>
-                <p className="text-muted-foreground">
-                  Advanced agricultural practices ensuring optimal crop yield and sustainable farming methods.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Video 2 - Harvest Process */}
-            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-0">
-              <div className="relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1592982631449-4c24ce2ecc82?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                  alt="Agricultural Harvest Process"
-                  className="w-full h-64 object-cover"
-                />
-                <div className="absolute inset-0 bg-black/30 flex items-center justify-center group hover:bg-black/40 transition-colors">
-                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform cursor-pointer">
-                    <Play className="h-8 w-8 text-white ml-1" fill="white" />
-                  </div>
-                </div>
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-3">Harvest & Processing</h3>
-                <p className="text-muted-foreground">
-                  From field to processing facilities, ensuring quality and freshness of our agricultural products.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Agricultural Gallery */}
-          <div className="grid md:grid-cols-4 gap-6">
-            {[
-              {
-                image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-                title: "Fresh Vegetables"
-              },
-              {
-                image: "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-                title: "Premium Grains"
-              },
-              {
-                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-                title: "Sustainable Farming"
-              },
-              {
-                image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-                title: "Global Export"
-              }
-            ].map((item, index) => (
-              <div key={index} className="group cursor-pointer">
-                <div className="relative overflow-hidden rounded-xl shadow-lg">
-                  <img 
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-4 left-4">
-                      <h4 className="text-white font-semibold text-lg">{item.title}</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Quick Stats */}
       <section className="py-20 bg-gradient-to-r from-primary/5 to-green-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -209,8 +113,8 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Technology and Innovation" 
+                src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                alt="Modern Agricultural Technology" 
                 className="rounded-2xl shadow-2xl"
               />
             </div>
@@ -312,8 +216,8 @@ const Index = () => {
             <Card className="hover:shadow-2xl transition-all duration-500 border-0 overflow-hidden group">
               <div className="relative h-64 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                  alt="Fresh Agricultural Products" 
+                  src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  alt="Fresh Agricultural Products Export" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
@@ -331,25 +235,40 @@ const Index = () => {
                 <div className="space-y-6">
                   <div>
                     <h4 className="font-semibold mb-3 text-primary">Fresh Vegetables</h4>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="grid grid-cols-2 gap-3">
                       {["Ginger", "Onion", "Maize", "Moringa", "Green Chilli", "Potato", "Tomato", "Okra"].map((item) => (
-                        <Badge key={item} variant="secondary" className="hover:bg-primary hover:text-white transition-colors cursor-pointer">{item}</Badge>
+                        <Card key={item} className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-primary group cursor-pointer">
+                          <div className="flex items-center space-x-2">
+                            <div className="w-2 h-2 bg-primary rounded-full group-hover:scale-150 transition-transform"></div>
+                            <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">{item}</span>
+                          </div>
+                        </Card>
                       ))}
                     </div>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-3 text-primary">Premium Fruits</h4>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="grid grid-cols-2 gap-3">
                       {["Banana", "Mangoes", "Pomegranate", "Guava", "Grapes", "Pineapple"].map((item) => (
-                        <Badge key={item} variant="secondary" className="hover:bg-primary hover:text-white transition-colors cursor-pointer">{item}</Badge>
+                        <Card key={item} className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-green-500 group cursor-pointer">
+                          <div className="flex items-center space-x-2">
+                            <div className="w-2 h-2 bg-green-500 rounded-full group-hover:scale-150 transition-transform"></div>
+                            <span className="text-sm font-medium text-muted-foreground group-hover:text-green-600 transition-colors">{item}</span>
+                          </div>
+                        </Card>
                       ))}
                     </div>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-3 text-primary">Millets & Pulses</h4>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="grid grid-cols-2 gap-3">
                       {["Wheat", "Jowar", "Bajra", "Ragi/Nachni"].map((item) => (
-                        <Badge key={item} variant="secondary" className="hover:bg-primary hover:text-white transition-colors cursor-pointer">{item}</Badge>
+                        <Card key={item} className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-orange-500 group cursor-pointer">
+                          <div className="flex items-center space-x-2">
+                            <div className="w-2 h-2 bg-orange-500 rounded-full group-hover:scale-150 transition-transform"></div>
+                            <span className="text-sm font-medium text-muted-foreground group-hover:text-orange-600 transition-colors">{item}</span>
+                          </div>
+                        </Card>
                       ))}
                     </div>
                   </div>
@@ -361,8 +280,8 @@ const Index = () => {
             <Card className="hover:shadow-2xl transition-all duration-500 border-0 overflow-hidden group">
               <div className="relative h-64 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                  alt="Engineering Solutions" 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  alt="Precision Engineering Solutions" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
@@ -379,18 +298,23 @@ const Index = () => {
               <CardContent>
                 <div className="space-y-4">
                   {[
-                    { icon: Zap, text: "Special Purpose Machines (SPMs)" },
-                    { icon: Shield, text: "Dies & Toolings" },
-                    { icon: Wrench, text: "PLC & Robotics Automation" },
-                    { icon: Factory, text: "Tubular Components" },
-                    { icon: Zap, text: "High-precision Laser Cutting Services" }
+                    { icon: Zap, text: "Special Purpose Machines (SPMs)", color: "blue" },
+                    { icon: Shield, text: "Dies & Toolings", color: "purple" },
+                    { icon: Wrench, text: "PLC & Robotics Automation", color: "indigo" },
+                    { icon: Factory, text: "Tubular Components", color: "gray" },
+                    { icon: Zap, text: "High-precision Laser Cutting Services", color: "yellow" }
                   ].map((service, index) => (
-                    <div key={index} className="flex items-center space-x-4 p-3 rounded-lg hover:bg-primary/5 transition-colors">
-                      <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <service.icon className="h-5 w-5 text-primary" />
+                    <Card key={index} className="p-4 hover:shadow-lg transition-all duration-300 group cursor-pointer border-l-4 border-l-primary">
+                      <div className="flex items-center space-x-4">
+                        <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                          <service.icon className="h-6 w-6 text-primary group-hover:text-white transition-colors" />
+                        </div>
+                        <div className="flex-1">
+                          <span className="text-muted-foreground font-medium group-hover:text-primary transition-colors">{service.text}</span>
+                        </div>
+                        <ArrowRight className="h-5 w-5 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
                       </div>
-                      <span className="text-muted-foreground font-medium">{service.text}</span>
-                    </div>
+                    </Card>
                   ))}
                 </div>
                 <div className="mt-6 p-6 bg-gradient-to-r from-primary/5 to-green-50 rounded-xl border border-primary/10">
