@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Leaf, Wrench, Globe, Users, Award, Mail, Phone, MapPin, CheckCircle, ArrowRight, Truck, Factory, Zap, Shield } from "lucide-react";
+import { Leaf, Wrench, Globe, Users, Award, Mail, Phone, MapPin, CheckCircle, ArrowRight, Handshake, Factory, Zap, Shield } from "lucide-react";
 
 const Index = () => {
   return (
@@ -349,7 +349,7 @@ const Index = () => {
               { icon: Factory, title: "Advanced Engineering & Agro Infrastructure"},
               { icon: Globe, title: "Direct-from-source Pricing"},
               { icon: Users, title: "Experienced Management & Advisory"},
-              { icon: Truck, title: "Strong Network across Farming and Industrial Ecosystems"}
+              { icon: Handshake, title: "Strong Network across Farming and Industrial Ecosystems"}
             ].map((benefit, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-gray-50 hover:from-primary/5 hover:to-green-50">
                 <CardContent className="p-8 text-center">
