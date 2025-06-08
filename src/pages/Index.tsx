@@ -2,7 +2,23 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Leaf, Wrench, Globe, Users, Award, Mail, Phone, MapPin, CheckCircle, ArrowRight, Handshake, Factory, Zap, Shield } from "lucide-react";
+import {
+  Leaf,
+  Wrench,
+  Globe,
+  Users,
+  Award,
+  Mail,
+  Phone,
+  MapPin,
+  CheckCircle,
+  ArrowRight,
+  Handshake,
+  Factory,
+  Zap,
+  Shield,
+  ShoppingBag
+} from "lucide-react";
 
 const Index = () => {
 
@@ -84,7 +100,8 @@ const Index = () => {
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="animate-fade-in">
               <div className="mb-6">
-                <Badge className="bg-primary/20 text-primary border-primary/30 text-sm px-4 py-2 mb-6 hover:cursor-pointer hover:text-white">
+                <Badge
+                    className="bg-primary/20 text-primary border-primary/30 text-sm px-4 py-2 mb-6 hover:cursor-pointer hover:text-white">
                   🌱 Sustainable Agriculture & Engineering Excellence
                 </Badge>
               </div>
@@ -99,14 +116,28 @@ const Index = () => {
                 "Rooted in Quality, Driven by Innovation."
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Button size="lg"
-                        className="bg-gradient-to-r from-primary to-green-600 hover:from-primary/90 hover:to-green-600/90 text-white px-8 py-4 text-lg shadow-xl">
-                  Explore Our Products
-                  <ArrowRight className="ml-2 h-5 w-5"/>
+                {/* Explore Products Button */}
+                <Button
+                    size="lg"
+                    className="bg-gradient-to-r from-primary to-green-600 hover:from-primary/90 hover:to-green-600/90 text-white px-8 py-4 text-lg shadow-xl flex items-center"
+                >
+                  <a href="#products" className="flex items-center">
+                    <ShoppingBag className="mr-2 h-5 w-5"/>
+                    Explore Our Products
+                    <ArrowRight className="ml-2 h-5 w-5"/>
+                  </a>
                 </Button>
-                <Button size="lg" variant="outline"
-                        className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg backdrop-blur-sm">
-                  Partner with Us
+
+                {/* Partner with Us Button */}
+                <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-2 border-white text-black hover:bg-white hover:text-primary px-8 py-4 text-lg backdrop-blur-sm flex items-center"
+                >
+                  <a href="#contact" className="flex items-center">
+                    <Handshake className="mr-2 h-5 w-5"/>
+                    Partner with Us
+                  </a>
                 </Button>
               </div>
             </div>
