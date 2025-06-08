@@ -5,6 +5,42 @@ import { Badge } from "@/components/ui/badge";
 import { Leaf, Wrench, Globe, Users, Award, Mail, Phone, MapPin, CheckCircle, ArrowRight, Handshake, Factory, Zap, Shield } from "lucide-react";
 
 const Index = () => {
+
+  const products = [
+    { name: "Ginger (Hydrated & Dehydrated)", image: "/products/ginger.jpg" },
+    { name: "Onion", image: "/products/onion.jpg" },
+    { name: "Maize", image: "/products/maize.jpg" },
+    { name: "Moringa Powder", image: "/products/moringa_powder.webp" },
+    { name: "Green Chilli", image: "/products/green_chilli.jpg" },
+    { name: "Potato", image: "/products/potato.jpg" },
+    { name: "Tomato", image: "/products/tomato.jpg" },
+    { name: "Okra", image: "/products/okra.jpg" },
+    { name: "Moringa", image: "/products/moringa.webp" },
+  ];
+
+  const fruits = [
+    { name: "Banana", image: "/products/banana.jpg" },
+    { name: "Mangoes", image: "/products/mango.jpg" },
+    { name: "Pomegranate", image: "/products/pomegranate.jpg" },
+    { name: "Guava", image: "/products/gauva.jpg" },
+    { name: "Grapes", image: "/products/grapes.jpg" },
+    { name: "Watermelon", image: "/products/watermelon.jpg" },
+    { name: "Muskmelon (Cantaloupe)", image: "/products/muskmelon.jpg" },
+    { name: "Sweet Lime (Mosambi)", image: "/products/orange.jpg" },
+    { name: "Lemon", image: "/products/lemon.jpg" },
+    { name: "Sapota (Chikoo)", image: "/products/sapota.jpg" },
+    { name: "Custard Apple (Sitaphal)", image: "/products/custard_apple.jpg" },
+    { name: "Jackfruit", image: "/products/jackfruit.jpg" },
+    { name: "Pineapple", image: "/products/pinapple.jpg" },
+  ];
+
+  const grains = [
+    { name: "Wheat", image: "/products/wheat.jpg" },
+    { name: "Jowar (Sorghum)", image: "/products/jowar.jpg" },
+    { name: "Bajra (Pearl Millet)", image: "/products/bajra.jpg" },
+    { name: "Ragi/Nachni", image: "/products/nachni.jpg" },
+  ];
+
   return (
       <div className="min-h-screen bg-background">
         {/* Navigation */}
@@ -230,7 +266,7 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12">
+            <div className="grid lg:grid-cols-1 gap-12">
               {/* Agro Exports */}
               <Card className="hover:shadow-2xl transition-all duration-500 border-0 overflow-hidden group">
                 <div className="relative h-64 overflow-hidden">
@@ -254,15 +290,21 @@ const Index = () => {
                   <div className="space-y-6">
                     <div>
                       <h4 className="font-semibold mb-3 text-primary">Fresh Vegetables</h4>
-                      <div className="grid grid-cols-2 gap-3">
-                        {["Ginger (Hydrated & Dehydrated)", "Onion", "Maize", "Moringa Powder", "Green Chilli", "Potato", "Tomato", "Okra", "Moringa"].map((item) => (
-                            <Card key={item}
-                                  className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-primary group cursor-pointer">
-                              <div className="flex items-center space-x-2">
-                                <div
-                                    className="w-2 h-2 bg-primary rounded-full group-hover:scale-150 transition-transform"></div>
-                                <span
-                                    className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">{item}</span>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4">
+                        {products.map((product) => (
+                            <Card
+                                key={product.name}
+                                className="p-3 hover:shadow-lg transition-shadow border-l-4 border-l-primary group cursor-pointer"
+                            >
+                              <div className="flex flex-col items-center text-center">
+                                <img
+                                    src={product.image}
+                                    alt={product.name}
+                                    className="w-30 h-40 object-cover rounded-lg mb-2 group-hover:scale-105 transition-transform"
+                                />
+                                <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
+                                  {product.name}
+                                </span>
                               </div>
                             </Card>
                         ))}
@@ -270,16 +312,21 @@ const Index = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-3 text-primary">Premium Fruits</h4>
-                      <div className="grid grid-cols-2 gap-3">
-                        {["Banana", "Mangoes", "Pomegranate", "Guava", "Grapes", "Watermelon", "Muskmelon (Cantaloupe)", "Sweet Lime (Mosambi)", "Lemon", "Sapota (Chikoo)", "Custard\n" +
-                        "Apple (Sitaphal)", "Jackfruit", "Pineapple"].map((item) => (
-                            <Card key={item}
-                                  className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-green-500 group cursor-pointer">
-                              <div className="flex items-center space-x-2">
-                                <div
-                                    className="w-2 h-2 bg-green-500 rounded-full group-hover:scale-150 transition-transform"></div>
-                                <span
-                                    className="text-sm font-medium text-muted-foreground group-hover:text-green-600 transition-colors">{item}</span>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4">
+                        {fruits.map((fruit) => (
+                            <Card
+                                key={fruit.name}
+                                className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-green-500 group cursor-pointer"
+                            >
+                              <div className="flex flex-col items-center text-center">
+                                <img
+                                    src={fruit.image}
+                                    alt={fruit.name}
+                                    className="w-30 h-40 object-cover rounded-lg mb-2 group-hover:scale-105 transition-transform"
+                                />
+                                <span className="text-sm font-medium text-muted-foreground group-hover:text-green-600 transition-colors">
+                                  {fruit.name}
+                                </span>
                               </div>
                             </Card>
                         ))}
@@ -287,15 +334,21 @@ const Index = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-3 text-primary">Millets & Pulses</h4>
-                      <div className="grid grid-cols-2 gap-3">
-                        {["Wheat", "Jowar (Sorghum)", "Bajra (Pearl Millet)", "Ragi/Nachni"].map((item) => (
-                            <Card key={item}
-                                  className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-orange-500 group cursor-pointer">
-                              <div className="flex items-center space-x-2">
-                                <div
-                                    className="w-2 h-2 bg-orange-500 rounded-full group-hover:scale-150 transition-transform"></div>
-                                <span
-                                    className="text-sm font-medium text-muted-foreground group-hover:text-orange-600 transition-colors">{item}</span>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4">
+                        {grains.map((grain) => (
+                            <Card
+                                key={grain.name}
+                                className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-orange-500 group cursor-pointer"
+                            >
+                              <div className="flex flex-col items-center text-center">
+                                <img
+                                    src={grain.image}
+                                    alt={grain.name}
+                                    className="w-30 h-40 object-cover rounded-lg mb-2 group-hover:scale-105 transition-transform"
+                                />
+                                <span className="text-sm font-medium text-muted-foreground group-hover:text-orange-600 transition-colors">
+                                  {grain.name}
+                                </span>
                               </div>
                             </Card>
                         ))}
@@ -327,22 +380,46 @@ const Index = () => {
                 <CardContent>
                   <div className="space-y-4">
                     {[
-                      {icon: Zap, text: "Special Purpose Machines (SPMs)", color: "blue"},
-                      {icon: Shield, text: "Dies & Toolings", color: "purple"},
-                      {icon: Wrench, text: "PLC & Robotics Automation", color: "indigo"},
-                      {icon: Factory, text: "Tubular Components", color: "gray"},
-                      {icon: Zap, text: "High-precision Laser Cutting Services", color: "yellow"}
+                      {
+                        icon: Zap,
+                        text: "<strong>Special Purpose Machines (SPMs)</strong> for automotive and industrial applications",
+                        color: "blue",
+                      },
+                      {
+                        icon: Shield,
+                        text: "<strong>Precision Dies and Toolings</strong> (blanking, forming, piercing, progressive)",
+                        color: "purple",
+                      },
+                      {
+                        icon: Wrench,
+                        text: "<strong>Automation Systems</strong> with PLCs and robotics integration",
+                        color: "indigo",
+                      },
+                      {
+                        icon: Factory,
+                        text: "<strong>Automotive Parts & Tubular Components</strong>",
+                        color: "gray",
+                      },
+                      {
+                        icon: Zap,
+                        text: "<strong>High-precision laser cutting services</strong>",
+                        color: "yellow",
+                      },
                     ].map((service, index) => (
-                        <Card key={index}
-                              className="p-4 hover:shadow-lg transition-all duration-300 group cursor-pointer border-l-4 border-l-primary">
+                        <Card
+                            key={index}
+                            className="p-4 hover:shadow-lg transition-all duration-300 group cursor-pointer border-l-4 border-l-primary"
+                        >
                           <div className="flex items-center space-x-4">
                             <div
                                 className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
                               <service.icon className="h-6 w-6 text-primary group-hover:text-white transition-colors"/>
                             </div>
                             <div className="flex-1">
-                              <span
-                                  className="text-muted-foreground font-medium group-hover:text-primary transition-colors">{service.text}</span>
+          <span
+              className="text-muted-foreground font-medium group-hover:text-primary transition-colors"
+              dangerouslySetInnerHTML={{__html: service.text}}
+          />
                             </div>
                             <ArrowRight
                                 className="h-5 w-5 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"/>
@@ -365,7 +442,9 @@ const Index = () => {
         <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20">
-              <Badge className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Why Choose ENJO-SAK GLOBAL PRIVATE
+              <Badge
+                  className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Why
+                Choose ENJO-SAK GLOBAL PRIVATE
                 LIMITED</Badge>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Trusted by Global Leaders</h2>
             </div>
