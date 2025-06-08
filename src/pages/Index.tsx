@@ -68,7 +68,9 @@ const Index = () => {
                     className="w-10 h-10 bg-gradient-to-r from-primary to-green-600 rounded-xl flex items-center justify-center shadow-lg">
                   <Leaf className="h-6 w-6 text-white"/>
                 </div>
-                <span className="font-bold text-xl text-foreground">ENJO-SAK GLOBAL PRIVATE LIMITED</span>
+                <span className="font-bold text-sm sm:text-xl text-foreground">
+                  ENJO-SAK GLOBAL PRIVATE LIMITED
+                </span>
               </div>
               <div className="hidden md:flex space-x-8">
                 <a href="#about"
