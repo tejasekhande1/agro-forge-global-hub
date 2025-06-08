@@ -359,80 +359,83 @@ const Index = () => {
               </Card>
 
               {/* Engineering Solutions */}
-              <Card className="hover:shadow-2xl transition-all duration-500 border-0 overflow-hidden group">
-                <div className="relative h-64 overflow-hidden">
+              <Card className="hover:shadow-2xl transition-all duration-500 border-0 overflow-hidden group flex flex-col md:flex-row">
+                {/* Left side: Image */}
+                <div className="relative h-80 md:h-auto md:w-1/2 overflow-hidden">
                   <img
-                      src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      src="/products/engineering.webp"
                       alt="Precision Engineering Solutions"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute bottom-4 left-4">
                     <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-                      <Wrench className="h-6 w-6 text-white"/>
+                      <Wrench className="h-6 w-6 text-white" />
                     </div>
                   </div>
                 </div>
-                <CardHeader>
-                  <CardTitle className="text-2xl text-foreground">Engineering Solutions</CardTitle>
-                  <p className="text-muted-foreground text-lg">Precision engineered for global standards</p>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    {[
-                      {
-                        icon: Zap,
-                        text: "<strong>Special Purpose Machines (SPMs)</strong> for automotive and industrial applications",
-                        color: "blue",
-                      },
-                      {
-                        icon: Shield,
-                        text: "<strong>Precision Dies and Toolings</strong> (blanking, forming, piercing, progressive)",
-                        color: "purple",
-                      },
-                      {
-                        icon: Wrench,
-                        text: "<strong>Automation Systems</strong> with PLCs and robotics integration",
-                        color: "indigo",
-                      },
-                      {
-                        icon: Factory,
-                        text: "<strong>Automotive Parts & Tubular Components</strong>",
-                        color: "gray",
-                      },
-                      {
-                        icon: Zap,
-                        text: "<strong>High-precision laser cutting services</strong>",
-                        color: "yellow",
-                      },
-                    ].map((service, index) => (
-                        <Card
-                            key={index}
-                            className="p-4 hover:shadow-lg transition-all duration-300 group cursor-pointer border-l-4 border-l-primary"
-                        >
-                          <div className="flex items-center space-x-4">
-                            <div
-                                className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                              <service.icon className="h-6 w-6 text-primary group-hover:text-white transition-colors"/>
+
+                {/* Right side: Content */}
+                <div className="md:w-1/2 flex flex-col">
+                  <CardHeader>
+                    <CardTitle className="text-2xl text-foreground">Engineering Solutions</CardTitle>
+                    <p className="text-muted-foreground text-lg">Precision engineered for global standards</p>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      {[
+                        {
+                          icon: Zap,
+                          text: "<strong>Special Purpose Machines (SPMs)</strong> for automotive and industrial applications",
+                          color: "blue",
+                        },
+                        {
+                          icon: Shield,
+                          text: "<strong>Precision Dies and Toolings</strong> (blanking, forming, piercing, progressive)",
+                          color: "purple",
+                        },
+                        {
+                          icon: Wrench,
+                          text: "<strong>Automation Systems</strong> with PLCs and robotics integration",
+                          color: "indigo",
+                        },
+                        {
+                          icon: Factory,
+                          text: "<strong>Automotive Parts & Tubular Components</strong>",
+                          color: "gray",
+                        },
+                        {
+                          icon: Zap,
+                          text: "<strong>High-precision laser cutting services</strong>",
+                          color: "yellow",
+                        },
+                      ].map((service, index) => (
+                          <Card
+                              key={index}
+                              className="p-4 hover:shadow-lg transition-all duration-300 group cursor-pointer border-l-4 border-l-primary"
+                          >
+                            <div className="flex items-center space-x-4">
+                              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                <service.icon className="h-6 w-6 text-primary group-hover:text-white transition-colors" />
+                              </div>
+                              <div className="flex-1">
+                <span
+                    className="text-muted-foreground font-medium group-hover:text-primary transition-colors"
+                    dangerouslySetInnerHTML={{ __html: service.text }}
+                />
+                              </div>
+                              <ArrowRight className="h-5 w-5 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
                             </div>
-                            <div className="flex-1">
-          <span
-              className="text-muted-foreground font-medium group-hover:text-primary transition-colors"
-              dangerouslySetInnerHTML={{__html: service.text}}
-          />
-                            </div>
-                            <ArrowRight
-                                className="h-5 w-5 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"/>
-                          </div>
-                        </Card>
-                    ))}
-                  </div>
-                  <div
-                      className="mt-6 p-6 bg-gradient-to-r from-primary/5 to-green-50 rounded-xl border border-primary/10">
-                    <p className="text-muted-foreground font-medium">
-                      Built to meet global industrial standards, with tailored design and development. </p>
-                  </div>
-                </CardContent>
+                          </Card>
+                      ))}
+                    </div>
+                    <div className="mt-6 p-6 bg-gradient-to-r from-primary/5 to-green-50 rounded-xl border border-primary/10">
+                      <p className="text-muted-foreground font-medium">
+                        Built to meet global industrial standards, with tailored design and development.
+                      </p>
+                    </div>
+                  </CardContent>
+                </div>
               </Card>
             </div>
           </div>
