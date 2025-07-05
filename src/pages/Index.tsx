@@ -711,7 +711,7 @@ const Index = () => {
               <p className="text-xl text-muted-foreground">Ready to start your journey with ENJO-SAK?</p>
             </div>
 
-            <div className="grid md:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-3 gap-16">
               <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white group">
                 <CardHeader className="text-center">
                   <div
@@ -758,20 +758,20 @@ const Index = () => {
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white group">
-                <CardHeader className="text-center">
-                  <div
-                      className="w-16 h-16 bg-gradient-to-r from-primary to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <Globe className="h-8 w-8 text-white"/>
-                  </div>
-                  <CardTitle className="text-xl">Website</CardTitle>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <div className="space-y-3">
-                    <p className="text-muted-foreground font-medium text-lg">www.enjosakglobal.com</p>
-                  </div>
-                </CardContent>
-              </Card>
+              {/*<Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white group">*/}
+              {/*  <CardHeader className="text-center">*/}
+              {/*    <div*/}
+              {/*        className="w-16 h-16 bg-gradient-to-r from-primary to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">*/}
+              {/*      <Globe className="h-8 w-8 text-white"/>*/}
+              {/*    </div>*/}
+              {/*    <CardTitle className="text-xl">Website</CardTitle>*/}
+              {/*  </CardHeader>*/}
+              {/*  <CardContent className="text-center">*/}
+              {/*    <div className="space-y-3">*/}
+              {/*      <p className="text-muted-foreground font-medium text-lg">www.enjosakglobal.com</p>*/}
+              {/*    </div>*/}
+              {/*  </CardContent>*/}
+              {/*</Card>*/}
             </div>
           </div>
         </section>
