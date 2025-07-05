@@ -22,8 +22,12 @@ import {
 import { FaWhatsapp, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import {grains, fruits, products} from "@/data/products.ts";
+import {useState} from "react";
+import {Menu, X} from "lucide-react";
 
 const Index = () => {
+
+  const [open, setOpen] = useState(false);
 
   return (
       <div className="min-h-screen bg-background">
@@ -31,29 +35,77 @@ const Index = () => {
         <nav className="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
+              {/* Logo and title */}
               <div className="flex items-center space-x-2">
                 <div
                     className="w-10 h-10 bg-gradient-to-r from-primary to-green-600 rounded-xl flex items-center justify-center shadow-lg">
                   <Leaf className="h-6 w-6 text-white"/>
                 </div>
                 <span className="font-bold text-sm sm:text-xl text-foreground">
-                  ENJO-SAK GLOBAL PRIVATE LIMITED
-                </span>
+          ENJO-SAK GLOBAL PRIVATE LIMITED
+        </span>
               </div>
+
+              {/* Desktop Menu */}
               <div className="hidden md:flex space-x-8">
-                <a href="#about"
-                   className="text-muted-foreground hover:text-primary transition-colors font-medium">About</a>
-                <a href="#products"
-                   className="text-muted-foreground hover:text-primary transition-colors font-medium">Products</a>
-                <Link to="/spices"
-                   className="text-muted-foreground hover:text-primary transition-colors font-medium">Spices</Link>
+                <a href="#about" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+                  About
+                </a>
+                <a href="#products" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+                  Products
+                </a>
+                <Link to="/spices" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+                  Spices
+                </Link>
                 <a href="#sustainability"
-                   className="text-muted-foreground hover:text-primary transition-colors font-medium">Sustainability</a>
-                <a href="#contact"
-                   className="text-muted-foreground hover:text-primary transition-colors font-medium">Contact</a>
+                   className="text-muted-foreground hover:text-primary transition-colors font-medium">
+                  Sustainability
+                </a>
+                <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+                  Contact
+                </a>
+              </div>
+
+              {/* Mobile menu button */}
+              <div className="md:hidden">
+                <button onClick={() => setOpen(!open)}
+                        className="text-muted-foreground hover:text-primary transition-colors">
+                  <Menu className="h-6 w-6"/>
+                </button>
               </div>
             </div>
           </div>
+
+          {/* Drawer / Mobile Menu */}
+          {open && (
+              <div className="md:hidden bg-white border-t px-4 py-4 space-y-4 shadow-lg z-40">
+                <div className="flex justify-end">
+                  <button onClick={() => setOpen(false)} className="text-muted-foreground">
+                    <X className="h-6 w-6"/>
+                  </button>
+                </div>
+                <a href="#about" onClick={() => setOpen(false)}
+                   className="block text-muted-foreground hover:text-primary font-medium">
+                  About
+                </a>
+                <a href="#products" onClick={() => setOpen(false)}
+                   className="block text-muted-foreground hover:text-primary font-medium">
+                  Products
+                </a>
+                <Link to="/spices" onClick={() => setOpen(false)}
+                      className="block text-muted-foreground hover:text-primary font-medium">
+                  Spices
+                </Link>
+                <a href="#sustainability" onClick={() => setOpen(false)}
+                   className="block text-muted-foreground hover:text-primary font-medium">
+                  Sustainability
+                </a>
+                <a href="#contact" onClick={() => setOpen(false)}
+                   className="block text-muted-foreground hover:text-primary font-medium">
+                  Contact
+                </a>
+              </div>
+          )}
         </nav>
 
         {/* Hero Section */}
@@ -149,7 +201,9 @@ const Index = () => {
         <section id="about" className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20">
-              <Badge className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">About ENJO-SAK GLOBAL PRIVATE
+              <Badge
+                  className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">About
+                ENJO-SAK GLOBAL PRIVATE
                 LIMITED</Badge>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Built on Excellence & Trust</h2>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
@@ -261,7 +315,9 @@ const Index = () => {
         <section id="products" className="py-24 bg-gradient-to-br from-gray-50 to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20">
-              <Badge className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Products & Services</Badge>
+              <Badge
+                  className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Products
+                & Services</Badge>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Premium Solutions</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 We offer a wide range of export-quality, farm-fresh products
@@ -305,7 +361,8 @@ const Index = () => {
                                     alt={product.name}
                                     className="w-30 h-40 object-cover rounded-lg mb-2 group-hover:scale-105 transition-transform"
                                 />
-                                <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
+                                <span
+                                    className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
                                   {product.name}
                                 </span>
                               </div>
@@ -327,7 +384,8 @@ const Index = () => {
                                     alt={fruit.name}
                                     className="w-30 h-40 object-cover rounded-lg mb-2 group-hover:scale-105 transition-transform"
                                 />
-                                <span className="text-sm font-medium text-muted-foreground group-hover:text-green-600 transition-colors">
+                                <span
+                                    className="text-sm font-medium text-muted-foreground group-hover:text-green-600 transition-colors">
                                   {fruit.name}
                                 </span>
                               </div>
@@ -349,7 +407,8 @@ const Index = () => {
                                     alt={grain.name}
                                     className="w-30 h-40 object-cover rounded-lg mb-2 group-hover:scale-105 transition-transform"
                                 />
-                                <span className="text-sm font-medium text-muted-foreground group-hover:text-orange-600 transition-colors">
+                                <span
+                                    className="text-sm font-medium text-muted-foreground group-hover:text-orange-600 transition-colors">
                                   {grain.name}
                                 </span>
                               </div>
@@ -362,7 +421,8 @@ const Index = () => {
               </Card>
 
               {/* Engineering Solutions */}
-              <Card className="hover:shadow-2xl transition-all duration-500 border-0 overflow-hidden group flex flex-col md:flex-row">
+              <Card
+                  className="hover:shadow-2xl transition-all duration-500 border-0 overflow-hidden group flex flex-col md:flex-row">
                 {/* Left side: Image */}
                 <div className="relative h-80 md:h-auto md:w-1/2 overflow-hidden">
                   <img
@@ -373,7 +433,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute bottom-4 left-4">
                     <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-                      <Wrench className="h-6 w-6 text-white" />
+                      <Wrench className="h-6 w-6 text-white"/>
                     </div>
                   </div>
                 </div>
@@ -418,21 +478,25 @@ const Index = () => {
                               className="p-4 hover:shadow-lg transition-all duration-300 group cursor-pointer border-l-4 border-l-primary"
                           >
                             <div className="flex items-center space-x-4">
-                              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                                <service.icon className="h-6 w-6 text-primary group-hover:text-white transition-colors" />
+                              <div
+                                  className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                <service.icon
+                                    className="h-6 w-6 text-primary group-hover:text-white transition-colors"/>
                               </div>
                               <div className="flex-1">
                 <span
                     className="text-muted-foreground font-medium group-hover:text-primary transition-colors"
-                    dangerouslySetInnerHTML={{ __html: service.text }}
+                    dangerouslySetInnerHTML={{__html: service.text}}
                 />
                               </div>
-                              <ArrowRight className="h-5 w-5 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
+                              <ArrowRight
+                                  className="h-5 w-5 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"/>
                             </div>
                           </Card>
                       ))}
                     </div>
-                    <div className="mt-6 p-6 bg-gradient-to-r from-primary/5 to-green-50 rounded-xl border border-primary/10">
+                    <div
+                        className="mt-6 p-6 bg-gradient-to-r from-primary/5 to-green-50 rounded-xl border border-primary/10">
                       <p className="text-muted-foreground font-medium">
                         Built to meet global industrial standards, with tailored design and development.
                       </p>
@@ -481,7 +545,8 @@ const Index = () => {
         <section id="sustainability" className="py-24 bg-gradient-to-br from-green-50 to-emerald-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20">
-              <Badge className="bg-green-100 text-green-700 border-green-200 mb-4 hover:cursor-pointer hover:text-white">Sustainability</Badge>
+              <Badge
+                  className="bg-green-100 text-green-700 border-green-200 mb-4 hover:cursor-pointer hover:text-white">Sustainability</Badge>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
                 Committed to a Greener Future
               </h2>
@@ -603,14 +668,14 @@ const Index = () => {
               <h2 className="text-3xl font-bold text-foreground mb-12">Certifications</h2>
               <div className="flex flex-wrap justify-center gap-8">
                 {[
-                  { name: "FSSAI", icon: Shield },
-                  { name: "APEDA", icon: Award },
-                  { name: "SPICE BOARD", icon: Leaf }
+                  {name: "FSSAI", icon: Shield},
+                  {name: "APEDA", icon: Award},
+                  {name: "SPICE BOARD", icon: Leaf}
                 ].map((cert) => (
                     <div key={cert.name} className="group hover:cursor-pointer">
                       <Badge variant="outline"
                              className="text-lg py-4 px-8 border-2 border-primary/20 hover:bg-primary hover:text-white hover:cursor-pointer transition-all duration-300 group-hover:scale-110 flex items-center gap-2">
-                        <cert.icon className="h-5 w-5" />
+                        <cert.icon className="h-5 w-5"/>
                         {cert.name}
                       </Badge>
                     </div>
@@ -625,7 +690,9 @@ const Index = () => {
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20">
-              <Badge className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Join Us on the Sustainability
+              <Badge
+                  className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Join
+                Us on the Sustainability
                 Journey</Badge>
               <h5 className="text-md md:text-lg font-bold text-muted-foreground">
                 We believe growth and responsibility go hand in hand. By choosing ENJO-SAK, you’re not just
@@ -636,7 +703,9 @@ const Index = () => {
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20">
-              <Badge className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Contact Us</Badge>
+              <Badge
+                  className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Contact
+                Us</Badge>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Let's Build Something Great
                 Together</h2>
               <p className="text-xl text-muted-foreground">Ready to start your journey with ENJO-SAK?</p>
@@ -722,7 +791,7 @@ const Index = () => {
                 <p className="text-gray-300 mb-6 text-lg leading-relaxed">
                   Bridging India's Agricultural Abundance & Engineering Excellence with the World
                 </p>
-                
+
                 {/* Social Media Icons */}
                 <div className="flex space-x-4 mb-6">
                   <a href="https://www.facebook.com/profile.php?id=61577634555659"
@@ -761,19 +830,19 @@ const Index = () => {
                   ].map((link) => (
                       <li key={link.label}>
                         {link.href.startsWith('#') ? (
-                          <a href={link.href}
-                             className="text-gray-300 hover:text-primary transition-colors duration-300 flex items-center space-x-2 group">
-                            <ArrowRight
-                                className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
-                            <span>{link.label}</span>
-                          </a>
+                            <a href={link.href}
+                               className="text-gray-300 hover:text-primary transition-colors duration-300 flex items-center space-x-2 group">
+                              <ArrowRight
+                                  className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
+                              <span>{link.label}</span>
+                            </a>
                         ) : (
-                          <Link to={link.href}
-                                className="text-gray-300 hover:text-primary transition-colors duration-300 flex items-center space-x-2 group">
-                            <ArrowRight
-                                className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
-                            <span>{link.label}</span>
-                          </Link>
+                            <Link to={link.href}
+                                  className="text-gray-300 hover:text-primary transition-colors duration-300 flex items-center space-x-2 group">
+                              <ArrowRight
+                                  className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
+                              <span>{link.label}</span>
+                            </Link>
                         )}
                       </li>
                   ))}
@@ -799,7 +868,7 @@ const Index = () => {
           </div>
         </footer>
       </div>
-);
+  );
 };
 
 export default Index;
