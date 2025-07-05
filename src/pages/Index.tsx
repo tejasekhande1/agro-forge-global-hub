@@ -17,8 +17,13 @@ import {
   Factory,
   Zap,
   Shield,
-  ShoppingBag
+  ShoppingBag,
+  Facebook,
+  Instagram,
+  Linkedin,
+  MessageCircle
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
 
@@ -77,6 +82,8 @@ const Index = () => {
                    className="text-muted-foreground hover:text-primary transition-colors font-medium">About</a>
                 <a href="#products"
                    className="text-muted-foreground hover:text-primary transition-colors font-medium">Products</a>
+                <Link to="/spices"
+                   className="text-muted-foreground hover:text-primary transition-colors font-medium">Spices</Link>
                 <a href="#sustainability"
                    className="text-muted-foreground hover:text-primary transition-colors font-medium">Sustainability</a>
                 <a href="#contact"
@@ -201,7 +208,7 @@ const Index = () => {
                 <h3 className="text-3xl font-bold text-foreground">Our Story</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Founded by industry veterans with deep roots in agriculture and engineering, ENJO-SAK GLOBAL is
-                  built on expertise, trust, and a global vision. With access to India’s rich natural resources and
+                  built on expertise, trust, and a global vision. With access to India's rich natural resources and
                   advanced manufacturing infrastructure, we ensure every shipment meets the highest global
                   standards. </p>
                 <div className="space-y-4">
@@ -632,11 +639,16 @@ const Index = () => {
             <div className="text-center">
               <h2 className="text-3xl font-bold text-foreground mb-12">Certifications</h2>
               <div className="flex flex-wrap justify-center gap-8">
-                {["FSSAI", "APEDA", "SPICE BOARD"].map((cert) => (
-                    <div key={cert} className="group hover:cursor-pointer">
+                {[
+                  { name: "FSSAI", icon: Shield },
+                  { name: "APEDA", icon: Award },
+                  { name: "SPICE BOARD", icon: Leaf }
+                ].map((cert) => (
+                    <div key={cert.name} className="group hover:cursor-pointer">
                       <Badge variant="outline"
-                             className="text-lg py-4 px-8 border-2 border-primary/20 hover:bg-primary hover:text-white hover:cursor-pointer transition-all duration-300 group-hover:scale-110">
-                        {cert}
+                             className="text-lg py-4 px-8 border-2 border-primary/20 hover:bg-primary hover:text-white hover:cursor-pointer transition-all duration-300 group-hover:scale-110 flex items-center gap-2">
+                        <cert.icon className="h-5 w-5" />
+                        {cert.name}
                       </Badge>
                     </div>
                 ))}
@@ -747,6 +759,23 @@ const Index = () => {
                 <p className="text-gray-300 mb-6 text-lg leading-relaxed">
                   Bridging India's Agricultural Abundance & Engineering Excellence with the World
                 </p>
+                
+                {/* Social Media Icons */}
+                <div className="flex space-x-4 mb-6">
+                  <a href="#" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                    <Facebook className="h-5 w-5 text-white" />
+                  </a>
+                  <a href="#" className="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors">
+                    <Instagram className="h-5 w-5 text-white" />
+                  </a>
+                  <a href="#" className="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors">
+                    <Linkedin className="h-5 w-5 text-white" />
+                  </a>
+                  <a href="#" className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-colors">
+                    <MessageCircle className="h-5 w-5 text-white" />
+                  </a>
+                </div>
+                
                 <p className="text-gray-400">
                   © 2025 ENJO-SAK GLOBAL PRIVATE LIMITED. All rights reserved.
                 </p>
@@ -758,16 +787,26 @@ const Index = () => {
                   {[
                     {label: "About ENJO-SAK", href: "#about"},
                     {label: "Products", href: "#products"},
+                    {label: "Spices", href: "/spices"},
                     {label: "Sustainability", href: "#sustainability"},
                     {label: "Contact", href: "#contact"}
                   ].map((link) => (
                       <li key={link.label}>
-                        <a href={link.href}
-                           className="text-gray-300 hover:text-primary transition-colors duration-300 flex items-center space-x-2 group">
-                          <ArrowRight
-                              className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
-                          <span>{link.label}</span>
-                        </a>
+                        {link.href.startsWith('#') ? (
+                          <a href={link.href}
+                             className="text-gray-300 hover:text-primary transition-colors duration-300 flex items-center space-x-2 group">
+                            <ArrowRight
+                                className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
+                            <span>{link.label}</span>
+                          </a>
+                        ) : (
+                          <Link to={link.href}
+                                className="text-gray-300 hover:text-primary transition-colors duration-300 flex items-center space-x-2 group">
+                            <ArrowRight
+                                className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
+                            <span>{link.label}</span>
+                          </Link>
+                        )}
                       </li>
                   ))}
                 </ul>
