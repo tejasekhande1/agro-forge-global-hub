@@ -6,14 +6,10 @@ import {
   Leaf,
   Shield,
   Award,
-  Thermometer,
-  MapPin,
-  CheckCircle,
   ArrowLeft,
   Package,
   Globe,
-  Star,
-  Info
+  Star
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -29,10 +25,7 @@ const Spices = () => {
       scoville: "30,000-35,000 SHU",
       packaging: "25kg, 50kg PP bags",
       description: "Premium quality red chili powder with intense heat and vibrant color.",
-      botanicalInfo: "Capsicum annuum is an annual herbaceous plant that grows 20-120 cm tall. The fruits are pendulous, conical or elongated, and turn from green to red when mature.",
-      characteristics: "Guntur Sannam chilies are known for their deep red color, moderate pungency, and high oleoresin content. They have thick flesh and are less wrinkled compared to other varieties.",
-      uses: "Widely used in Indian cuisine for adding heat and color to curries, pickles, and spice blends. Essential ingredient in sambar powder, rasam powder, and various masalas.",
-      healthBenefits: "Rich in Vitamin C, capsaicin helps boost metabolism, has anti-inflammatory properties, and may help in pain relief and cardiovascular health."
+      info: "Capsicum annuum is an annual herbaceous plant growing 20-120 cm tall with pendulous, conical fruits. Guntur Sannam chilies are prized for their deep red color, moderate pungency, and high oleoresin content. Widely used in Indian cuisine for curries, pickles, and spice blends like sambar powder and rasam powder. Rich in Vitamin C and capsaicin, which helps boost metabolism and has anti-inflammatory properties."
     },
     {
       name: "Turmeric Powder",
@@ -44,10 +37,7 @@ const Spices = () => {
       curcumin: "3-5%",
       packaging: "25kg, 50kg PP bags",
       description: "High curcumin content turmeric powder with natural golden color.",
-      botanicalInfo: "Curcuma longa is a perennial herbaceous plant of the ginger family. It grows 3-5 feet tall with large, oblong leaves and produces rhizomes underground.",
-      characteristics: "Salem/Erode turmeric is prized for its high curcumin content, bright golden-yellow color, and aromatic properties. The rhizomes are finger-like and have a smooth texture.",
-      uses: "Essential spice in Indian cooking, used for color, flavor, and preservation. Key ingredient in curry powders, pickles, and traditional medicine preparations.",
-      healthBenefits: "Contains curcumin with powerful anti-inflammatory and antioxidant properties. May help reduce inflammation, support joint health, and boost immune system."
+      info: "Curcuma longa is a perennial herbaceous plant of the ginger family growing 3-5 feet tall with underground rhizomes. Salem/Erode turmeric features high curcumin content and bright golden-yellow color. Essential in Indian cooking for color, flavor, and preservation, key ingredient in curry powders and traditional medicine. Contains curcumin with powerful anti-inflammatory and antioxidant properties that may support joint health and boost immune system."
     },
     {
       name: "Black Pepper",
@@ -59,10 +49,7 @@ const Spices = () => {
       piperine: "≥ 5%",
       packaging: "25kg, 50kg jute bags",
       description: "Premium Malabar black pepper with strong aroma and pungency.",
-      botanicalInfo: "Piper nigrum is a perennial woody vine that can grow up to 4 meters high. It produces small white flowers in spikes and round drupes that turn red when ripe.",
-      characteristics: "Malabar pepper is known for its bold flavor, high piperine content, and strong aroma. The peppercorns are uniform in size with a wrinkled, dark surface.",
-      uses: "Universal spice used in both whole and ground form. Essential for seasoning, marinades, spice blends, and as a table condiment worldwide.",
-      healthBenefts: "Rich in piperine which enhances nutrient absorption. Has antioxidant properties, may aid digestion, and has antimicrobial effects."
+      info: "Piper nigrum is a perennial woody vine growing up to 4 meters high, producing small white flowers and round drupes. Malabar pepper is known for its bold flavor, high piperine content, and strong aroma with uniform, wrinkled peppercorns. Universal spice used worldwide in both whole and ground form for seasoning, marinades, and spice blends. Rich in piperine which enhances nutrient absorption and has antioxidant properties."
     },
     {
       name: "Cardamom",
@@ -74,10 +61,7 @@ const Spices = () => {
       grade: "AGEB/AGB",
       packaging: "5kg, 10kg cartons",
       description: "Premium green cardamom with intense aroma and flavor.",
-      botanicalInfo: "Elettaria cardamomum is a perennial herbaceous plant of the ginger family, growing 5-10 feet tall in the shade of forest trees in the Western Ghats.",
-      characteristics: "Green cardamom pods are triangular in cross-section, with a thin, papery outer shell containing 8-16 aromatic black seeds. Known as the 'Queen of Spices'.",
-      uses: "Used in sweet and savory dishes, beverages like chai, and in garam masala. Essential in Indian sweets, biryanis, and Middle Eastern cuisine.",
-      healthBenefits: "Contains compounds that may help with digestive issues, bad breath, and may have antioxidant and anti-inflammatory properties."
+      info: "Elettaria cardamomum is a perennial herbaceous plant growing 5-10 feet tall in forest shade of Western Ghats. Known as 'Queen of Spices', green cardamom pods are triangular with thin, papery shells containing 8-16 aromatic black seeds. Used in sweet and savory dishes, chai beverages, garam masala, Indian sweets, and Middle Eastern cuisine. Contains compounds that may help with digestive issues and has antioxidant properties."
     },
     {
       name: "Coriander Seeds",
@@ -89,10 +73,7 @@ const Spices = () => {
       oil: "0.8-1.0%",
       packaging: "25kg, 50kg PP bags",
       description: "High-quality coriander seeds with excellent aroma and taste.",
-      botanicalInfo: "Coriandrum sativum is an annual herb growing 20-70 cm tall with slender, solid stems and delicate, lacy leaves. The seeds are small, round, and ribbed.",
-      characteristics: "Eagle variety coriander seeds are uniform in size, light brown in color, and have a sweet, citrusy aroma. They have low volatile oil content making them ideal for grinding.",
-      uses: "Ground into powder for curry bases, used whole in tempering, pickling, and spice blends. Essential component of garam masala and sambar powder.",
-      healthBenefits: "Rich in dietary fiber, antioxidants, and may help regulate blood sugar levels. Has antimicrobial properties and supports digestive health."
+      info: "Coriandrum sativum is an annual herb growing 20-70 cm tall with delicate, lacy leaves and small, round, ribbed seeds. Eagle variety seeds are uniform, light brown with sweet, citrusy aroma and low volatile oil content ideal for grinding. Ground into powder for curry bases, used whole in tempering and pickling, essential in garam masala and sambar powder. Rich in dietary fiber and antioxidants, may help regulate blood sugar and support digestive health."
     },
     {
       name: "Cumin Seeds",
@@ -104,10 +85,7 @@ const Spices = () => {
       oil: "2.5-3.0%",
       packaging: "25kg, 50kg PP bags",
       description: "Premium cumin seeds with strong distinctive flavor.",
-      botanicalInfo: "Cuminum cyminum is a small annual herbaceous plant, 15-20 cm tall, with thread-like leaves and small white or pink flowers arranged in umbels.",
-      characteristics: "Gujarat cumin seeds are elongated, ridged, and yellowish-brown in color. They have a warm, earthy flavor with a hint of both sweetness and bitterness.",
-      uses: "Used whole in tempering, ground in spice blends, and essential in Indian, Middle Eastern, and Mexican cuisines. Key ingredient in jeera rice and various curries.",
-      healthBenefits: "Good source of iron, may aid digestion, has antioxidant properties, and may help with blood sugar control and weight management."
+      info: "Cuminum cyminum is a small annual herbaceous plant, 15-20 cm tall, with thread-like leaves and small flowers in umbels. Gujarat cumin seeds are elongated, ridged, yellowish-brown with warm, earthy flavor combining sweetness and bitterness. Used whole in tempering, ground in spice blends, essential in Indian, Middle Eastern, and Mexican cuisines including jeera rice. Good source of iron, may aid digestion and help with blood sugar control."
     }
   ];
 
@@ -159,16 +137,16 @@ const Spices = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-orange-50 to-red-50">
+      <section className="relative py-12 sm:py-20 bg-gradient-to-br from-orange-50 to-red-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Badge className="bg-orange-100 text-orange-700 border-orange-200 mb-4">
               Premium Indian Spices
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
               Authentic Indian Spices
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               Export-quality spices meeting Spices Board of India standards, sourced directly from premium growing regions across India.
             </p>
           </div>
@@ -176,23 +154,23 @@ const Spices = () => {
       </section>
 
       {/* Quality Standards */}
-      <section className="py-16 bg-white">
+      <section className="py-12 sm:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Quality Assurance</h2>
-            <p className="text-lg text-muted-foreground">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">Quality Assurance</h2>
+            <p className="text-base sm:text-lg text-muted-foreground">
               Every product meets stringent quality standards set by the Spices Board of India
             </p>
           </div>
           
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {qualityStandards.map((standard, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-white to-orange-50">
-                <CardContent className="p-6 text-center">
+                <CardContent className="p-4 sm:p-6 text-center">
                   <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                     <standard.icon className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="font-semibold text-lg mb-2">{standard.title}</h3>
+                  <h3 className="font-semibold text-base sm:text-lg mb-2">{standard.title}</h3>
                   <p className="text-muted-foreground text-sm">{standard.description}</p>
                 </CardContent>
               </Card>
@@ -202,162 +180,100 @@ const Spices = () => {
       </section>
 
       {/* Spice Products */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+      <section className="py-12 sm:py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">Our Spice Products</h2>
-            <p className="text-xl text-muted-foreground">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">Our Spice Products</h2>
+            <p className="text-lg sm:text-xl text-muted-foreground">
               Premium quality spices with detailed specifications and comprehensive information
             </p>
           </div>
 
-          <div className="space-y-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             {spiceProducts.map((spice, index) => (
               <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 overflow-hidden">
-                <div className="flex flex-col lg:flex-row">
-                  <div className="lg:w-1/4 h-64 lg:h-auto">
+                <div className="flex flex-col sm:flex-row">
+                  <div className="sm:w-1/3 h-48 sm:h-auto">
                     <img 
                       src={spice.image} 
                       alt={spice.name}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="lg:w-3/4 flex flex-col">
-                    <CardHeader>
-                      <div className="flex items-center justify-between mb-4">
-                        <CardTitle className="text-3xl text-foreground">{spice.name}</CardTitle>
-                        <Badge className="bg-green-100 text-green-700">
+                  <div className="sm:w-2/3 flex flex-col">
+                    <CardHeader className="pb-3">
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                        <CardTitle className="text-xl sm:text-2xl text-foreground mb-2 sm:mb-0">{spice.name}</CardTitle>
+                        <Badge className="bg-green-100 text-green-700 w-fit">
                           <Star className="w-3 h-3 mr-1" />
                           Export Grade
                         </Badge>
                       </div>
-                      <p className="text-lg text-muted-foreground mb-6">{spice.description}</p>
+                      <p className="text-sm sm:text-base text-muted-foreground">{spice.description}</p>
                     </CardHeader>
-                    <CardContent className="flex-1">
-                      <div className="space-y-6">
-                        {/* Technical Specifications */}
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-4 bg-gray-50 rounded-lg">
-                          <div className="flex items-center space-x-2">
-                            <MapPin className="h-4 w-4 text-orange-600" />
-                            <div>
-                              <p className="text-sm font-medium">Origin</p>
-                              <p className="text-sm text-muted-foreground">{spice.origin}</p>
-                            </div>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <Leaf className="h-4 w-4 text-green-600" />
-                            <div>
-                              <p className="text-sm font-medium">Variety</p>
-                              <p className="text-sm text-muted-foreground">{spice.variety}</p>
-                            </div>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <Thermometer className="h-4 w-4 text-blue-600" />
-                            <div>
-                              <p className="text-sm font-medium">Moisture</p>
-                              <p className="text-sm text-muted-foreground">{spice.moisture}</p>
-                            </div>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <CheckCircle className="h-4 w-4 text-green-600" />
-                            <div>
-                              <p className="text-sm font-medium">Purity</p>
-                              <p className="text-sm text-muted-foreground">{spice.purity}</p>
-                            </div>
-                          </div>
-                        </div>
-
+                    <CardContent className="flex-1 pt-0">
+                      <div className="space-y-4">
                         {/* Special Properties */}
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                           {spice.scoville && (
-                            <div className="flex items-center space-x-2 p-3 bg-red-50 rounded-lg">
-                              <Package className="h-4 w-4 text-red-600" />
-                              <div>
-                                <p className="text-sm font-medium">Heat Level</p>
-                                <p className="text-sm text-muted-foreground">{spice.scoville}</p>
+                            <div className="flex items-center space-x-2 p-2 bg-red-50 rounded-lg">
+                              <Package className="h-4 w-4 text-red-600 flex-shrink-0" />
+                              <div className="min-w-0">
+                                <p className="text-xs font-medium">Heat Level</p>
+                                <p className="text-xs text-muted-foreground truncate">{spice.scoville}</p>
                               </div>
                             </div>
                           )}
 
                           {spice.curcumin && (
-                            <div className="flex items-center space-x-2 p-3 bg-yellow-50 rounded-lg">
-                              <Package className="h-4 w-4 text-yellow-600" />
-                              <div>
-                                <p className="text-sm font-medium">Curcumin Content</p>
-                                <p className="text-sm text-muted-foreground">{spice.curcumin}</p>
+                            <div className="flex items-center space-x-2 p-2 bg-yellow-50 rounded-lg">
+                              <Package className="h-4 w-4 text-yellow-600 flex-shrink-0" />
+                              <div className="min-w-0">
+                                <p className="text-xs font-medium">Curcumin</p>
+                                <p className="text-xs text-muted-foreground truncate">{spice.curcumin}</p>
                               </div>
                             </div>
                           )}
 
                           {spice.piperine && (
-                            <div className="flex items-center space-x-2 p-3 bg-gray-50 rounded-lg">
-                              <Package className="h-4 w-4 text-gray-600" />
-                              <div>
-                                <p className="text-sm font-medium">Piperine Content</p>
-                                <p className="text-sm text-muted-foreground">{spice.piperine}</p>
+                            <div className="flex items-center space-x-2 p-2 bg-gray-50 rounded-lg">
+                              <Package className="h-4 w-4 text-gray-600 flex-shrink-0" />
+                              <div className="min-w-0">
+                                <p className="text-xs font-medium">Piperine</p>
+                                <p className="text-xs text-muted-foreground truncate">{spice.piperine}</p>
                               </div>
                             </div>
                           )}
 
                           {spice.grade && (
-                            <div className="flex items-center space-x-2 p-3 bg-green-50 rounded-lg">
-                              <Award className="h-4 w-4 text-green-600" />
-                              <div>
-                                <p className="text-sm font-medium">Grade</p>
-                                <p className="text-sm text-muted-foreground">{spice.grade}</p>
+                            <div className="flex items-center space-x-2 p-2 bg-green-50 rounded-lg">
+                              <Award className="h-4 w-4 text-green-600 flex-shrink-0" />
+                              <div className="min-w-0">
+                                <p className="text-xs font-medium">Grade</p>
+                                <p className="text-xs text-muted-foreground truncate">{spice.grade}</p>
                               </div>
                             </div>
                           )}
 
                           {spice.oil && (
-                            <div className="flex items-center space-x-2 p-3 bg-blue-50 rounded-lg">
-                              <Package className="h-4 w-4 text-blue-600" />
-                              <div>
-                                <p className="text-sm font-medium">Essential Oil</p>
-                                <p className="text-sm text-muted-foreground">{spice.oil}</p>
+                            <div className="flex items-center space-x-2 p-2 bg-blue-50 rounded-lg">
+                              <Package className="h-4 w-4 text-blue-600 flex-shrink-0" />
+                              <div className="min-w-0">
+                                <p className="text-xs font-medium">Essential Oil</p>
+                                <p className="text-xs text-muted-foreground truncate">{spice.oil}</p>
                               </div>
                             </div>
                           )}
                         </div>
 
-                        {/* Detailed Information */}
-                        <div className="space-y-4">
-                          <div className="p-4 bg-blue-50 rounded-lg">
-                            <div className="flex items-center mb-2">
-                              <Info className="h-4 w-4 text-blue-600 mr-2" />
-                              <h4 className="font-semibold text-blue-900">Botanical Information</h4>
-                            </div>
-                            <p className="text-sm text-blue-800">{spice.botanicalInfo}</p>
-                          </div>
-
-                          <div className="p-4 bg-green-50 rounded-lg">
-                            <div className="flex items-center mb-2">
-                              <Leaf className="h-4 w-4 text-green-600 mr-2" />
-                              <h4 className="font-semibold text-green-900">Characteristics</h4>
-                            </div>
-                            <p className="text-sm text-green-800">{spice.characteristics}</p>
-                          </div>
-
-                          <div className="p-4 bg-orange-50 rounded-lg">
-                            <div className="flex items-center mb-2">
-                              <Package className="h-4 w-4 text-orange-600 mr-2" />
-                              <h4 className="font-semibold text-orange-900">Culinary Uses</h4>
-                            </div>
-                            <p className="text-sm text-orange-800">{spice.uses}</p>
-                          </div>
-
-                          <div className="p-4 bg-purple-50 rounded-lg">
-                            <div className="flex items-center mb-2">
-                              <Shield className="h-4 w-4 text-purple-600 mr-2" />
-                              <h4 className="font-semibold text-purple-900">Health Benefits</h4>
-                            </div>
-                            <p className="text-sm text-purple-800">{spice.healthBenefits || spice.healthBenefts}</p>
-                          </div>
+                        {/* Consolidated Information */}
+                        <div className="p-3 bg-blue-50 rounded-lg">
+                          <p className="text-xs sm:text-sm text-blue-800 leading-relaxed">{spice.info}</p>
                         </div>
 
-                        <div className="pt-4 border-t">
-                          <p className="text-sm font-medium mb-1">Packaging Options</p>
-                          <p className="text-sm text-muted-foreground">{spice.packaging}</p>
+                        <div className="pt-2 border-t">
+                          <p className="text-xs font-medium mb-1">Packaging</p>
+                          <p className="text-xs text-muted-foreground">{spice.packaging}</p>
                         </div>
                       </div>
                     </CardContent>
@@ -370,12 +286,12 @@ const Spices = () => {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-16 bg-gradient-to-r from-orange-500 to-red-600">
+      <section className="py-12 sm:py-16 bg-gradient-to-r from-orange-500 to-red-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
             Ready to Source Premium Spices?
           </h2>
-          <p className="text-xl text-orange-100 mb-8">
+          <p className="text-lg sm:text-xl text-orange-100 mb-8">
             Contact us for detailed specifications, pricing, and custom packaging options
           </p>
           <Button size="lg" variant="secondary" asChild>
