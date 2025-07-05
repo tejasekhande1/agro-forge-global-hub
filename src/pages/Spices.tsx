@@ -1,7 +1,7 @@
+
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import {
   Leaf,
   Shield,
@@ -17,72 +17,36 @@ const Spices = () => {
     {
       name: "Red Chili Powder",
       image: "/products/red_chili.jpg",
-      variety: "Guntur Sannam",
-      origin: "Andhra Pradesh",
-      moisture: "≤ 10%",
-      purity: "99.5%",
-      scoville: "30,000-35,000 SHU",
-      packaging: "25kg, 50kg PP bags",
       description: "Premium quality red chili powder with intense heat and vibrant color.",
       info: "Capsicum annuum is an annual herbaceous plant growing 20-120 cm tall with pendulous, conical fruits. Guntur Sannam chilies are prized for their deep red color, moderate pungency, and high oleoresin content. Widely used in Indian cuisine for curries, pickles, and spice blends like sambar powder and rasam powder. Rich in Vitamin C and capsaicin, which helps boost metabolism and has anti-inflammatory properties."
     },
     {
       name: "Turmeric Powder",
       image: "/products/turmeric.jpg",
-      variety: "Salem/Erode",
-      origin: "Tamil Nadu",
-      moisture: "≤ 10%",
-      purity: "99%",
-      curcumin: "3-5%",
-      packaging: "25kg, 50kg PP bags",
       description: "High curcumin content turmeric powder with natural golden color.",
       info: "Curcuma longa is a perennial herbaceous plant of the ginger family growing 3-5 feet tall with underground rhizomes. Salem/Erode turmeric features high curcumin content and bright golden-yellow color. Essential in Indian cooking for color, flavor, and preservation, key ingredient in curry powders and traditional medicine. Contains curcumin with powerful anti-inflammatory and antioxidant properties that may support joint health and boost immune system."
     },
     {
       name: "Black Pepper",
       image: "/products/black_pepper.jpg",
-      variety: "Malabar",
-      origin: "Kerala",
-      moisture: "≤ 12%",
-      purity: "98%",
-      piperine: "≥ 5%",
-      packaging: "25kg, 50kg jute bags",
       description: "Premium Malabar black pepper with strong aroma and pungency.",
       info: "Piper nigrum is a perennial woody vine growing up to 4 meters high, producing small white flowers and round drupes. Malabar pepper is known for its bold flavor, high piperine content, and strong aroma with uniform, wrinkled peppercorns. Universal spice used worldwide in both whole and ground form for seasoning, marinades, and spice blends. Rich in piperine which enhances nutrient absorption and has antioxidant properties."
     },
     {
       name: "Cardamom",
       image: "/products/cardamom.jpg",
-      variety: "Green Cardamom",
-      origin: "Kerala/Karnataka",
-      moisture: "≤ 10%",
-      purity: "99%",
-      grade: "AGEB/AGB",
-      packaging: "5kg, 10kg cartons",
       description: "Premium green cardamom with intense aroma and flavor.",
       info: "Elettaria cardamomum is a perennial herbaceous plant growing 5-10 feet tall in forest shade of Western Ghats. Known as 'Queen of Spices', green cardamom pods are triangular with thin, papery shells containing 8-16 aromatic black seeds. Used in sweet and savory dishes, chai beverages, garam masala, Indian sweets, and Middle Eastern cuisine. Contains compounds that may help with digestive issues and has antioxidant properties."
     },
     {
       name: "Coriander Seeds",
       image: "/products/coriander.jpg",
-      variety: "Eagle Type",
-      origin: "Rajasthan/Gujarat",
-      moisture: "≤ 9%",
-      purity: "99.5%",
-      oil: "0.8-1.0%",
-      packaging: "25kg, 50kg PP bags",
       description: "High-quality coriander seeds with excellent aroma and taste.",
       info: "Coriandrum sativum is an annual herb growing 20-70 cm tall with delicate, lacy leaves and small, round, ribbed seeds. Eagle variety seeds are uniform, light brown with sweet, citrusy aroma and low volatile oil content ideal for grinding. Ground into powder for curry bases, used whole in tempering and pickling, essential in garam masala and sambar powder. Rich in dietary fiber and antioxidants, may help regulate blood sugar and support digestive health."
     },
     {
       name: "Cumin Seeds",
       image: "/products/cumin.jpg",
-      variety: "Gujarat Type",
-      origin: "Gujarat/Rajasthan",
-      moisture: "≤ 9%",
-      purity: "99%",
-      oil: "2.5-3.0%",
-      packaging: "25kg, 50kg PP bags",
       description: "Premium cumin seeds with strong distinctive flavor.",
       info: "Cuminum cyminum is a small annual herbaceous plant, 15-20 cm tall, with thread-like leaves and small flowers in umbels. Gujarat cumin seeds are elongated, ridged, yellowish-brown with warm, earthy flavor combining sweetness and bitterness. Used whole in tempering, ground in spice blends, essential in Indian, Middle Eastern, and Mexican cuisines including jeera rice. Good source of iron, may aid digestion and help with blood sugar control."
     }
@@ -184,57 +148,29 @@ const Spices = () => {
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">Our Spice Products</h2>
             <p className="text-lg sm:text-xl text-muted-foreground">
-              Premium quality spices with detailed specifications and comprehensive information
+              Premium quality spices sourced from the finest growing regions in India
             </p>
           </div>
 
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <Table>
-              <TableHeader>
-                <TableRow className="bg-gray-50">
-                  <TableHead className="font-semibold">Product</TableHead>
-                  <TableHead className="font-semibold">Variety & Origin</TableHead>
-                  <TableHead className="font-semibold">Specifications</TableHead>
-                  <TableHead className="font-semibold">Details</TableHead>
-                  <TableHead className="font-semibold">Packaging</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {spiceProducts.map((spice, index) => (
-                  <TableRow key={index} className="hover:bg-gray-50">
-                    <TableCell className="font-medium">
-                      <div>
-                        <h3 className="text-lg font-semibold text-foreground mb-1">{spice.name}</h3>
-                        <p className="text-sm text-muted-foreground">{spice.description}</p>
-                      </div>
-                    </TableCell>
-                    <TableCell>
-                      <div className="space-y-1">
-                        <p className="text-sm"><span className="font-medium">Variety:</span> {spice.variety}</p>
-                        <p className="text-sm"><span className="font-medium">Origin:</span> {spice.origin}</p>
-                      </div>
-                    </TableCell>
-                    <TableCell>
-                      <div className="space-y-1 text-sm">
-                        <p><span className="font-medium">Moisture:</span> {spice.moisture}</p>
-                        <p><span className="font-medium">Purity:</span> {spice.purity}</p>
-                        {spice.scoville && <p><span className="font-medium">Heat Level:</span> {spice.scoville}</p>}
-                        {spice.curcumin && <p><span className="font-medium">Curcumin:</span> {spice.curcumin}</p>}
-                        {spice.piperine && <p><span className="font-medium">Piperine:</span> {spice.piperine}</p>}
-                        {spice.grade && <p><span className="font-medium">Grade:</span> {spice.grade}</p>}
-                        {spice.oil && <p><span className="font-medium">Essential Oil:</span> {spice.oil}</p>}
-                      </div>
-                    </TableCell>
-                    <TableCell>
-                      <p className="text-xs text-muted-foreground leading-relaxed max-w-md">{spice.info}</p>
-                    </TableCell>
-                    <TableCell>
-                      <p className="text-sm">{spice.packaging}</p>
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {spiceProducts.map((spice, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow overflow-hidden">
+                <div className="aspect-square w-full overflow-hidden">
+                  <img
+                    src={spice.image}
+                    alt={spice.name}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-xl">{spice.name}</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <p className="text-muted-foreground text-sm mb-3">{spice.description}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed line-clamp-4">{spice.info}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
