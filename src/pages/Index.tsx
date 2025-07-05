@@ -18,11 +18,8 @@ import {
   Zap,
   Shield,
   ShoppingBag,
-  Facebook,
-  Instagram,
-  Linkedin,
-  MessageCircle
 } from "lucide-react";
+import { FaWhatsapp, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -721,7 +718,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="text-center">
                   <div className="space-y-3">
-                    <p className="text-muted-foreground font-medium text-lg">export@enjosakglobal.com</p>
+                    <p className="text-muted-foreground font-medium text-lg">enjosak33@gmail.com</p>
                   </div>
                 </CardContent>
               </Card>
@@ -762,20 +759,25 @@ const Index = () => {
                 
                 {/* Social Media Icons */}
                 <div className="flex space-x-4 mb-6">
-                  <a href="#" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
-                    <Facebook className="h-5 w-5 text-white" />
+                  <a href="https://www.facebook.com/profile.php?id=61577634555659"
+                     className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                    <FaFacebook className="h-5 w-5 text-white"/>
                   </a>
-                  <a href="#" className="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors">
-                    <Instagram className="h-5 w-5 text-white" />
+                  <a href="https://www.instagram.com/enjosak_global?igsh=MTF4aXQ4YzN1N2Z5bQ%3D%3D&utm_source=qr"
+                     className="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors">
+                    <FaInstagram className="h-5 w-5 text-white"/>
                   </a>
-                  <a href="#" className="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors">
-                    <Linkedin className="h-5 w-5 text-white" />
-                  </a>
-                  <a href="#" className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-colors">
-                    <MessageCircle className="h-5 w-5 text-white" />
+
+                  <a
+                      href="https://wa.me/8605995967"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-colors"
+                  >
+                    <FaWhatsapp className="h-5 w-5 text-white"/>
                   </a>
                 </div>
-                
+
                 <p className="text-gray-400">
                   © 2025 ENJO-SAK GLOBAL PRIVATE LIMITED. All rights reserved.
                 </p>
