@@ -1,15 +1,14 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import {
   Leaf,
   Shield,
   Award,
   ArrowLeft,
   Package,
-  Globe,
-  Star
+  Globe
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -189,98 +188,53 @@ const Spices = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-            {spiceProducts.map((spice, index) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 overflow-hidden">
-                <div className="flex flex-col sm:flex-row">
-                  <div className="sm:w-1/3 h-48 sm:h-auto">
-                    <img 
-                      src={spice.image} 
-                      alt={spice.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="sm:w-2/3 flex flex-col">
-                    <CardHeader className="pb-3">
-                      <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
-                        <CardTitle className="text-xl sm:text-2xl text-foreground mb-2 sm:mb-0">{spice.name}</CardTitle>
-                        <Badge className="bg-green-100 text-green-700 w-fit">
-                          <Star className="w-3 h-3 mr-1" />
-                          Export Grade
-                        </Badge>
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <Table>
+              <TableHeader>
+                <TableRow className="bg-gray-50">
+                  <TableHead className="font-semibold">Product</TableHead>
+                  <TableHead className="font-semibold">Variety & Origin</TableHead>
+                  <TableHead className="font-semibold">Specifications</TableHead>
+                  <TableHead className="font-semibold">Details</TableHead>
+                  <TableHead className="font-semibold">Packaging</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {spiceProducts.map((spice, index) => (
+                  <TableRow key={index} className="hover:bg-gray-50">
+                    <TableCell className="font-medium">
+                      <div>
+                        <h3 className="text-lg font-semibold text-foreground mb-1">{spice.name}</h3>
+                        <p className="text-sm text-muted-foreground">{spice.description}</p>
                       </div>
-                      <p className="text-sm sm:text-base text-muted-foreground">{spice.description}</p>
-                    </CardHeader>
-                    <CardContent className="flex-1 pt-0">
-                      <div className="space-y-4">
-                        {/* Special Properties */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                          {spice.scoville && (
-                            <div className="flex items-center space-x-2 p-2 bg-red-50 rounded-lg">
-                              <Package className="h-4 w-4 text-red-600 flex-shrink-0" />
-                              <div className="min-w-0">
-                                <p className="text-xs font-medium">Heat Level</p>
-                                <p className="text-xs text-muted-foreground truncate">{spice.scoville}</p>
-                              </div>
-                            </div>
-                          )}
-
-                          {spice.curcumin && (
-                            <div className="flex items-center space-x-2 p-2 bg-yellow-50 rounded-lg">
-                              <Package className="h-4 w-4 text-yellow-600 flex-shrink-0" />
-                              <div className="min-w-0">
-                                <p className="text-xs font-medium">Curcumin</p>
-                                <p className="text-xs text-muted-foreground truncate">{spice.curcumin}</p>
-                              </div>
-                            </div>
-                          )}
-
-                          {spice.piperine && (
-                            <div className="flex items-center space-x-2 p-2 bg-gray-50 rounded-lg">
-                              <Package className="h-4 w-4 text-gray-600 flex-shrink-0" />
-                              <div className="min-w-0">
-                                <p className="text-xs font-medium">Piperine</p>
-                                <p className="text-xs text-muted-foreground truncate">{spice.piperine}</p>
-                              </div>
-                            </div>
-                          )}
-
-                          {spice.grade && (
-                            <div className="flex items-center space-x-2 p-2 bg-green-50 rounded-lg">
-                              <Award className="h-4 w-4 text-green-600 flex-shrink-0" />
-                              <div className="min-w-0">
-                                <p className="text-xs font-medium">Grade</p>
-                                <p className="text-xs text-muted-foreground truncate">{spice.grade}</p>
-                              </div>
-                            </div>
-                          )}
-
-                          {spice.oil && (
-                            <div className="flex items-center space-x-2 p-2 bg-blue-50 rounded-lg">
-                              <Package className="h-4 w-4 text-blue-600 flex-shrink-0" />
-                              <div className="min-w-0">
-                                <p className="text-xs font-medium">Essential Oil</p>
-                                <p className="text-xs text-muted-foreground truncate">{spice.oil}</p>
-                              </div>
-                            </div>
-                          )}
-                        </div>
-
-                        {/* Consolidated Information */}
-                        <div className="p-3 bg-blue-50 rounded-lg">
-                          <p className="text-xs sm:text-sm text-blue-800 leading-relaxed">{spice.info}</p>
-                        </div>
-
-                        <div className="pt-2 border-t">
-                          <p className="text-xs font-medium mb-1">Packaging</p>
-                          <p className="text-xs text-muted-foreground">{spice.packaging}</p>
-                        </div>
+                    </TableCell>
+                    <TableCell>
+                      <div className="space-y-1">
+                        <p className="text-sm"><span className="font-medium">Variety:</span> {spice.variety}</p>
+                        <p className="text-sm"><span className="font-medium">Origin:</span> {spice.origin}</p>
                       </div>
-                    </CardContent>
-                  </div>
-                </div>
-              </Card>
-            ))}
+                    </TableCell>
+                    <TableCell>
+                      <div className="space-y-1 text-sm">
+                        <p><span className="font-medium">Moisture:</span> {spice.moisture}</p>
+                        <p><span className="font-medium">Purity:</span> {spice.purity}</p>
+                        {spice.scoville && <p><span className="font-medium">Heat Level:</span> {spice.scoville}</p>}
+                        {spice.curcumin && <p><span className="font-medium">Curcumin:</span> {spice.curcumin}</p>}
+                        {spice.piperine && <p><span className="font-medium">Piperine:</span> {spice.piperine}</p>}
+                        {spice.grade && <p><span className="font-medium">Grade:</span> {spice.grade}</p>}
+                        {spice.oil && <p><span className="font-medium">Essential Oil:</span> {spice.oil}</p>}
+                      </div>
+                    </TableCell>
+                    <TableCell>
+                      <p className="text-xs text-muted-foreground leading-relaxed max-w-md">{spice.info}</p>
+                    </TableCell>
+                    <TableCell>
+                      <p className="text-sm">{spice.packaging}</p>
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
           </div>
         </div>
       </section>
