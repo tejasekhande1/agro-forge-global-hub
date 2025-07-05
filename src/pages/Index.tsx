@@ -21,43 +21,9 @@ import {
 } from "lucide-react";
 import { FaWhatsapp, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { Link } from "react-router-dom";
+import {grains, fruits, products} from "@/data/products.ts";
 
 const Index = () => {
-
-  const products = [
-    { name: "Ginger (Hydrated & Dehydrated)", image: "/products/ginger.jpg" },
-    { name: "Onion", image: "/products/onion.jpg" },
-    { name: "Maize", image: "/products/maize.jpg" },
-    { name: "Moringa Powder", image: "/products/moringa_powder.webp" },
-    { name: "Green Chilli", image: "/products/green_chilli.jpg" },
-    { name: "Potato", image: "/products/potato.jpg" },
-    { name: "Tomato", image: "/products/tomato.jpg" },
-    { name: "Okra", image: "/products/okra.jpg" },
-    { name: "Moringa", image: "/products/moringa.webp" },
-  ];
-
-  const fruits = [
-    { name: "Banana", image: "/products/banana.jpg" },
-    { name: "Mangoes", image: "/products/mango.jpg" },
-    { name: "Pomegranate", image: "/products/pomegranate.jpg" },
-    { name: "Guava", image: "/products/gauva.jpg" },
-    { name: "Grapes", image: "/products/grapes.jpg" },
-    { name: "Watermelon", image: "/products/watermelon.jpg" },
-    { name: "Muskmelon (Cantaloupe)", image: "/products/muskmelon.jpg" },
-    { name: "Sweet Lime (Mosambi)", image: "/products/orange.jpg" },
-    { name: "Lemon", image: "/products/lemon.jpg" },
-    { name: "Sapota (Chikoo)", image: "/products/sapota.jpg" },
-    { name: "Custard Apple (Sitaphal)", image: "/products/custard_apple.jpg" },
-    { name: "Jackfruit", image: "/products/jackfruit.jpg" },
-    { name: "Pineapple", image: "/products/pinapple.jpg" },
-  ];
-
-  const grains = [
-    { name: "Wheat", image: "/products/wheat.jpg" },
-    { name: "Jowar (Sorghum)", image: "/products/jowar.jpg" },
-    { name: "Bajra (Pearl Millet)", image: "/products/bajra.jpg" },
-    { name: "Ragi/Nachni", image: "/products/nachni.jpg" },
-  ];
 
   return (
       <div className="min-h-screen bg-background">
