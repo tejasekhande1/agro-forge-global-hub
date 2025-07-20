@@ -15,22 +15,22 @@ import {spicesList} from "@/data/products.ts";
 const Spices = () => {
   const qualityStandards = [
     {
-      image: "/certifications/spices-board-certification.png",
+      icon: Shield,
       title: "Spices Board Certification",
       description: "All products certified by Spices Board of India"
     },
     {
-      image: "/certifications/export-quality-standards.png",
+      icon: Award,
       title: "Export Quality Standards",
       description: "Meeting international quality parameters"
     },
     {
-      image: "/certifications/residue-free-testing.png",
+      icon: Leaf,
       title: "Residue-Free Testing",
       description: "Tested for pesticide residues and heavy metals"
     },
     {
-      image: "/certifications/haccp-certification.png",
+      icon: Package,
       title: "Hygienic Processing",
       description: "Processed in HACCP certified facilities"
     }
@@ -91,12 +91,8 @@ const Spices = () => {
             {qualityStandards.map((standard, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-white to-orange-50">
                 <CardContent className="p-4 sm:p-6 text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 p-2 bg-white rounded-xl shadow-sm">
-                    <img 
-                      src={standard.image} 
-                      alt={`${standard.title} certification`}
-                      className="w-full h-full object-contain"
-                    />
+                  <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <standard.icon className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="font-semibold text-base sm:text-lg mb-2">{standard.title}</h3>
                   <p className="text-muted-foreground text-sm">{standard.description}</p>
