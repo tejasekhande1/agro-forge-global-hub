@@ -662,11 +662,11 @@ const Index = () => {
         </section>
 
         {/* Certifications */}
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="text-3xl font-bold text-foreground mb-12">Certifications</h2>
-              <div className="flex flex-wrap justify-center gap-8">
+              <div className="flex flex-wrap justify-center gap-6">
                 {[
                   {name: "FSSAI", icon: Shield},
                   {name: "APEDA", icon: Award},
@@ -674,8 +674,8 @@ const Index = () => {
                 ].map((cert) => (
                     <div key={cert.name} className="group hover:cursor-pointer">
                       <Badge variant="outline"
-                             className="text-lg py-4 px-8 border-2 border-primary/20 hover:bg-primary hover:text-white hover:cursor-pointer transition-all duration-300 group-hover:scale-110 flex items-center gap-2">
-                        <cert.icon className="h-5 w-5"/>
+                             className="text-lg py-3 px-6 border-2 border-green-200 bg-white text-gray-700 hover:bg-green-50 hover:border-green-300 transition-all duration-300 group-hover:scale-105 flex items-center gap-3 rounded-full shadow-sm">
+                        <cert.icon className="h-5 w-5 text-green-600"/>
                         {cert.name}
                       </Badge>
                     </div>
