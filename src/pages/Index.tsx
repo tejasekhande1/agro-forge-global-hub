@@ -668,16 +668,29 @@ const Index = () => {
               <h2 className="text-3xl font-bold text-foreground mb-12">Certifications</h2>
               <div className="flex flex-wrap justify-center gap-6">
                 {[
-                  {name: "FSSAI", icon: Shield},
-                  {name: "APEDA", icon: Award},
-                  {name: "SPICE BOARD", icon: Leaf}
+                  {name: "FSSAI", image: "/certifications/fssai-certification.png"},
+                  {name: "APEDA", image: "/certifications/apeda-certification.png"},
+                  {name: "SPICE BOARD", image: "/certifications/spice-board-certification.png"}
                 ].map((cert) => (
                     <div key={cert.name} className="group hover:cursor-pointer">
-                      <Badge variant="outline"
-                             className="text-lg py-3 px-6 border-2 border-green-200 bg-white text-gray-700 hover:bg-green-50 hover:border-green-300 transition-all duration-300 group-hover:scale-105 flex items-center gap-3 rounded-full shadow-sm">
-                        <cert.icon className="h-5 w-5 text-green-600"/>
-                        {cert.name}
-                      </Badge>
+                      <div className="bg-white border-2 border-green-200 rounded-full py-3 px-6 hover:bg-green-50 hover:border-green-300 transition-all duration-300 group-hover:scale-105 flex items-center gap-3 shadow-sm">
+                        <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
+                          <img 
+                            src={cert.image} 
+                            alt={`${cert.name} certification`}
+                            className="w-6 h-6 object-contain"
+                            onError={(e) => {
+                              // Fallback to icon if image doesn't exist
+                              const target = e.currentTarget;
+                              target.style.display = 'none';
+                              const iconElement = target.nextElementSibling as HTMLElement;
+                              if (iconElement) iconElement.style.display = 'block';
+                            }}
+                          />
+                          <Shield className="h-4 w-4 text-green-600 hidden" />
+                        </div>
+                        <span className="text-lg text-gray-700 font-medium">{cert.name}</span>
+                      </div>
                     </div>
                 ))}
               </div>
