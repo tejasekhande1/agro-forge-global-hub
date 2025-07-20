@@ -766,6 +766,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="text-center">
                   <div className="space-y-3">
+                    <p className="text-muted-foreground font-medium text-lg">export@enjosakglobal.com</p>
                     <p className="text-muted-foreground font-medium text-lg">enjosak33@gmail.com</p>
                   </div>
                 </CardContent>
