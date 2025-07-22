@@ -44,7 +44,7 @@ const Index = () => {
             <div className="flex justify-between items-center h-16">
               {/* Logo and title */}
               <div className="flex items-center space-x-2">
-                <div className="w-10 h-10 flex items-center justify-center shadow-lg">
+                <div className="w-12 h-12 flex items-center justify-center">
                   <img
                       src="./enjosack_logo.png"
                       alt="Modern Agricultural Technology"
