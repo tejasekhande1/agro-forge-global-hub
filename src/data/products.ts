@@ -163,4 +163,4 @@ export const grains = [
     }
 ];
 
-export const spicesList = [...products, ...fruits, ...grains];
+export const spicesList = [...products, ...grains];
