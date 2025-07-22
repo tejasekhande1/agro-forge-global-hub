@@ -44,9 +44,12 @@ const Index = () => {
             <div className="flex justify-between items-center h-16">
               {/* Logo and title */}
               <div className="flex items-center space-x-2">
-                <div
-                    className="w-10 h-10 bg-gradient-to-r from-primary to-green-600 rounded-xl flex items-center justify-center shadow-lg">
-                  <Leaf className="h-6 w-6 text-white"/>
+                <div className="w-10 h-10 flex items-center justify-center shadow-lg">
+                  <img
+                      src="./enjosack_logo.png"
+                      alt="Modern Agricultural Technology"
+                      className="mix-blend-multiply"
+                  />
                 </div>
                 <span className="font-bold text-sm sm:text-xl text-foreground">
           ENJO-SAK GLOBAL PRIVATE LIMITED
