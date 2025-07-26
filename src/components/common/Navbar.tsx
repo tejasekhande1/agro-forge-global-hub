@@ -100,20 +100,6 @@ const Navbar = () => {
                         >
                             Spices
                         </Link>
-
-                        <Link
-                            to="/sustainability"
-                            className="text-muted-foreground hover:text-primary transition-colors font-medium"
-                        >
-                            Sustainability
-                        </Link>
-
-                        <Link
-                            to="/contact"
-                            className="text-muted-foreground hover:text-primary transition-colors font-medium"
-                        >
-                            Contact
-                        </Link>
                     </div>
 
 
