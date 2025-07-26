@@ -13,6 +13,8 @@ import Footer from "@/components/common/Footer.tsx";
 import Leadership from "@/pages/About/Leadership.tsx";
 import Certifications from "@/pages/About/Certification.tsx";
 import CompanyOverview from "@/pages/About/CompanyOverview.tsx";
+import ProductCategoryPage from "@/pages/ProductCategoryPage.tsx";
+import Gallery from "@/pages/Gallery.tsx";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +32,8 @@ const App = () => (
           <Route path="/about/leadership" element={<Leadership/>}/>
           <Route path="/about/awards-certifications" element={<Certifications/>}/>
           <Route path="/about/company-overview" element={<CompanyOverview/>}/>
+          <Route path="/products/:category" element={<ProductCategoryPage/>} />
+          <Route path="/gallery" element={<Gallery/>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

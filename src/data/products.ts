@@ -1,4 +1,4 @@
-export const products = [
+export const vegetables = [
     {
         name: "Ginger (Hydrated & Dehydrated)",
         image: "/products/ginger.jpg",
@@ -163,4 +163,22 @@ export const grains = [
     }
 ];
 
-export const spicesList = [...products, ...grains];
+export const spicesList = [...vegetables, ...grains];
+
+export const categorizedProducts = [
+    {
+        category: "Vegetables",
+        slug: "vegetables",
+        items: vegetables,
+    },
+    {
+        category: "Fruits",
+        slug: "fruits",
+        items: fruits,
+    },
+    {
+        category: "Grains & Cereals",
+        slug: "grains",
+        items: grains,
+    },
+];

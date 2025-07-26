@@ -19,7 +19,6 @@ import {
   Shield,
   ShoppingBag,
 } from "lucide-react";
-import {grains, fruits, products} from "@/data/products.ts";
 
 const Index = () => {
 

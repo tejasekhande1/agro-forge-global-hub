@@ -8,6 +8,12 @@ const Navbar = () => {
 
     const toggleAbout = () => setAboutOpen((prev) => !prev);
 
+    const [productsOpen, setProductsOpen] = useState(false);
+
+    const toggleProducts = () => {
+        setProductsOpen(!productsOpen);
+    };
+
     return (
         <nav className="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -86,19 +92,82 @@ const Navbar = () => {
                             )}
                         </div>
 
-                        {/* Other nav items */}
-                        <Link
-                            to="/products"
-                            className="text-muted-foreground hover:text-primary transition-colors font-medium"
-                        >
-                            Products
-                        </Link>
+                        {/* Products Dropdown */}
+                        <div className="relative">
+                            <button
+                                onClick={toggleProducts}
+                                className="flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors font-medium"
+                            >
+                                Products
+                                <ChevronDown
+                                    size={16}
+                                    className={`transition-transform duration-300 ${productsOpen ? "rotate-180" : ""}`}
+                                />
+                            </button>
+
+                            {productsOpen && (
+                                <div
+                                    className="absolute top-full mt-2 left-0 bg-white shadow-lg rounded-md w-64 z-50 py-2 space-y-1 border border-muted"
+                                    onMouseLeave={() => setProductsOpen(false)} // Optional UX improvement
+                                >
+                                    <Link
+                                        to="/products/vegetables"
+                                        className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted/30 hover:text-primary"
+                                        onClick={() => setProductsOpen(false)}
+                                    >
+                                        Vegetables
+                                    </Link>
+                                    <Link
+                                        to="/products/fruits"
+                                        className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted/30 hover:text-primary"
+                                        onClick={() => setProductsOpen(false)}
+                                    >
+                                        Fruits
+                                    </Link>
+                                    <Link
+                                        to="/spices"
+                                        className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted/30 hover:text-primary"
+                                        onClick={() => setProductsOpen(false)}
+                                    >
+                                        Spices
+                                    </Link>
+                                    <Link
+                                        to="/products/millets"
+                                        className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted/30 hover:text-primary"
+                                        onClick={() => setProductsOpen(false)}
+                                    >
+                                        Millets
+                                    </Link>
+                                    <Link
+                                        to="/products/pulses"
+                                        className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted/30 hover:text-primary"
+                                        onClick={() => setProductsOpen(false)}
+                                    >
+                                        Pulses
+                                    </Link>
+                                    <Link
+                                        to="/products/grains"
+                                        className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted/30 hover:text-primary"
+                                        onClick={() => setProductsOpen(false)}
+                                    >
+                                        Grains & Cereals
+                                    </Link>
+                                    <Link
+                                        to="/products/dryfruits-nuts"
+                                        className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted/30 hover:text-primary"
+                                        onClick={() => setProductsOpen(false)}
+                                    >
+                                        Dry Fruits & Nuts
+                                    </Link>
+                                </div>
+                            )}
+                        </div>
 
                         <Link
-                            to="/spices"
+                            to="/gallery"
                             className="text-muted-foreground hover:text-primary transition-colors font-medium"
                         >
-                            Spices
+                            Gallery
                         </Link>
                     </div>
 
