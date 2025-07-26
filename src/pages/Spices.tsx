@@ -38,39 +38,17 @@ const Spices = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-r from-primary to-green-600 rounded-xl flex items-center justify-center shadow-lg">
-                <Leaf className="h-6 w-6 text-white"/>
-              </div>
-              <span className="font-bold text-sm sm:text-xl text-foreground">
-                ENJO-SAK GLOBAL PRIVATE LIMITED
-              </span>
-            </Link>
-            <Button variant="outline" asChild>
-              <Link to="/" className="flex items-center">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Home
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </nav>
-
       {/* Hero Section */}
-      <section className="relative py-12 sm:py-20 bg-gradient-to-br from-orange-50 to-red-50">
+      <section className="relative py-10 sm:py-10 bg-gradient-to-br from-orange-50 to-red-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Badge className="bg-orange-100 text-orange-700 border-orange-200 mb-4">
               Premium Indian Spices
             </Badge>
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold text-foreground mb-4">
               Authentic Indian Spices
             </h1>
-            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            <p className="text-sm sm:text-sm text-muted-foreground max-w-3xl mx-auto">
               Export-quality spices meeting Spices Board of India standards, sourced directly from premium growing regions across India.
             </p>
           </div>

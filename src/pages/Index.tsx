@@ -22,12 +22,9 @@ import {
 import { FaWhatsapp, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import {grains, fruits, products} from "@/data/products.ts";
-import {useState} from "react";
-import {Menu, X} from "lucide-react";
+import Navbar from "@/components/common/Navbar.tsx";
 
 const Index = () => {
-
-  const [open, setOpen] = useState(false);
 
   const certifications = [
     {name: "ISO 9001:2015 CERTIFIED", image: "/certifications/iso-certification.png"},
@@ -38,86 +35,6 @@ const Index = () => {
 
   return (
       <div className="min-h-screen bg-background">
-        {/* Navigation */}
-        <nav className="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              {/* Logo and title */}
-              <div className="flex items-center space-x-2">
-                <div className="w-12 h-12 flex items-center justify-center">
-                  <img
-                      src="./enjosack_logo.png"
-                      alt="Modern Agricultural Technology"
-                      className="mix-blend-multiply"
-                  />
-                </div>
-                <span className="font-bold text-sm sm:text-xl text-foreground">
-          ENJO-SAK GLOBAL PRIVATE LIMITED
-        </span>
-              </div>
-
-              {/* Desktop Menu */}
-              <div className="hidden md:flex space-x-8">
-                <a href="#about" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-                  About
-                </a>
-                <a href="#products" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-                  Products
-                </a>
-                <Link to="/spices" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-                  Spices
-                </Link>
-                <a href="#sustainability"
-                   className="text-muted-foreground hover:text-primary transition-colors font-medium">
-                  Sustainability
-                </a>
-                <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-                  Contact
-                </a>
-              </div>
-
-              {/* Mobile menu button */}
-              <div className="md:hidden">
-                <button onClick={() => setOpen(!open)}
-                        className="text-muted-foreground hover:text-primary transition-colors">
-                  <Menu className="h-6 w-6"/>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Drawer / Mobile Menu */}
-          {open && (
-              <div className="md:hidden bg-white border-t px-4 py-4 space-y-4 shadow-lg z-40">
-                <div className="flex justify-end">
-                  <button onClick={() => setOpen(false)} className="text-muted-foreground">
-                    <X className="h-6 w-6"/>
-                  </button>
-                </div>
-                <a href="#about" onClick={() => setOpen(false)}
-                   className="block text-muted-foreground hover:text-primary font-medium">
-                  About
-                </a>
-                <a href="#products" onClick={() => setOpen(false)}
-                   className="block text-muted-foreground hover:text-primary font-medium">
-                  Products
-                </a>
-                <Link to="/spices" onClick={() => setOpen(false)}
-                      className="block text-muted-foreground hover:text-primary font-medium">
-                  Spices
-                </Link>
-                <a href="#sustainability" onClick={() => setOpen(false)}
-                   className="block text-muted-foreground hover:text-primary font-medium">
-                  Sustainability
-                </a>
-                <a href="#contact" onClick={() => setOpen(false)}
-                   className="block text-muted-foreground hover:text-primary font-medium">
-                  Contact
-                </a>
-              </div>
-          )}
-        </nav>
-
         {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
           {/* Background Image - Agricultural themed */}
@@ -705,6 +622,7 @@ const Index = () => {
             </div>
           </div>
         </section>
+
         {/* Contact */}
         <section id="contact" className="py-24 bg-gradient-to-br from-gray-50 to-white">
 
@@ -798,96 +716,7 @@ const Index = () => {
         </section>
 
         {/* Footer */}
-        <footer className="bg-gradient-to-r from-gray-900 to-black text-white py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-4 gap-8">
-              <div className="md:col-span-2">
-                <div className="flex items-center space-x-3 mb-6">
-                  <div
-                      className="w-12 h-12 bg-gradient-to-r from-primary to-green-600 rounded-xl flex items-center justify-center shadow-lg">
-                    <Leaf className="h-7 w-7 text-white"/>
-                  </div>
-                  <span className="font-bold text-2xl">ENJO-SAK GLOBAL PRIVATE LIMITED</span>
-                </div>
-                <p className="text-gray-300 mb-6 text-lg leading-relaxed">
-                  Bridging India's Agricultural Abundance & Engineering Excellence with the World
-                </p>
 
-                {/* Social Media Icons */}
-                <div className="flex space-x-4 mb-6">
-                  <a href="https://www.facebook.com/profile.php?id=61577634555659"
-                     className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
-                    <FaFacebook className="h-5 w-5 text-white"/>
-                  </a>
-                  <a href="https://www.instagram.com/enjosak_global?igsh=MTF4aXQ4YzN1N2Z5bQ%3D%3D&utm_source=qr"
-                     className="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors">
-                    <FaInstagram className="h-5 w-5 text-white"/>
-                  </a>
-
-                  <a
-                      href="https://wa.me/8605995967"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-colors"
-                  >
-                    <FaWhatsapp className="h-5 w-5 text-white"/>
-                  </a>
-                </div>
-
-                <p className="text-gray-400">
-                  © 2025 ENJO-SAK GLOBAL PRIVATE LIMITED. All rights reserved.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-semibold mb-6 text-lg">Quick Links</h3>
-                <ul className="space-y-3">
-                  {[
-                    {label: "About ENJO-SAK", href: "#about"},
-                    {label: "Products", href: "#products"},
-                    {label: "Spices", href: "/spices"},
-                    {label: "Sustainability", href: "#sustainability"},
-                    {label: "Contact", href: "#contact"}
-                  ].map((link) => (
-                      <li key={link.label}>
-                        {link.href.startsWith('#') ? (
-                            <a href={link.href}
-                               className="text-gray-300 hover:text-primary transition-colors duration-300 flex items-center space-x-2 group">
-                              <ArrowRight
-                                  className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
-                              <span>{link.label}</span>
-                            </a>
-                        ) : (
-                            <Link to={link.href}
-                                  className="text-gray-300 hover:text-primary transition-colors duration-300 flex items-center space-x-2 group">
-                              <ArrowRight
-                                  className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
-                              <span>{link.label}</span>
-                            </Link>
-                        )}
-                      </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="font-semibold mb-6 text-lg">Legal</h3>
-                <ul className="space-y-3">
-                  {["Privacy Policy", "Terms of Service"].map((item) => (
-                      <li key={item}>
-                        <a href="#"
-                           className="text-gray-300 hover:text-primary transition-colors duration-300 flex items-center space-x-2 group">
-                          <ArrowRight
-                              className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
-                          <span>{item}</span>
-                        </a>
-                      </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
   );
 };
