@@ -27,7 +27,7 @@ const CompanyOverview = () => {
                     {/* Company Overview */}
                     <div className="text-aligned">
                         <h2 className="text-2xl sm:text-3xl font-semibold text-primary mb-4">About Enjo-Sak Global</h2>
-                        <p className="text-muted-foreground leading-relaxed text-sm md:text-base space-y-2">
+                        <p className="text-muted-foreground leading-relaxed text-sm md:text-base space-y-2 text-justify">
                             Enjo-Sak Global Private Limited is a dynamic and forward-looking export company based in
                             India, committed to connecting
                             high-quality Indian products with global markets. We specialize in the sourcing, processing,

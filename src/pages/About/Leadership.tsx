@@ -70,7 +70,7 @@ const Leadership = () => {
                                         </div>
                                     </CardHeader>
                                     <CardContent className="p-0 pt-4">
-                                        <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
+                                        <p className="text-muted-foreground leading-relaxed text-sm md:text-base text-justify">
                                             {advisor.description}
                                         </p>
                                     </CardContent>

@@ -129,7 +129,7 @@ const Index = () => {
                 ENJO-SAK GLOBAL PRIVATE
                 LIMITED</Badge>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Built on Excellence & Trust</h2>
-              <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed text-justify">
                 ENJO-SAK GLOBAL PRIVATE LIMITED is a dynamic Indian export company delivering world-class
                 agricultural products and engineering solutions. With decades of industry experience and global
                 market access, we serve as your reliable partner in quality, sustainability, and innovation.
@@ -146,7 +146,7 @@ const Index = () => {
               </div>
               <div className="space-y-6">
                 <h3 className="text-3xl font-bold text-foreground">Our Story</h3>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-lg text-muted-foreground leading-relaxed text-justify">
                   Founded by industry veterans with deep roots in agriculture and engineering, ENJO-SAK GLOBAL is
                   built on expertise, trust, and a global vision. With access to India's rich natural resources and
                   advanced manufacturing infrastructure, we ensure every shipment meets the highest global
@@ -655,7 +655,7 @@ const Index = () => {
                   <CardTitle className="text-xl">Registered Office</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-justify">
                     Plot No 47 G.NO 140, Swami Samarth Nagar, Chh. Sambhaji Nagar, Maharashtra, India – 431136
                   </p>
                 </CardContent>

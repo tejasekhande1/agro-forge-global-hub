@@ -32,7 +32,7 @@ const Vision = () => {
                     {/* Vision */}
                     <div className="text-aligned">
                         <h2 className="text-2xl sm:text-3xl font-semibold text-primary mb-4">Vision</h2>
-                        <p className="text-muted-foreground leading-relaxed text-sm md:text-base space-y-2">
+                        <p className="text-muted-foreground leading-relaxed text-sm md:text-base space-y-2 text-justify">
                             Enjo-Sak Global Private Limited envisions becoming a globally renowned leader in exporting agricultural products,
                             engineering goods, spices, and millets. We aspire to bridge India’s rich agricultural and manufacturing heritage
                             with international markets by ensuring the highest standards of quality, innovation, and reliability.
@@ -50,7 +50,7 @@ const Vision = () => {
                     {/* Mission */}
                     <div>
                         <h2 className="text-2xl sm:text-3xl font-semibold text-primary mb-4">Mission</h2>
-                        <ul className="space-y-4 list-disc list-inside text-muted-foreground text-sm md:text-base">
+                        <ul className="space-y-4 list-disc list-inside text-muted-foreground text-sm md:text-base text-justify">
                             {missionPoints.map((point, index) => (
                                 <li key={index}>{point}</li>
                             ))}

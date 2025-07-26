@@ -1,4 +1,4 @@
-import {ArrowRight, Leaf} from "lucide-react";
+import {ArrowRight, Leaf, Mail, MapIcon, MapPin, Phone} from "lucide-react";
 import {FaFacebook, FaInstagram, FaWhatsapp} from "react-icons/fa";
 import {Link} from "react-router-dom";
 
@@ -6,7 +6,7 @@ const Footer = () => {
   return (
       <footer className="bg-gradient-to-r from-gray-900 to-black text-white py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid md:grid-cols-4 gap-8">
+              <div className="grid md:grid-cols-5 gap-8">
                   <div className="md:col-span-2">
                       <div className="flex items-center space-x-3 mb-6">
                           <div
@@ -15,7 +15,7 @@ const Footer = () => {
                           </div>
                           <span className="font-bold text-2xl">ENJO-SAK GLOBAL PRIVATE LIMITED</span>
                       </div>
-                      <p className="text-gray-300 mb-6 text-lg leading-relaxed">
+                      <p className="text-gray-300 mb-6 text-lg leading-relaxed text-justify">
                           Bridging India's Agricultural Abundance & Engineering Excellence with the World
                       </p>
 
@@ -49,11 +49,10 @@ const Footer = () => {
                       <h3 className="font-semibold mb-6 text-lg">Quick Links</h3>
                       <ul className="space-y-3">
                           {[
-                              {label: "About ENJO-SAK", href: "#about"},
-                              {label: "Products", href: "#products"},
+                              {label: "About ENJO-SAK", href: "/about/company-overview"},
+                              {label: "Products", href: "/products/vegetables"},
                               {label: "Spices", href: "/spices"},
-                              {label: "Sustainability", href: "#sustainability"},
-                              {label: "Contact", href: "#contact"}
+                              {label: "Gallery", href: "/gallery"},
                           ].map((link) => (
                               <li key={link.label}>
                                   {link.href.startsWith('#') ? (
@@ -90,6 +89,43 @@ const Footer = () => {
                               </li>
                           ))}
                       </ul>
+                  </div>
+
+                  <div>
+                      <h3 className="font-semibold mb-6 text-lg text-white">Contact</h3>
+                      <div className="space-y-6">
+                          {/* Address */}
+                          <div className="flex items-start space-x-4">
+                              <div className="h-12 flex items-center justify-center shadow-lg">
+                                  <MapPin className="h-6 w-6 text-white" />
+                              </div>
+                              <p className="text-gray-300 text-sm text-justify">
+                                  Plot No 47 G.NO 140, Swami Samarth Nagar, Chh. Sambhaji Nagar, Maharashtra, India – 431136
+                              </p>
+                          </div>
+
+                          {/* Phone */}
+                          <div className="flex items-start space-x-4">
+                              <div className="h-12 flex items-center justify-center shadow-lg">
+                                  <Phone className="h-6 w-6 text-white" />
+                              </div>
+                              <div className="text-gray-300 text-sm leading-relaxed space-y-1">
+                                  <p>+91 9579291495</p>
+                                  <p>+91 8605995967</p>
+                              </div>
+                          </div>
+
+                          {/* Email */}
+                          <div className="flex items-start space-x-4">
+                              <div className="h-12 flex items-center justify-center shadow-lg">
+                                  <Mail className="h-6 w-6 text-white" />
+                              </div>
+                              <div className="text-gray-300 text-sm leading-relaxed space-y-1">
+                                  <p>export@enjosakglobal.com</p>
+                                  <p>enjosak33@gmail.com</p>
+                              </div>
+                          </div>
+                      </div>
                   </div>
               </div>
           </div>
