@@ -19,10 +19,7 @@ import {
   Shield,
   ShoppingBag,
 } from "lucide-react";
-import { FaWhatsapp, FaInstagram, FaFacebook } from 'react-icons/fa';
-import { Link } from "react-router-dom";
 import {grains, fruits, products} from "@/data/products.ts";
-import Navbar from "@/components/common/Navbar.tsx";
 
 const Index = () => {
 
@@ -171,70 +168,70 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              <Card
-                  className="hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-gray-50">
-                <CardHeader>
-                  <div
-                      className="w-16 h-16 bg-gradient-to-r from-primary to-green-600 rounded-2xl flex items-center justify-center mb-6">
-                    <Users className="h-8 w-8 text-white"/>
-                  </div>
-                  <CardTitle className="text-2xl">Advisory Leadership</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-6">
-                    <div className="p-4 bg-white rounded-xl shadow-sm">
-                      <p className="font-semibold text-lg text-foreground">Mr. Arun M. Kotame</p>
-                      <p className="text-primary font-medium">Agro Industry Specialist</p>
-                      <p className="text-sm text-muted-foreground mt-1">25+ years transforming agricultural value
-                        chains</p>
-                    </div>
-                    <div className="p-4 bg-white rounded-xl shadow-sm">
-                      <p className="font-semibold text-lg text-foreground">Mr. Vijay J. Shirke</p>
-                      <p className="text-primary font-medium">Engineering & Automation Expert</p>
-                      <p className="text-sm text-muted-foreground mt-1">25+ years in automotive & SPM manufacturing</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+            {/*<div className="grid md:grid-cols-2 gap-8">*/}
+            {/*  <Card*/}
+            {/*      className="hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-gray-50">*/}
+            {/*    <CardHeader>*/}
+            {/*      <div*/}
+            {/*          className="w-16 h-16 bg-gradient-to-r from-primary to-green-600 rounded-2xl flex items-center justify-center mb-6">*/}
+            {/*        <Users className="h-8 w-8 text-white"/>*/}
+            {/*      </div>*/}
+            {/*      <CardTitle className="text-2xl">Advisory Leadership</CardTitle>*/}
+            {/*    </CardHeader>*/}
+            {/*    <CardContent>*/}
+            {/*      <div className="space-y-6">*/}
+            {/*        <div className="p-4 bg-white rounded-xl shadow-sm">*/}
+            {/*          <p className="font-semibold text-lg text-foreground">Mr. Arun M. Kotame</p>*/}
+            {/*          <p className="text-primary font-medium">Agro Industry Specialist</p>*/}
+            {/*          <p className="text-sm text-muted-foreground mt-1">25+ years transforming agricultural value*/}
+            {/*            chains</p>*/}
+            {/*        </div>*/}
+            {/*        <div className="p-4 bg-white rounded-xl shadow-sm">*/}
+            {/*          <p className="font-semibold text-lg text-foreground">Mr. Vijay J. Shirke</p>*/}
+            {/*          <p className="text-primary font-medium">Engineering & Automation Expert</p>*/}
+            {/*          <p className="text-sm text-muted-foreground mt-1">25+ years in automotive & SPM manufacturing</p>*/}
+            {/*        </div>*/}
+            {/*      </div>*/}
+            {/*    </CardContent>*/}
+            {/*  </Card>*/}
 
-              <Card
-                  className="hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-primary/5 to-green-50">
-                <CardHeader>
-                  <div
-                      className="w-16 h-16 bg-gradient-to-r from-primary to-green-600 rounded-2xl flex items-center justify-center mb-6">
-                    <Award className="h-8 w-8 text-white"/>
-                  </div>
-                  <CardTitle className="text-2xl">Vision & Mission</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-6">
-                    <div>
-                      <h4 className="font-bold text-primary mb-3 text-lg">Vision</h4>
-                      <p className="text-muted-foreground leading-relaxed">
-                        To be a globally trusted export partner, delivering India's finest agricultural produce and
-                        precision
-                        engineered solutions with integrity, innovation, and sustainability. </p>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-primary mb-3 text-lg">Mission</h4>
-                      <ul className="space-y-2">
-                        {[
-                          "Connect Indian producers with global buyers",
-                          "Offer high-quality, internationally compliant products",
-                          "Build ethical, long-term partnerships"
-                        ].map((item, index) => (
-                            <li key={index} className="flex items-center space-x-2">
-                              <div className="w-2 h-2 bg-primary rounded-full"></div>
-                              <span className="text-muted-foreground">{item}</span>
-                            </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+            {/*  <Card*/}
+            {/*      className="hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-primary/5 to-green-50">*/}
+            {/*    <CardHeader>*/}
+            {/*      <div*/}
+            {/*          className="w-16 h-16 bg-gradient-to-r from-primary to-green-600 rounded-2xl flex items-center justify-center mb-6">*/}
+            {/*        <Award className="h-8 w-8 text-white"/>*/}
+            {/*      </div>*/}
+            {/*      <CardTitle className="text-2xl">Vision & Mission</CardTitle>*/}
+            {/*    </CardHeader>*/}
+            {/*    <CardContent>*/}
+            {/*      <div className="space-y-6">*/}
+            {/*        <div>*/}
+            {/*          <h4 className="font-bold text-primary mb-3 text-lg">Vision</h4>*/}
+            {/*          <p className="text-muted-foreground leading-relaxed">*/}
+            {/*            To be a globally trusted export partner, delivering India's finest agricultural produce and*/}
+            {/*            precision*/}
+            {/*            engineered solutions with integrity, innovation, and sustainability. </p>*/}
+            {/*        </div>*/}
+            {/*        <div>*/}
+            {/*          <h4 className="font-bold text-primary mb-3 text-lg">Mission</h4>*/}
+            {/*          <ul className="space-y-2">*/}
+            {/*            {[*/}
+            {/*              "Connect Indian producers with global buyers",*/}
+            {/*              "Offer high-quality, internationally compliant products",*/}
+            {/*              "Build ethical, long-term partnerships"*/}
+            {/*            ].map((item, index) => (*/}
+            {/*                <li key={index} className="flex items-center space-x-2">*/}
+            {/*                  <div className="w-2 h-2 bg-primary rounded-full"></div>*/}
+            {/*                  <span className="text-muted-foreground">{item}</span>*/}
+            {/*                </li>*/}
+            {/*            ))}*/}
+            {/*          </ul>*/}
+            {/*        </div>*/}
+            {/*      </div>*/}
+            {/*    </CardContent>*/}
+            {/*  </Card>*/}
+            {/*</div>*/}
           </div>
         </section>
 
@@ -255,19 +252,19 @@ const Index = () => {
             <div className="grid lg:grid-cols-1 gap-12">
               {/* Agro Exports */}
               <Card className="hover:shadow-2xl transition-all duration-500 border-0 overflow-hidden group">
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                      src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                      alt="Fresh Agricultural Products Export"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4">
-                    <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-                      <Leaf className="h-6 w-6 text-white"/>
-                    </div>
-                  </div>
-                </div>
+                {/*<div className="relative h-64 overflow-hidden">*/}
+                {/*  <img*/}
+                {/*      src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"*/}
+                {/*      alt="Fresh Agricultural Products Export"*/}
+                {/*      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"*/}
+                {/*  />*/}
+                {/*  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>*/}
+                {/*  <div className="absolute bottom-4 left-4">*/}
+                {/*    <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">*/}
+                {/*      <Leaf className="h-6 w-6 text-white"/>*/}
+                {/*    </div>*/}
+                {/*  </div>*/}
+                {/*</div>*/}
                 <CardHeader>
                   <CardTitle className="text-2xl text-foreground">Agro Exports</CardTitle>
                   <p className="text-muted-foreground text-lg">Farm-fresh products from certified Indian growers</p>
@@ -469,124 +466,124 @@ const Index = () => {
         </section>
 
         {/* Sustainability */}
-        <section id="sustainability" className="py-24 bg-gradient-to-br from-green-50 to-emerald-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-20">
-              <Badge
-                  className="bg-green-100 text-green-700 border-green-200 mb-4 hover:cursor-pointer hover:text-white">Sustainability</Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Committed to a Greener Future
-              </h2>
-              <p className="text-md text-green-600 font-semibold">
-                At ENJO-SAK GLOBAL PRIVATE LIMITED, sustainability is not just a practice—it’s a principle that
-                guides everything we do. Whether we're exporting farm-fresh produce or designing precision
-                engineering systems, we strive to minimize our environmental impact and empower communities. 🌱
-              </p>
-            </div>
+        {/*<section id="sustainability" className="py-24 bg-gradient-to-br from-green-50 to-emerald-50">*/}
+        {/*  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">*/}
+        {/*    <div className="text-center mb-20">*/}
+        {/*      <Badge*/}
+        {/*          className="bg-green-100 text-green-700 border-green-200 mb-4 hover:cursor-pointer hover:text-white">Sustainability</Badge>*/}
+        {/*      <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">*/}
+        {/*        Committed to a Greener Future*/}
+        {/*      </h2>*/}
+        {/*      <p className="text-md text-green-600 font-semibold">*/}
+        {/*        At ENJO-SAK GLOBAL PRIVATE LIMITED, sustainability is not just a practice—it’s a principle that*/}
+        {/*        guides everything we do. Whether we're exporting farm-fresh produce or designing precision*/}
+        {/*        engineering systems, we strive to minimize our environmental impact and empower communities. 🌱*/}
+        {/*      </p>*/}
+        {/*    </div>*/}
 
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
-                    <Leaf className="h-6 w-6 text-green-600"/>
-                  </div>
-                  <CardTitle className="text-green-700">Sustainable Agriculture</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start space-x-2">
-                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0"/>
-                      <span>
-                      <strong>Ethical Sourcing:</strong> We work directly with farmers and cooperatives who follow good agricultural practices (GAP).
-                    </span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0"/>
-                      <span><strong>Natural Inputs:</strong> Prioritizing the use of organic-friendly and residue-free crop protection solutions.</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0"/>
-                      <span><strong>Water Management:</strong> Supporting farmers who use drip irrigation and other water-saving technologies.</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+        {/*    <div className="grid md:grid-cols-3 gap-8 mb-16">*/}
+        {/*      <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white">*/}
+        {/*        <CardHeader>*/}
+        {/*          <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">*/}
+        {/*            <Leaf className="h-6 w-6 text-green-600"/>*/}
+        {/*          </div>*/}
+        {/*          <CardTitle className="text-green-700">Sustainable Agriculture</CardTitle>*/}
+        {/*        </CardHeader>*/}
+        {/*        <CardContent>*/}
+        {/*          <ul className="space-y-3 text-muted-foreground">*/}
+        {/*            <li className="flex items-start space-x-2">*/}
+        {/*              <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0"/>*/}
+        {/*              <span>*/}
+        {/*              <strong>Ethical Sourcing:</strong> We work directly with farmers and cooperatives who follow good agricultural practices (GAP).*/}
+        {/*            </span>*/}
+        {/*            </li>*/}
+        {/*            <li className="flex items-start space-x-2">*/}
+        {/*              <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0"/>*/}
+        {/*              <span><strong>Natural Inputs:</strong> Prioritizing the use of organic-friendly and residue-free crop protection solutions.</span>*/}
+        {/*            </li>*/}
+        {/*            <li className="flex items-start space-x-2">*/}
+        {/*              <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0"/>*/}
+        {/*              <span><strong>Water Management:</strong> Supporting farmers who use drip irrigation and other water-saving technologies.</span>*/}
+        {/*            </li>*/}
+        {/*          </ul>*/}
+        {/*        </CardContent>*/}
+        {/*      </Card>*/}
 
-              <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                    <Wrench className="h-6 w-6 text-blue-600"/>
-                  </div>
-                  <CardTitle className="text-blue-700">Sustainable Engineering</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start space-x-2">
-                      <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0"/>
-                      <span><strong>Energy-Efficient Machines:</strong> Designing SPMs and automation systems that reduce energy consumption in production.</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0"/>
-                      <span><strong>Material Optimization:</strong> Using high-quality materials that reduce waste and extend machine life.</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0"/>
-                      <span><strong>Eco-Friendly Processes:</strong> Adopting cleaner manufacturing techniques in line with global environmental norms.</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0"/>
-                      <span><strong>Waste Management:</strong> Recycling scrap metals and minimizing industrial waste in our production facilities.</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+        {/*      <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white">*/}
+        {/*        <CardHeader>*/}
+        {/*          <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">*/}
+        {/*            <Wrench className="h-6 w-6 text-blue-600"/>*/}
+        {/*          </div>*/}
+        {/*          <CardTitle className="text-blue-700">Sustainable Engineering</CardTitle>*/}
+        {/*        </CardHeader>*/}
+        {/*        <CardContent>*/}
+        {/*          <ul className="space-y-3 text-muted-foreground">*/}
+        {/*            <li className="flex items-start space-x-2">*/}
+        {/*              <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0"/>*/}
+        {/*              <span><strong>Energy-Efficient Machines:</strong> Designing SPMs and automation systems that reduce energy consumption in production.</span>*/}
+        {/*            </li>*/}
+        {/*            <li className="flex items-start space-x-2">*/}
+        {/*              <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0"/>*/}
+        {/*              <span><strong>Material Optimization:</strong> Using high-quality materials that reduce waste and extend machine life.</span>*/}
+        {/*            </li>*/}
+        {/*            <li className="flex items-start space-x-2">*/}
+        {/*              <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0"/>*/}
+        {/*              <span><strong>Eco-Friendly Processes:</strong> Adopting cleaner manufacturing techniques in line with global environmental norms.</span>*/}
+        {/*            </li>*/}
+        {/*            <li className="flex items-start space-x-2">*/}
+        {/*              <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0"/>*/}
+        {/*              <span><strong>Waste Management:</strong> Recycling scrap metals and minimizing industrial waste in our production facilities.</span>*/}
+        {/*            </li>*/}
+        {/*          </ul>*/}
+        {/*        </CardContent>*/}
+        {/*      </Card>*/}
 
-              <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
-                    <Users className="h-6 w-6 text-purple-600"/>
-                  </div>
-                  <CardTitle className="text-purple-700">Social Sustainability</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start space-x-2">
-                      <CheckCircle className="h-5 w-5 text-purple-500 mt-0.5 flex-shrink-0"/>
-                      <span><strong>Farmer Empowerment:</strong> Providing fair prices, consistent demand, and training to small and marginal farmers.</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <CheckCircle className="h-5 w-5 text-purple-500 mt-0.5 flex-shrink-0"/>
-                      <span><strong>Skilled Employment:</strong> Generating skilled jobs in rural and semi-urban regions through our engineering and agro units.</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <CheckCircle className="h-5 w-5 text-purple-500 mt-0.5 flex-shrink-0"/>
-                      <span><strong>Inclusive Growth:</strong> Ensuring value chains are inclusive, supporting women farmers, local vendors, and youth-led businesses.</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
+        {/*      <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white">*/}
+        {/*        <CardHeader>*/}
+        {/*          <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">*/}
+        {/*            <Users className="h-6 w-6 text-purple-600"/>*/}
+        {/*          </div>*/}
+        {/*          <CardTitle className="text-purple-700">Social Sustainability</CardTitle>*/}
+        {/*        </CardHeader>*/}
+        {/*        <CardContent>*/}
+        {/*          <ul className="space-y-3 text-muted-foreground">*/}
+        {/*            <li className="flex items-start space-x-2">*/}
+        {/*              <CheckCircle className="h-5 w-5 text-purple-500 mt-0.5 flex-shrink-0"/>*/}
+        {/*              <span><strong>Farmer Empowerment:</strong> Providing fair prices, consistent demand, and training to small and marginal farmers.</span>*/}
+        {/*            </li>*/}
+        {/*            <li className="flex items-start space-x-2">*/}
+        {/*              <CheckCircle className="h-5 w-5 text-purple-500 mt-0.5 flex-shrink-0"/>*/}
+        {/*              <span><strong>Skilled Employment:</strong> Generating skilled jobs in rural and semi-urban regions through our engineering and agro units.</span>*/}
+        {/*            </li>*/}
+        {/*            <li className="flex items-start space-x-2">*/}
+        {/*              <CheckCircle className="h-5 w-5 text-purple-500 mt-0.5 flex-shrink-0"/>*/}
+        {/*              <span><strong>Inclusive Growth:</strong> Ensuring value chains are inclusive, supporting women farmers, local vendors, and youth-led businesses.</span>*/}
+        {/*            </li>*/}
+        {/*          </ul>*/}
+        {/*        </CardContent>*/}
+        {/*      </Card>*/}
+        {/*    </div>*/}
 
-            <div className="bg-gradient-to-r from-primary/10 to-green-100 rounded-2xl p-8 border border-primary/20">
-              <h3 className="text-2xl font-bold text-primary mb-6 text-center">Our Green Goals</h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
-                {[
-                  "Align with UN Sustainable Development Goals (SDGs)",
-                  "Reduce operational carbon footprint by 30% in the next 3 years",
-                  "Support 1000+ farmers in sustainable water and soil practices",
-                  "Launch a line of Eco-Efficient Machines by 2026"
-                ].map((goal, index) => (
-                    <div key={index} className="flex items-center space-x-3 bg-white p-4 rounded-xl shadow-sm">
-                      <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                        <CheckCircle className="h-5 w-5 text-white"/>
-                      </div>
-                      <span className="text-muted-foreground font-medium">{goal}</span>
-                    </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+        {/*    <div className="bg-gradient-to-r from-primary/10 to-green-100 rounded-2xl p-8 border border-primary/20">*/}
+        {/*      <h3 className="text-2xl font-bold text-primary mb-6 text-center">Our Green Goals</h3>*/}
+        {/*      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">*/}
+        {/*        {[*/}
+        {/*          "Align with UN Sustainable Development Goals (SDGs)",*/}
+        {/*          "Reduce operational carbon footprint by 30% in the next 3 years",*/}
+        {/*          "Support 1000+ farmers in sustainable water and soil practices",*/}
+        {/*          "Launch a line of Eco-Efficient Machines by 2026"*/}
+        {/*        ].map((goal, index) => (*/}
+        {/*            <div key={index} className="flex items-center space-x-3 bg-white p-4 rounded-xl shadow-sm">*/}
+        {/*              <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">*/}
+        {/*                <CheckCircle className="h-5 w-5 text-white"/>*/}
+        {/*              </div>*/}
+        {/*              <span className="text-muted-foreground font-medium">{goal}</span>*/}
+        {/*            </div>*/}
+        {/*        ))}*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</section>*/}
 
         {/* Certifications */}
         <section className="py-16 bg-gray-50">
@@ -626,18 +623,18 @@ const Index = () => {
         {/* Contact */}
         <section id="contact" className="py-24 bg-gradient-to-br from-gray-50 to-white">
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-20">
-              <Badge
-                  className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Join
-                Us on the Sustainability
-                Journey</Badge>
-              <h5 className="text-md md:text-lg font-bold text-muted-foreground">
-                We believe growth and responsibility go hand in hand. By choosing ENJO-SAK, you’re not just
-                choosing quality—you’re choosing a partner that cares for people and the planet.
-              </h5>
-            </div>
-          </div>
+          {/*<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">*/}
+          {/*  <div className="text-center mb-20">*/}
+          {/*    <Badge*/}
+          {/*        className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Join*/}
+          {/*      Us on the Sustainability*/}
+          {/*      Journey</Badge>*/}
+          {/*    <h5 className="text-md md:text-lg font-bold text-muted-foreground">*/}
+          {/*      We believe growth and responsibility go hand in hand. By choosing ENJO-SAK, you’re not just*/}
+          {/*      choosing quality—you’re choosing a partner that cares for people and the planet.*/}
+          {/*    </h5>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20">
