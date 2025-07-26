@@ -236,113 +236,113 @@ const Index = () => {
         </section>
 
         {/* Products & Services */}
-        <section id="products" className="py-24 bg-gradient-to-br from-gray-50 to-white">
+        <section id="products" className="py-10 bg-gradient-to-br from-gray-50 to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-20">
-              <Badge
-                  className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Products
-                & Services</Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Premium Solutions</h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                We offer a wide range of export-quality, farm-fresh products
-                sourced directly from Indian growers:
-              </p>
-            </div>
+            {/*<div className="text-center mb-20">*/}
+            {/*  <Badge*/}
+            {/*      className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Products*/}
+            {/*    & Services</Badge>*/}
+            {/*  <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Premium Solutions</h2>*/}
+            {/*  <p className="text-xl text-muted-foreground max-w-3xl mx-auto">*/}
+            {/*    We offer a wide range of export-quality, farm-fresh products*/}
+            {/*    sourced directly from Indian growers:*/}
+            {/*  </p>*/}
+            {/*</div>*/}
 
             <div className="grid lg:grid-cols-1 gap-12">
               {/* Agro Exports */}
-              <Card className="hover:shadow-2xl transition-all duration-500 border-0 overflow-hidden group">
-                {/*<div className="relative h-64 overflow-hidden">*/}
-                {/*  <img*/}
-                {/*      src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"*/}
-                {/*      alt="Fresh Agricultural Products Export"*/}
-                {/*      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"*/}
-                {/*  />*/}
-                {/*  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>*/}
-                {/*  <div className="absolute bottom-4 left-4">*/}
-                {/*    <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">*/}
-                {/*      <Leaf className="h-6 w-6 text-white"/>*/}
-                {/*    </div>*/}
-                {/*  </div>*/}
-                {/*</div>*/}
-                <CardHeader>
-                  <CardTitle className="text-2xl text-foreground">Agro Exports</CardTitle>
-                  <p className="text-muted-foreground text-lg">Farm-fresh products from certified Indian growers</p>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-6">
-                    <div>
-                      <h4 className="font-semibold mb-3 text-primary">Fresh Vegetables</h4>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4">
-                        {products.map((product) => (
-                            <Card
-                                key={product.name}
-                                className="p-3 hover:shadow-lg transition-shadow border-l-4 border-l-primary group cursor-pointer"
-                            >
-                              <div className="flex flex-col items-center text-center">
-                                <img
-                                    src={product.image}
-                                    alt={product.name}
-                                    className="w-30 h-40 object-cover rounded-lg mb-2 group-hover:scale-105 transition-transform"
-                                />
-                                <span
-                                    className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
-                                  {product.name}
-                                </span>
-                              </div>
-                            </Card>
-                        ))}
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-3 text-primary">Premium Fruits</h4>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4">
-                        {fruits.map((fruit) => (
-                            <Card
-                                key={fruit.name}
-                                className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-green-500 group cursor-pointer"
-                            >
-                              <div className="flex flex-col items-center text-center">
-                                <img
-                                    src={fruit.image}
-                                    alt={fruit.name}
-                                    className="w-30 h-40 object-cover rounded-lg mb-2 group-hover:scale-105 transition-transform"
-                                />
-                                <span
-                                    className="text-sm font-medium text-muted-foreground group-hover:text-green-600 transition-colors">
-                                  {fruit.name}
-                                </span>
-                              </div>
-                            </Card>
-                        ))}
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-3 text-primary">Millets & Pulses</h4>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4">
-                        {grains.map((grain) => (
-                            <Card
-                                key={grain.name}
-                                className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-orange-500 group cursor-pointer"
-                            >
-                              <div className="flex flex-col items-center text-center">
-                                <img
-                                    src={grain.image}
-                                    alt={grain.name}
-                                    className="w-30 h-40 object-cover rounded-lg mb-2 group-hover:scale-105 transition-transform"
-                                />
-                                <span
-                                    className="text-sm font-medium text-muted-foreground group-hover:text-orange-600 transition-colors">
-                                  {grain.name}
-                                </span>
-                              </div>
-                            </Card>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              {/*<Card className="hover:shadow-2xl transition-all duration-500 border-0 overflow-hidden group">*/}
+              {/*  /!*<div className="relative h-64 overflow-hidden">*!/*/}
+              {/*  /!*  <img*!/*/}
+              {/*  /!*      src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"*!/*/}
+              {/*  /!*      alt="Fresh Agricultural Products Export"*!/*/}
+              {/*  /!*      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"*!/*/}
+              {/*  /!*  />*!/*/}
+              {/*  /!*  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>*!/*/}
+              {/*  /!*  <div className="absolute bottom-4 left-4">*!/*/}
+              {/*  /!*    <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">*!/*/}
+              {/*  /!*      <Leaf className="h-6 w-6 text-white"/>*!/*/}
+              {/*  /!*    </div>*!/*/}
+              {/*  /!*  </div>*!/*/}
+              {/*  /!*</div>*!/*/}
+              {/*  <CardHeader>*/}
+              {/*    <CardTitle className="text-2xl text-foreground">Agro Exports</CardTitle>*/}
+              {/*    <p className="text-muted-foreground text-lg">Farm-fresh products from certified Indian growers</p>*/}
+              {/*  </CardHeader>*/}
+              {/*  <CardContent>*/}
+              {/*    <div className="space-y-6">*/}
+              {/*      <div>*/}
+              {/*        <h4 className="font-semibold mb-3 text-primary">Fresh Vegetables</h4>*/}
+              {/*        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4">*/}
+              {/*          {products.map((product) => (*/}
+              {/*              <Card*/}
+              {/*                  key={product.name}*/}
+              {/*                  className="p-3 hover:shadow-lg transition-shadow border-l-4 border-l-primary group cursor-pointer"*/}
+              {/*              >*/}
+              {/*                <div className="flex flex-col items-center text-center">*/}
+              {/*                  <img*/}
+              {/*                      src={product.image}*/}
+              {/*                      alt={product.name}*/}
+              {/*                      className="w-30 h-40 object-cover rounded-lg mb-2 group-hover:scale-105 transition-transform"*/}
+              {/*                  />*/}
+              {/*                  <span*/}
+              {/*                      className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">*/}
+              {/*                    {product.name}*/}
+              {/*                  </span>*/}
+              {/*                </div>*/}
+              {/*              </Card>*/}
+              {/*          ))}*/}
+              {/*        </div>*/}
+              {/*      </div>*/}
+              {/*      <div>*/}
+              {/*        <h4 className="font-semibold mb-3 text-primary">Premium Fruits</h4>*/}
+              {/*        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4">*/}
+              {/*          {fruits.map((fruit) => (*/}
+              {/*              <Card*/}
+              {/*                  key={fruit.name}*/}
+              {/*                  className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-green-500 group cursor-pointer"*/}
+              {/*              >*/}
+              {/*                <div className="flex flex-col items-center text-center">*/}
+              {/*                  <img*/}
+              {/*                      src={fruit.image}*/}
+              {/*                      alt={fruit.name}*/}
+              {/*                      className="w-30 h-40 object-cover rounded-lg mb-2 group-hover:scale-105 transition-transform"*/}
+              {/*                  />*/}
+              {/*                  <span*/}
+              {/*                      className="text-sm font-medium text-muted-foreground group-hover:text-green-600 transition-colors">*/}
+              {/*                    {fruit.name}*/}
+              {/*                  </span>*/}
+              {/*                </div>*/}
+              {/*              </Card>*/}
+              {/*          ))}*/}
+              {/*        </div>*/}
+              {/*      </div>*/}
+              {/*      <div>*/}
+              {/*        <h4 className="font-semibold mb-3 text-primary">Millets & Pulses</h4>*/}
+              {/*        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4">*/}
+              {/*          {grains.map((grain) => (*/}
+              {/*              <Card*/}
+              {/*                  key={grain.name}*/}
+              {/*                  className="p-3 hover:shadow-md transition-shadow border-l-4 border-l-orange-500 group cursor-pointer"*/}
+              {/*              >*/}
+              {/*                <div className="flex flex-col items-center text-center">*/}
+              {/*                  <img*/}
+              {/*                      src={grain.image}*/}
+              {/*                      alt={grain.name}*/}
+              {/*                      className="w-30 h-40 object-cover rounded-lg mb-2 group-hover:scale-105 transition-transform"*/}
+              {/*                  />*/}
+              {/*                  <span*/}
+              {/*                      className="text-sm font-medium text-muted-foreground group-hover:text-orange-600 transition-colors">*/}
+              {/*                    {grain.name}*/}
+              {/*                  </span>*/}
+              {/*                </div>*/}
+              {/*              </Card>*/}
+              {/*          ))}*/}
+              {/*        </div>*/}
+              {/*      </div>*/}
+              {/*    </div>*/}
+              {/*  </CardContent>*/}
+              {/*</Card>*/}
 
               {/* Engineering Solutions */}
               <Card
@@ -637,7 +637,7 @@ const Index = () => {
           {/*</div>*/}
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-20">
+            <div className="text-center mb-10">
               <Badge
                   className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Contact
                 Us</Badge>
