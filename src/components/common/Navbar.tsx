@@ -6,11 +6,15 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [aboutOpen, setAboutOpen] = useState(false);
 
-    const toggleAbout = () => setAboutOpen((prev) => !prev);
+    const toggleAbout = () => {
+        setProductsOpen(false);
+        setAboutOpen((prev) => !prev);
+    }
 
     const [productsOpen, setProductsOpen] = useState(false);
 
     const toggleProducts = () => {
+        setAboutOpen(false);
         setProductsOpen(!productsOpen);
     };
 
@@ -158,6 +162,14 @@ const Navbar = () => {
                                         onClick={() => setProductsOpen(false)}
                                     >
                                         Dry Fruits & Nuts
+                                    </Link>
+
+                                    <Link
+                                        to="/engineering-solutions"
+                                        className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted/30 hover:text-primary"
+                                        onClick={() => setProductsOpen(false)}
+                                    >
+                                        Engineering Solutions
                                     </Link>
                                 </div>
                             )}

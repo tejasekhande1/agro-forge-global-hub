@@ -16,6 +16,7 @@ import CompanyOverview from "@/pages/About/CompanyOverview.tsx";
 import ProductCategoryPage from "@/pages/ProductCategoryPage.tsx";
 import Gallery from "@/pages/Gallery.tsx";
 import Contact from "@/pages/Contact.tsx";
+import EngineeringSolutions from "@/pages/EngineeringSolutions.tsx";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/products/:category" element={<ProductCategoryPage/>} />
           <Route path="/gallery" element={<Gallery/>} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path='/engineering-solutions' element={<EngineeringSolutions/>}/>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
