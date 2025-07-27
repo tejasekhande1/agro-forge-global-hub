@@ -163,7 +163,76 @@ export const grains = [
     }
 ];
 
-export const spicesList = [...vegetables, ...grains];
+export const spices = [
+    {
+        name: "Cardamom Small",
+        image: "/products/spices/cardamom_small.jpg",
+        description: "Aromatic green cardamom pods packed with flavor.",
+        info: "Small green cardamom (Elettaria cardamomum) is widely used in Indian sweets, tea, and curries. It has a sweet, floral aroma and aids digestion."
+    },
+    {
+        name: "Cardamom Large",
+        image: "/products/spices/cardamom_large.jpg",
+        description: "Bold brown cardamom with smoky flavor.",
+        info: "Large cardamom (Amomum subulatum), also known as black cardamom, is used in biryanis and garam masala blends for its robust aroma."
+    },
+    {
+        name: "Pepper",
+        image: "/products/spices/pepper.jpg",
+        description: "Bold and pungent black peppercorns.",
+        info: "Piper nigrum, the king of spices, is grown mainly in Kerala. Adds heat and depth to dishes. Also known for its antibacterial properties."
+    },
+    {
+        name: "Dried Red Chili",
+        image: "/products/spices/dried_red_chili.jpg",
+        description: "Fiery red chilies sun-dried for intense flavor.",
+        info: "Capsicum annuum varieties are dried and used for heat and color in Indian cuisine. Popular in tempering, chutneys, and masalas."
+    },
+    {
+        name: "Ginger",
+        image: "/products/spices/ginger.jpg",
+        description: "Dried ginger root with sharp, spicy aroma.",
+        info: "Zingiber officinale in dried form is used in spice blends, Ayurvedic medicine, and desserts. Known for its warming and digestive benefits."
+    },
+    {
+        name: "Turmeric",
+        image: "/products/spices/turmeric.jpg",
+        description: "Golden yellow turmeric powder with earthy notes.",
+        info: "Curcuma longa is a staple in Indian cooking and traditional medicine. Known for its anti-inflammatory compound curcumin."
+    },
+    {
+        name: "Garlic",
+        image: "/products/spices/garlic.jpg",
+        description: "Pungent dried garlic cloves used in seasoning.",
+        info: "Allium sativum adds depth to curries, pickles, and spice blends. Offers health benefits including heart protection and immune support."
+    },
+    {
+        name: "Coriander",
+        image: "/products/spices/coriander.jpg",
+        description: "Whole or ground coriander seeds with citrusy aroma.",
+        info: "Coriandrum sativum seeds are essential to Indian spice mixes. They lend a mild, nutty flavor to curries and dry snacks."
+    },
+    {
+        name: "Mustard",
+        image: "/products/spices/mustard.jpg",
+        description: "Strong, pungent mustard seeds for tempering.",
+        info: "Brassica species seeds are used whole in tadka or ground in pickles. Adds spicy warmth to Indian dishes."
+    },
+    {
+        name: "Curry Leaf",
+        image: "/products/spices/curry_leaf.jpg",
+        description: "Fragrant curry leaves used for seasoning.",
+        info: "Murraya koenigii leaves are a key ingredient in South Indian cooking. Typically used fresh or dried in tempering."
+    },
+    {
+        name: "Tejpat",
+        image: "/products/spices/tejpat.jpg",
+        description: "Indian bay leaves with cinnamon-like fragrance.",
+        info: "Cinnamomum tamala leaves are used in biryanis and spice mixes. They add a subtle aromatic warmth unlike European bay leaf."
+    }
+];
+
+export const spicesList = [...spices];
 
 export const categorizedProducts = [
     {
