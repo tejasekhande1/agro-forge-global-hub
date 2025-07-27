@@ -51,8 +51,8 @@ const Footer = () => {
                           {[
                               {label: "About ENJO-SAK", href: "/about/company-overview"},
                               {label: "Products", href: "/products/vegetables"},
-                              {label: "Spices", href: "/spices"},
                               {label: "Gallery", href: "/gallery"},
+                              {label: "Contact Us", href: "/contact"},
                           ].map((link) => (
                               <li key={link.label}>
                                   {link.href.startsWith('#') ? (

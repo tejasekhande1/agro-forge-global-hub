@@ -169,6 +169,13 @@ const Navbar = () => {
                         >
                             Gallery
                         </Link>
+
+                        <Link
+                            to="/contact"
+                            className="text-muted-foreground hover:text-primary transition-colors font-medium"
+                        >
+                            Contact
+                        </Link>
                     </div>
 
 

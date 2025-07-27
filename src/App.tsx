@@ -15,6 +15,7 @@ import Certifications from "@/pages/About/Certification.tsx";
 import CompanyOverview from "@/pages/About/CompanyOverview.tsx";
 import ProductCategoryPage from "@/pages/ProductCategoryPage.tsx";
 import Gallery from "@/pages/Gallery.tsx";
+import Contact from "@/pages/Contact.tsx";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/about/company-overview" element={<CompanyOverview/>}/>
           <Route path="/products/:category" element={<ProductCategoryPage/>} />
           <Route path="/gallery" element={<Gallery/>} />
+          <Route path="/contact" element={<Contact/>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

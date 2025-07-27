@@ -620,96 +620,96 @@ const Index = () => {
         </section>
 
         {/* Contact */}
-        <section id="contact" className="py-24 bg-gradient-to-br from-gray-50 to-white">
+        {/*<section id="contact" className="py-24 bg-gradient-to-br from-gray-50 to-white">*/}
 
-          {/*<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">*/}
-          {/*  <div className="text-center mb-20">*/}
-          {/*    <Badge*/}
-          {/*        className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Join*/}
-          {/*      Us on the Sustainability*/}
-          {/*      Journey</Badge>*/}
-          {/*    <h5 className="text-md md:text-lg font-bold text-muted-foreground">*/}
-          {/*      We believe growth and responsibility go hand in hand. By choosing ENJO-SAK, you’re not just*/}
-          {/*      choosing quality—you’re choosing a partner that cares for people and the planet.*/}
-          {/*    </h5>*/}
-          {/*  </div>*/}
-          {/*</div>*/}
+        {/*  /!*<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">*!/*/}
+        {/*  /!*  <div className="text-center mb-20">*!/*/}
+        {/*  /!*    <Badge*!/*/}
+        {/*  /!*        className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Join*!/*/}
+        {/*  /!*      Us on the Sustainability*!/*/}
+        {/*  /!*      Journey</Badge>*!/*/}
+        {/*  /!*    <h5 className="text-md md:text-lg font-bold text-muted-foreground">*!/*/}
+        {/*  /!*      We believe growth and responsibility go hand in hand. By choosing ENJO-SAK, you’re not just*!/*/}
+        {/*  /!*      choosing quality—you’re choosing a partner that cares for people and the planet.*!/*/}
+        {/*  /!*    </h5>*!/*/}
+        {/*  /!*  </div>*!/*/}
+        {/*  /!*</div>*!/*/}
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-10">
-              <Badge
-                  className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Contact
-                Us</Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Let's Build Something Great
-                Together</h2>
-              <p className="text-xl text-muted-foreground">Ready to start your journey with ENJO-SAK?</p>
-            </div>
+        {/*  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">*/}
+        {/*    <div className="text-center mb-10">*/}
+        {/*      <Badge*/}
+        {/*          className="bg-primary/10 text-primary border-primary/20 mb-4 hover:cursor-pointer hover:text-white">Contact*/}
+        {/*        Us</Badge>*/}
+        {/*      <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Let's Build Something Great*/}
+        {/*        Together</h2>*/}
+        {/*      <p className="text-xl text-muted-foreground">Ready to start your journey with ENJO-SAK?</p>*/}
+        {/*    </div>*/}
 
-            <div className="grid md:grid-cols-3 gap-16">
-              <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white group">
-                <CardHeader className="text-center">
-                  <div
-                      className="w-16 h-16 bg-gradient-to-r from-primary to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <MapPin className="h-8 w-8 text-white"/>
-                  </div>
-                  <CardTitle className="text-xl">Registered Office</CardTitle>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-muted-foreground leading-relaxed text-justify">
-                    Plot No 47 G.NO 140, Swami Samarth Nagar, Chh. Sambhaji Nagar, Maharashtra, India – 431136
-                  </p>
-                </CardContent>
-              </Card>
+        {/*    <div className="grid md:grid-cols-3 gap-16">*/}
+        {/*      <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white group">*/}
+        {/*        <CardHeader className="text-center">*/}
+        {/*          <div*/}
+        {/*              className="w-16 h-16 bg-gradient-to-r from-primary to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">*/}
+        {/*            <MapPin className="h-8 w-8 text-white"/>*/}
+        {/*          </div>*/}
+        {/*          <CardTitle className="text-xl">Registered Office</CardTitle>*/}
+        {/*        </CardHeader>*/}
+        {/*        <CardContent className="text-center">*/}
+        {/*          <p className="text-muted-foreground leading-relaxed text-justify">*/}
+        {/*            Plot No 47 G.NO 140, Swami Samarth Nagar, Chh. Sambhaji Nagar, Maharashtra, India – 431136*/}
+        {/*          </p>*/}
+        {/*        </CardContent>*/}
+        {/*      </Card>*/}
 
-              <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white group">
-                <CardHeader className="text-center">
-                  <div
-                      className="w-16 h-16 bg-gradient-to-r from-primary to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <Phone className="h-8 w-8 text-white"/>
-                  </div>
-                  <CardTitle className="text-xl">Phone</CardTitle>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <div className="space-y-3">
-                    <p className="text-muted-foreground font-medium text-lg">+91 9579291495</p>
-                    <p className="text-muted-foreground font-medium text-lg">+91 8605995967</p>
-                  </div>
-                </CardContent>
-              </Card>
+        {/*      <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white group">*/}
+        {/*        <CardHeader className="text-center">*/}
+        {/*          <div*/}
+        {/*              className="w-16 h-16 bg-gradient-to-r from-primary to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">*/}
+        {/*            <Phone className="h-8 w-8 text-white"/>*/}
+        {/*          </div>*/}
+        {/*          <CardTitle className="text-xl">Phone</CardTitle>*/}
+        {/*        </CardHeader>*/}
+        {/*        <CardContent className="text-center">*/}
+        {/*          <div className="space-y-3">*/}
+        {/*            <p className="text-muted-foreground font-medium text-lg">+91 9579291495</p>*/}
+        {/*            <p className="text-muted-foreground font-medium text-lg">+91 8605995967</p>*/}
+        {/*          </div>*/}
+        {/*        </CardContent>*/}
+        {/*      </Card>*/}
 
-              <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white group">
-                <CardHeader className="text-center">
-                  <div
-                      className="w-16 h-16 bg-gradient-to-r from-primary to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <Mail className="h-8 w-8 text-white"/>
-                  </div>
-                  <CardTitle className="text-xl">Email</CardTitle>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <div className="space-y-3">
-                    <p className="text-muted-foreground font-medium text-lg">export@enjosakglobal.com</p>
-                    <p className="text-muted-foreground font-medium text-lg">enjosak33@gmail.com</p>
-                  </div>
-                </CardContent>
-              </Card>
+        {/*      <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white group">*/}
+        {/*        <CardHeader className="text-center">*/}
+        {/*          <div*/}
+        {/*              className="w-16 h-16 bg-gradient-to-r from-primary to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">*/}
+        {/*            <Mail className="h-8 w-8 text-white"/>*/}
+        {/*          </div>*/}
+        {/*          <CardTitle className="text-xl">Email</CardTitle>*/}
+        {/*        </CardHeader>*/}
+        {/*        <CardContent className="text-center">*/}
+        {/*          <div className="space-y-3">*/}
+        {/*            <p className="text-muted-foreground font-medium text-lg">export@enjosakglobal.com</p>*/}
+        {/*            <p className="text-muted-foreground font-medium text-lg">enjosak33@gmail.com</p>*/}
+        {/*          </div>*/}
+        {/*        </CardContent>*/}
+        {/*      </Card>*/}
 
-              {/*<Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white group">*/}
-              {/*  <CardHeader className="text-center">*/}
-              {/*    <div*/}
-              {/*        className="w-16 h-16 bg-gradient-to-r from-primary to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">*/}
-              {/*      <Globe className="h-8 w-8 text-white"/>*/}
-              {/*    </div>*/}
-              {/*    <CardTitle className="text-xl">Website</CardTitle>*/}
-              {/*  </CardHeader>*/}
-              {/*  <CardContent className="text-center">*/}
-              {/*    <div className="space-y-3">*/}
-              {/*      <p className="text-muted-foreground font-medium text-lg">www.enjosakglobal.com</p>*/}
-              {/*    </div>*/}
-              {/*  </CardContent>*/}
-              {/*</Card>*/}
-            </div>
-          </div>
-        </section>
+        {/*      /!*<Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white group">*!/*/}
+        {/*      /!*  <CardHeader className="text-center">*!/*/}
+        {/*      /!*    <div*!/*/}
+        {/*      /!*        className="w-16 h-16 bg-gradient-to-r from-primary to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">*!/*/}
+        {/*      /!*      <Globe className="h-8 w-8 text-white"/>*!/*/}
+        {/*      /!*    </div>*!/*/}
+        {/*      /!*    <CardTitle className="text-xl">Website</CardTitle>*!/*/}
+        {/*      /!*  </CardHeader>*!/*/}
+        {/*      /!*  <CardContent className="text-center">*!/*/}
+        {/*      /!*    <div className="space-y-3">*!/*/}
+        {/*      /!*      <p className="text-muted-foreground font-medium text-lg">www.enjosakglobal.com</p>*!/*/}
+        {/*      /!*    </div>*!/*/}
+        {/*      /!*  </CardContent>*!/*/}
+        {/*      /!*</Card>*!/*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</section>*/}
 
         {/* Footer */}
 
