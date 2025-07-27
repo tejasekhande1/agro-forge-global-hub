@@ -165,6 +165,14 @@ const Navbar = () => {
                                     </Link>
 
                                     <Link
+                                        to="/dehydrated-foods"
+                                        className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted/30 hover:text-primary"
+                                        onClick={() => setProductsOpen(false)}
+                                    >
+                                        Dehydrated Foods
+                                    </Link>
+
+                                    <Link
                                         to="/engineering-solutions"
                                         className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted/30 hover:text-primary"
                                         onClick={() => setProductsOpen(false)}
