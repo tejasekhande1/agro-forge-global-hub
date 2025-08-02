@@ -9,11 +9,13 @@ const Footer = () => {
               <div className="grid md:grid-cols-5 gap-8">
                   <div className="md:col-span-2">
                       <div className="flex items-center space-x-3 mb-6">
-                          <div
-                              className="w-12 h-12 bg-gradient-to-r from-primary to-green-600 rounded-xl flex items-center justify-center shadow-lg">
-                              <Leaf className="h-7 w-7 text-white"/>
+                          <div className="w-12 h-12 flex items-center justify-center">
+                              <img
+                                  src="./enjosack_logo.png"
+                                  alt="Modern Agricultural Technology"
+                              />
                           </div>
-                          <span className="font-bold text-2xl">ENJO-SAK GLOBAL PRIVATE LIMITED</span>
+                          <span className="font-bold text-xl">ENJO-SAK GLOBAL PRIVATE LIMITED</span>
                       </div>
                       <p className="text-gray-300 mb-6 text-lg leading-relaxed text-justify">
                           Bridging India's Agricultural Abundance & Engineering Excellence with the World
