@@ -1,0 +1,7 @@
+deployment:
+  tasks:
+    - export NODE_ENV=production
+    - source /opt/cpanel/ea-nodejs*/enable
+    - npm install
+    - npm run build
+    - rsync -av --delete build/ ~/public_html/
