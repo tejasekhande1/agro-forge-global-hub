@@ -26,7 +26,7 @@ const Navbar = () => {
                     <div className="flex items-center space-x-2">
                         <div className="w-12 h-12 flex items-center justify-center">
                             <img
-                                src="./enjosack_logo.png"
+                                src="/enjosack_logo.png"
                                 alt="Modern Agricultural Technology"
                                 className="mix-blend-multiply"
                             />
