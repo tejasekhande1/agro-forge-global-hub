@@ -136,13 +136,6 @@ const Navbar = () => {
                                         Spices
                                     </Link>
                                     <Link
-                                        to="/products/millets"
-                                        className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted/30 hover:text-primary"
-                                        onClick={() => setProductsOpen(false)}
-                                    >
-                                        Millets
-                                    </Link>
-                                    <Link
                                         to="/products/pulses"
                                         className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted/30 hover:text-primary"
                                         onClick={() => setProductsOpen(false)}
@@ -154,7 +147,7 @@ const Navbar = () => {
                                         className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted/30 hover:text-primary"
                                         onClick={() => setProductsOpen(false)}
                                     >
-                                        Grains & Cereals
+                                        Millets
                                     </Link>
                                     <Link
                                         to="/products/dryfruits-nuts"

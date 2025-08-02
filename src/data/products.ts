@@ -246,7 +246,7 @@ export const categorizedProducts = [
         items: fruits,
     },
     {
-        category: "Grains & Cereals",
+        category: "Millets",
         slug: "grains",
         items: grains,
     },
