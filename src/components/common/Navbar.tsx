@@ -205,31 +205,158 @@ const Navbar = () => {
             {/* Drawer / Mobile Menu */}
             {open && (
                 <div className="md:hidden bg-white border-t px-4 py-4 space-y-4 shadow-lg z-40">
+                    {/* Close Button */}
                     <div className="flex justify-end">
                         <button onClick={() => setOpen(false)} className="text-muted-foreground">
-                            <X className="h-6 w-6"/>
+                            <X className="h-6 w-6" />
                         </button>
                     </div>
-                    <a href="#about" onClick={() => setOpen(false)}
-                       className="block text-muted-foreground hover:text-primary font-medium">
-                        About
-                    </a>
-                    <a href="#products" onClick={() => setOpen(false)}
-                       className="block text-muted-foreground hover:text-primary font-medium">
-                        Products
-                    </a>
-                    <Link to="/spices" onClick={() => setOpen(false)}
-                          className="block text-muted-foreground hover:text-primary font-medium">
-                        Spices
+
+                    {/* Home */}
+                    <Link
+                        to="/"
+                        onClick={() => setOpen(false)}
+                        className="block text-muted-foreground hover:text-primary font-medium"
+                    >
+                        Home
                     </Link>
-                    <a href="#sustainability" onClick={() => setOpen(false)}
-                       className="block text-muted-foreground hover:text-primary font-medium">
-                        Sustainability
-                    </a>
-                    <a href="#contact" onClick={() => setOpen(false)}
-                       className="block text-muted-foreground hover:text-primary font-medium">
+
+                    {/* About Dropdown */}
+                    <div>
+                        <button
+                            onClick={() => setAboutOpen(!aboutOpen)}
+                            className="flex items-center justify-between w-full text-left text-muted-foreground hover:text-primary font-medium"
+                        >
+                            About
+                            <ChevronDown
+                                size={16}
+                                className={`transition-transform ${aboutOpen ? "rotate-180" : ""}`}
+                            />
+                        </button>
+                        {aboutOpen && (
+                            <div className="mt-2 pl-4 space-y-2">
+                                <Link
+                                    to="/about/company-overview"
+                                    onClick={() => setOpen(false)}
+                                    className="block text-muted-foreground hover:text-primary text-sm"
+                                >
+                                    Company Overview
+                                </Link>
+                                <Link
+                                    to="/about/vision-mission"
+                                    onClick={() => setOpen(false)}
+                                    className="block text-muted-foreground hover:text-primary text-sm"
+                                >
+                                    Vision and Mission
+                                </Link>
+                                <Link
+                                    to="/about/leadership"
+                                    onClick={() => setOpen(false)}
+                                    className="block text-muted-foreground hover:text-primary text-sm"
+                                >
+                                    Leadership
+                                </Link>
+                                <Link
+                                    to="/about/awards-certifications"
+                                    onClick={() => setOpen(false)}
+                                    className="block text-muted-foreground hover:text-primary text-sm"
+                                >
+                                    Awards and Certifications
+                                </Link>
+                            </div>
+                        )}
+                    </div>
+
+                    {/* Products Dropdown */}
+                    <div>
+                        <button
+                            onClick={() => setProductsOpen(!productsOpen)}
+                            className="flex items-center justify-between w-full text-left text-muted-foreground hover:text-primary font-medium"
+                        >
+                            Products
+                            <ChevronDown
+                                size={16}
+                                className={`transition-transform ${productsOpen ? "rotate-180" : ""}`}
+                            />
+                        </button>
+                        {productsOpen && (
+                            <div className="mt-2 pl-4 space-y-2">
+                                <Link
+                                    to="/products/vegetables"
+                                    onClick={() => setOpen(false)}
+                                    className="block text-muted-foreground hover:text-primary text-sm"
+                                >
+                                    Vegetables
+                                </Link>
+                                <Link
+                                    to="/products/fruits"
+                                    onClick={() => setOpen(false)}
+                                    className="block text-muted-foreground hover:text-primary text-sm"
+                                >
+                                    Fruits
+                                </Link>
+                                <Link
+                                    to="/spices"
+                                    onClick={() => setOpen(false)}
+                                    className="block text-muted-foreground hover:text-primary text-sm"
+                                >
+                                    Spices
+                                </Link>
+                                <Link
+                                    to="/products/pulses"
+                                    onClick={() => setOpen(false)}
+                                    className="block text-muted-foreground hover:text-primary text-sm"
+                                >
+                                    Pulses
+                                </Link>
+                                <Link
+                                    to="/products/grains"
+                                    onClick={() => setOpen(false)}
+                                    className="block text-muted-foreground hover:text-primary text-sm"
+                                >
+                                    Millets
+                                </Link>
+                                <Link
+                                    to="/products/dryfruits-nuts"
+                                    onClick={() => setOpen(false)}
+                                    className="block text-muted-foreground hover:text-primary text-sm"
+                                >
+                                    Dry Fruits & Nuts
+                                </Link>
+                                <Link
+                                    to="/dehydrated-foods"
+                                    onClick={() => setOpen(false)}
+                                    className="block text-muted-foreground hover:text-primary text-sm"
+                                >
+                                    Dehydrated Foods
+                                </Link>
+                                <Link
+                                    to="/engineering-solutions"
+                                    onClick={() => setOpen(false)}
+                                    className="block text-muted-foreground hover:text-primary text-sm"
+                                >
+                                    Engineering Solutions
+                                </Link>
+                            </div>
+                        )}
+                    </div>
+
+                    {/* Other Direct Links */}
+                    <Link
+                        to="/gallery"
+                        onClick={() => setOpen(false)}
+                        className="block text-muted-foreground hover:text-primary font-medium"
+                    >
+                        Gallery
+                    </Link>
+
+                    <Link
+                        to="/contact"
+                        onClick={() => setOpen(false)}
+                        className="block text-muted-foreground hover:text-primary font-medium"
+                    >
                         Contact
-                    </a>
+                    </Link>
                 </div>
             )}
         </nav>
