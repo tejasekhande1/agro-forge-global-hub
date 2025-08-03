@@ -28,12 +28,8 @@ const CompanyOverview = () => {
                     <div className="text-aligned">
                         <h2 className="text-2xl sm:text-3xl font-semibold text-primary mb-4">About Enjo-Sak Global</h2>
                         <p className="text-muted-foreground leading-relaxed text-sm md:text-base space-y-2 text-justify">
-                            Enjo-Sak Global Private Limited is a dynamic and forward-looking export company based in
-                            India, committed to connecting
-                            high-quality Indian products with global markets. We specialize in the sourcing, processing,
-                            and export of a wide range
-                            of agro-based and industrial products, including spices, food ingredients, herbal powders,
-                            and engineering components.
+                            Enjo-Sak Global Private Limited is a dynamic and forward-looking export company based in India, committed to connecting high-quality Indian products with global markets. We specialize in the sourcing, processing, and export of a wide range of agro-based and industrial products, including
+                            Vegetables, Fruits, Spices, pluses, Millets and cereals, Dehydrated foods, and Engineering Products.
                             <br/><br/>
                             With a deep-rooted commitment to quality, transparency, and long-term partnerships, Enjo-Sak
                             Global bridges the gap between

@@ -12,12 +12,6 @@ export const vegetables = [
         info: "Allium cepa is cultivated for its bulb, rich in sulfur compounds. Indian onions, especially from Nashik, are known for their long shelf life and flavor intensity."
     },
     {
-        name: "Maize",
-        image: "/products/maize.jpg",
-        description: "Golden yellow maize kernels used for food and feed.",
-        info: "Zea mays is a staple crop in India used for human consumption and animal feed. Commonly used in making rotis (makki di roti), snacks, and processed foods."
-    },
-    {
         name: "Moringa Powder",
         image: "/products/moringa_powder.webp",
         description: "Fine moringa leaf powder packed with nutrients.",
@@ -160,7 +154,13 @@ export const grains = [
         image: "/products/nachni.jpg",
         description: "Calcium-rich finger millet used in porridges and rotis.",
         info: "Eleusine coracana is widely consumed in southern and western India. Often used for infants and lactating mothers for its high iron and calcium content."
-    }
+    },
+    {
+        name: "Maize",
+        image: "/products/maize.jpg",
+        description: "Golden yellow maize kernels used for food and feed.",
+        info: "Zea mays is a staple crop in India used for human consumption and animal feed. Commonly used in making rotis (makki di roti), snacks, and processed foods."
+    },
 ];
 
 export const spices = [
@@ -246,7 +246,7 @@ export const categorizedProducts = [
         items: fruits,
     },
     {
-        category: "Millets",
+        category: "Millets & Cereals",
         slug: "grains",
         items: grains,
     },
