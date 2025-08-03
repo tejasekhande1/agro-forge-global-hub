@@ -150,7 +150,7 @@ const Navbar = () => {
                                         Millets & Cereals
                                     </Link>
                                     <Link
-                                        to="/products/dryfruits-nuts"
+                                        to="/dry-fruits"
                                         className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted/30 hover:text-primary"
                                         onClick={() => setProductsOpen(false)}
                                     >

@@ -322,4 +322,41 @@ export const categorizedProducts = [
         slug: "grains",
         items: grains,
     },
+    {
+        category: "Dry Fruits & Nuts",
+        slug: "dryfruits-nuts",
+        items: [
+            {
+                subcategory: "Tree Nuts",
+                products: [
+                    { name: "Cashew Nuts", image: "/products/cashew.jpg" },
+                    { name: "Almonds", image: "/products/almonds.jpg" },
+                    { name: "Walnuts", image: "/products/walnuts.jpg" },
+                    { name: "Pistachios", image: "/products/pistachios.jpg" },
+                ],
+            },
+            {
+                subcategory: "Dried Fruits",
+                products: [
+                    { name: "Raisins", image: "/products/raisins.jpg" },
+                    { name: "Dried Figs (Anjeer)", image: "/products/figs.jpg" },
+                    { name: "Dry Dates (Chuhara)", image: "/products/dry_dates.jpg" },
+                    { name: "Dried Apricots", image: "/products/apricots.jpg" },
+                    { name: "Dried Mango Slices", image: "/products/dried_mango.jpg" },
+                    { name: "Dried Banana Chips", image: "/products/banana_chips.jpg" },
+                    { name: "Dried Papaya / Pineapple Cubes", image: "/products/mixed_cubes.jpg" },
+                    { name: "Amla (Dried Gooseberry)", image: "/products/amla.jpg" },
+                ],
+            },
+            {
+                subcategory: "Other Edible Nuts & Seeds",
+                products: [
+                    { name: "Groundnuts (Peanuts)", image: "/products/peanuts.jpg" },
+                    { name: "Fox Nuts (Makhana)", image: "/products/makhana.jpg" },
+                    { name: "Water Chestnuts (Singhara)", image: "/products/singhara.jpg" },
+                    { name: "Charoli (Chironji Nuts)", image: "/products/charoli.jpg" },
+                ],
+            },
+        ],
+    },
 ];

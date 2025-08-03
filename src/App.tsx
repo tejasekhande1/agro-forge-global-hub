@@ -18,6 +18,7 @@ import Gallery from "@/pages/Gallery.tsx";
 import Contact from "@/pages/Contact.tsx";
 import EngineeringSolutions from "@/pages/EngineeringSolutions.tsx";
 import DehydratedFoods from "@/pages/DehydratedFoods.tsx";
+import DryFruitsPage from "@/pages/DryFruitsPage.tsx";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ const App = () => (
           <Route path="/contact" element={<Contact/>} />
           <Route path='/engineering-solutions' element={<EngineeringSolutions/>}/>
           <Route path='/dehydrated-foods' element={<DehydratedFoods/>}/>
+          <Route path='/dry-fruits' element={<DryFruitsPage/>}/>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
