@@ -19,6 +19,21 @@ const Leadership = () => {
                 'A veteran in automotive engineering and Special Purpose Machine (SPM) design, Mr. Shirke brings 25+ years of innovation in automation systems and manufacturing process optimization. His contributions have significantly improved efficiency and quality standards across multiple sectors.',
             image: '/images/vijay-shirke.jpg',
         },
+        {
+            name: 'Aniket A. Kotame',
+            title: 'Director, Enjo-Sak Global Pvt. Ltd.\nCEO, Enjo-Chem Group.',
+            description: 'Aniket holds a B.Tech in Chemical Engineering from VIT Pune. With a passion for global commerce and sustainable trade practices, he leads operational excellence and strategic planning at Enjo-Sak Global. His scientific acumen and problem-solving mindset play a key role in ensuring quality, compliance, and customer satisfaction across all our international trade verticals.\n' +
+                'He also serves as the CEO of Enjo-Chem Group, a leading agrochemical manufacturer in India. Under his leadership, the company has empowered and served over 1 lakh farmers—and continues to grow—by delivering innovative, high-quality solutions in crop care, specialty fertilizers, and sustainable agriculture.',
+            image: '/images/aniket-kothame.jpg',
+        },
+        {
+            name: 'Mayur Vijay Shirke',
+            title: 'Director, Enjo-Sak Global Pvt. Ltd.',
+            description: 'Mayur holds a B.Tech in Mechatronics and Automation Engineering from MIT ADT University, Pune. As a forward-thinking entrepreneur with a deep understanding of industrial systems and global trade, he plays a key role in shaping the vision and strategic direction of Enjo-Sak Global. His leadership is driven by a strong foundation in engineering, automation, and cross-border business development.\n' +
+                '\n' +
+                'In addition to his role at Enjo-Sak, Mayur also serves as the Development and Marketing Head at Varad Group, a leading manufacturer of Special Purpose Machines (SPMs), automotive components, and automation solutions. His combined experience across both organizations enables him to bridge technical innovation with market demands, ensuring customer satisfaction and long-term growth. With a passion for international collaboration, he continues to explore opportunities to position Indian manufacturing on the global map.',
+            image: '/images/mayur-shirke.jpg',
+        }
     ];
 
     return (
@@ -48,11 +63,11 @@ const Leadership = () => {
                                 className="group hover:shadow-xl transition-all duration-300 border border-gray-100 rounded-2xl overflow-hidden"
                             >
                                 {/* Image */}
-                                <div className="h-64 w-full overflow-hidden">
+                                <div className="h-80 w-full overflow-hidden">
                                     <img
                                         src={advisor.image}
                                         alt={advisor.name}
-                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                        className="w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                                     />
                                 </div>
 
@@ -65,7 +80,14 @@ const Leadership = () => {
                                             </div>
                                             <div>
                                                 <CardTitle className="text-xl">{advisor.name}</CardTitle>
-                                                <p className="text-sm text-primary font-medium">{advisor.title}</p>
+                                                <p className="text-sm text-primary font-medium">
+                                                    {advisor.title.split('\n').map((line, idx) => (
+                                                        <span key={idx}>
+                                                            {line}
+                                                            <br/>
+                                                        </span>
+                                                    ))}
+                                                </p>
                                             </div>
                                         </div>
                                     </CardHeader>
