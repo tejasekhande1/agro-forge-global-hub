@@ -1,10 +1,10 @@
 export const vegetables = [
-    {
-        name: "Ginger (Hydrated & Dehydrated)",
-        image: "/products/ginger.jpg",
-        description: "Aromatic ginger available in both hydrated and dehydrated forms.",
-        info: "Zingiber officinale is a flowering plant whose rhizome is widely used as a spice and folk medicine. Known for its anti-inflammatory and digestive properties, ginger is commonly used in Indian teas, curries, and pickles."
-    },
+    // {
+    //     name: "Ginger (Hydrated & Dehydrated)",
+    //     image: "/products/ginger.jpg",
+    //     description: "Aromatic ginger available in both hydrated and dehydrated forms.",
+    //     info: "Zingiber officinale is a flowering plant whose rhizome is widely used as a spice and folk medicine. Known for its anti-inflammatory and digestive properties, ginger is commonly used in Indian teas, curries, and pickles."
+    // },
     {
         name: "Onion",
         image: "/products/onion.jpg",
@@ -12,16 +12,10 @@ export const vegetables = [
         info: "Allium cepa is cultivated for its bulb, rich in sulfur compounds. Indian onions, especially from Nashik, are known for their long shelf life and flavor intensity."
     },
     {
-        name: "Moringa Powder",
-        image: "/products/moringa_powder.webp",
-        description: "Fine moringa leaf powder packed with nutrients.",
-        info: "Derived from Moringa oleifera, often called the 'drumstick tree'. Moringa powder is rich in iron, calcium, and antioxidants, used in smoothies and health supplements."
-    },
-    {
-        name: "Green Chilli",
-        image: "/products/green_chilli.jpg",
-        description: "Spicy green chilies with a fresh, sharp heat.",
-        info: "Capsicum annuum in its unripe form. Widely used in Indian cooking to add heat to dishes. Rich in Vitamin C and capsaicin."
+        name: "Garlic",
+        image: "/products/garlic.jpg",
+        description: "Aromatic garlic bulbs used for flavoring dishes.",
+        info: "Allium sativum is used in Indian cooking for its strong flavor and medicinal properties, especially for heart health and immunity."
     },
     {
         name: "Potato",
@@ -36,16 +30,94 @@ export const vegetables = [
         info: "Solanum lycopersicum is rich in lycopene, a powerful antioxidant. Tomatoes are used in almost all Indian curries and chutneys."
     },
     {
+        name: "Green Chilli",
+        image: "/products/green_chilli.jpg",
+        description: "Spicy green chilies with a fresh, sharp heat.",
+        info: "Capsicum annuum in its unripe form. Widely used in Indian cooking to add heat to dishes. Rich in Vitamin C and capsaicin."
+    },
+    {
+        name: "Brinjal (Eggplant)",
+        image: "/products/brinjal.jpg",
+        description: "Glossy purple brinjals used in various Indian curries.",
+        info: "Solanum melongena is a versatile vegetable used in dishes like baingan bharta and stuffed brinjal. Rich in fiber and antioxidants."
+    },
+    {
         name: "Okra",
         image: "/products/okra.jpg",
         description: "Tender okra (bhindi) pods ideal for Indian dishes.",
         info: "Abelmoschus esculentus is a high-fiber vegetable often stir-fried or stuffed in Indian kitchens. Known for aiding digestion and controlling blood sugar."
     },
     {
-        name: "Moringa",
+        name: "Cabbage",
+        image: "/products/cabbage.jpg",
+        description: "Crisp cabbage leaves ideal for salads and stir-fries.",
+        info: "Brassica oleracea is a leafy vegetable rich in Vitamin K and C. Commonly used in Indian sabzis and Chinese-style recipes."
+    },
+    {
+        name: "Cauliflower",
+        image: "/products/cauliflower.jpg",
+        description: "White cauliflower florets perfect for curries and snacks.",
+        info: "Brassica oleracea var. botrytis is used in dishes like aloo-gobi. A rich source of fiber and antioxidants."
+    },
+    {
+        name: "Spinach (Palak)",
+        image: "/products/spinach.jpg",
+        description: "Green leafy spinach rich in iron and fiber.",
+        info: "Spinacia oleracea is widely used in Indian dishes like palak paneer. It’s a great source of iron, folate, and Vitamin A."
+    },
+    {
+        name: "Fenugreek Leaves (Methi)",
+        image: "/products/methi.jpg",
+        description: "Aromatic fenugreek leaves for flavorful curries.",
+        info: "Trigonella foenum-graecum is used both fresh and dried (kasuri methi) in Indian cuisine. Known for regulating blood sugar and enhancing flavor."
+    },
+    {
+        name: "Coriander Leaves",
+        image: "/products/coriander.jpg",
+        description: "Fresh coriander used for garnishing and chutneys.",
+        info: "Coriandrum sativum adds a burst of freshness to Indian food. Commonly used in chutneys, garnishes, and spice blends."
+    },
+    {
+        name: "Cluster Beans (Gawar)",
+        image: "/products/gawar.jpg",
+        description: "Tender cluster beans used in traditional Indian recipes.",
+        info: "Cyamopsis tetragonoloba is native to India and rich in dietary fiber. Used in dry and gravy dishes, especially in Western India."
+    },
+    {
+        name: "Drumsticks (Moringa)",
         image: "/products/moringa.webp",
         description: "Fresh moringa leaves and pods full of nutrition.",
         info: "Moringa oleifera leaves and drumsticks are widely used in South Indian sambar and curries. Known as a superfood for its high nutritional profile."
+    },
+    // {
+    //     name: "Moringa Powder",
+    //     image: "/products/moringa_powder.webp",
+    //     description: "Fine moringa leaf powder packed with nutrients.",
+    //     info: "Derived from Moringa oleifera, often called the 'drumstick tree'. Moringa powder is rich in iron, calcium, and antioxidants, used in smoothies and health supplements."
+    // },
+    {
+        name: "Sweet Potato",
+        image: "/products/sweet_potato.jpg",
+        description: "Naturally sweet tubers ideal for roasting and curries.",
+        info: "Ipomoea batatas is high in beta-carotene, fiber, and vitamins. Popular during fasting and as a healthy snack."
+    },
+    {
+        name: "Pumpkin",
+        image: "/products/pumpkin.jpg",
+        description: "Bright orange pumpkin used in curries and desserts.",
+        info: "Cucurbita pepo is a nutrient-rich vegetable with a mild sweetness. Used in dishes like kaddu ki sabzi and halwa."
+    },
+    {
+        name: "Cucumber",
+        image: "/products/cucumber.jpg",
+        description: "Cool, crisp cucumbers perfect for salads and raita.",
+        info: "Cucumis sativus is hydrating and low in calories. Commonly eaten raw or added to chaats and raitas."
+    },
+    {
+        name: "Spring Onion",
+        image: "/products/spring_onion.jpg",
+        description: "Mild, fresh spring onions for stir-fries and garnishing.",
+        info: "Allium fistulosum is used in Indo-Chinese and Indian dishes for its mild flavor. Great in parathas, fried rice, and salads."
     }
 ];
 
