@@ -68,7 +68,7 @@ const Index = () => {
                     size="lg"
                     className="bg-gradient-to-r from-primary to-green-600 hover:from-primary/90 hover:to-green-600/90 text-white px-8 py-4 text-lg shadow-xl flex items-center"
                 >
-                  <a href="#products" className="flex items-center">
+                  <a href="/products/vegetables" className="flex items-center">
                     <ShoppingBag className="mr-2 h-5 w-5"/>
                     Explore Our Products
                     <ArrowRight className="ml-2 h-5 w-5"/>
@@ -81,7 +81,7 @@ const Index = () => {
                     variant="outline"
                     className="border-2 border-white text-black hover:bg-white hover:text-primary px-8 py-4 text-lg backdrop-blur-sm flex items-center"
                 >
-                  <a href="#contact" className="flex items-center">
+                  <a href="/contact" className="flex items-center">
                     <Handshake className="mr-2 h-5 w-5"/>
                     Partner with Us
                   </a>
