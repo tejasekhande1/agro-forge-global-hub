@@ -301,6 +301,162 @@ export const spices = [
         image: "/products/spices/tejpat.jpg",
         description: "Indian bay leaves with cinnamon-like fragrance.",
         info: "Cinnamomum tamala leaves are used in biryanis and spice mixes. They add a subtle aromatic warmth unlike European bay leaf."
+    },
+
+    // 🌿 Whole Spices
+    {
+        name: "Cumin Seeds (Jeera)",
+        image: "/products/spices/cumin_seeds.jpg",
+        description: "Earthy-flavored cumin seeds used in tempering and curries.",
+        info: "Cuminum cyminum is one of the most common spices in Indian cooking. Boosts digestion and enhances flavor in dals, rice, and snacks."
+    },
+    {
+        name: "Coriander Seeds (Dhaniya)",
+        image: "/products/spices/coriander_seeds.jpg",
+        description: "Citrusy and slightly sweet coriander seeds.",
+        info: "Used whole or ground, coriander seeds are essential in spice blends. Known for aiding digestion and balancing flavors."
+    },
+    {
+        name: "Fennel Seeds (Saunf)",
+        image: "/products/spices/fennel_seeds.jpg",
+        description: "Sweet, aromatic seeds often used as mouth fresheners.",
+        info: "Foeniculum vulgare seeds are used in spice mixes, pickles, and desserts. Also used post-meals for digestion."
+    },
+    {
+        name: "Fenugreek Seeds (Methi)",
+        image: "/products/spices/fenugreek_seeds.jpg",
+        description: "Bitter seeds with strong aroma used in pickles and curries.",
+        info: "Trigonella foenum-graecum seeds are rich in fiber and aid in blood sugar control. Used in tempering and spice powders."
+    },
+
+    // 🌶️ Ground Spices
+    {
+        name: "Red Chilli Powder",
+        image: "/products/spices/red_chilli_powder.jpg",
+        description: "Ground dried chilies for heat and color.",
+        info: "A staple spice in Indian cooking that varies in pungency and color intensity. Used in nearly all savory dishes."
+    },
+    {
+        name: "Coriander Powder",
+        image: "/products/spices/coriander_powder.jpg",
+        description: "Ground coriander seeds with a citrusy, earthy flavor.",
+        info: "Used in curry bases and vegetable dishes to provide depth and balance. Best when ground fresh from whole seeds."
+    },
+    {
+        name: "Cumin Powder",
+        image: "/products/spices/cumin_powder.jpg",
+        description: "Earthy and warm spice made from roasted cumin seeds.",
+        info: "Adds a roasted, nutty taste to spice blends, chaats, and dals. Also aids digestion and boosts immunity."
+    },
+    {
+        name: "Ginger Powder",
+        image: "/products/spices/ginger_powder.jpg",
+        description: "Finely ground dried ginger root.",
+        info: "Used in masala chai, sweets, and spice mixes. Offers anti-inflammatory and antioxidant properties."
+    },
+    {
+        name: "Black Pepper Powder",
+        image: "/products/spices/black_pepper_powder.jpg",
+        description: "Freshly ground black pepper for sharp, spicy flavor.",
+        info: "Adds pungency and heat to soups, gravies, and spice blends. Contains piperine, known for aiding nutrient absorption."
+    },
+    {
+        name: "Garlic Powder",
+        image: "/products/spices/garlic_powder.jpg",
+        description: "Convenient powdered garlic for instant flavor.",
+        info: "Perfect for marinades, dry rubs, and seasoning blends. Retains the pungency and health benefits of fresh garlic."
+    },
+    {
+        name: "Onion Powder",
+        image: "/products/spices/onion_powder.jpg",
+        description: "Mildly sweet and savory onion powder.",
+        info: "Adds depth to sauces, curries, and seasoning mixes. Useful in dry preparations and spice blends."
+    },
+    {
+        name: "Fennel Powder",
+        image: "/products/spices/fennel_powder.jpg",
+        description: "Sweet and cooling fennel flavor in powdered form.",
+        info: "Used in digestive mixes and sweet masalas. Supports digestion and freshens breath."
+    },
+    {
+        name: "Fenugreek Powder",
+        image: "/products/spices/fenugreek_powder.jpg",
+        description: "Ground methi seeds with bitter, rich flavor.",
+        info: "Used in pickles, sambar powder, and spice mixes. Boosts lactation and lowers cholesterol."
+    },
+
+    // 🌿 Other Whole Spices
+    {
+        name: "Mustard Seeds (Yellow/Black)",
+        image: "/products/spices/mustard_mixed.jpg",
+        description: "Small seeds with a bold, pungent flavor.",
+        info: "Used in tempering and spice blends. Yellow mustard is mild, while black is stronger and more pungent."
+    },
+    {
+        name: "Carom Seeds (Ajwain)",
+        image: "/products/spices/ajwain.jpg",
+        description: "Thyme-flavored seeds used in parathas and snacks.",
+        info: "Ajwain (Trachyspermum ammi) is great for digestion. Used in Indian breads, pakoras, and masala powders."
+    },
+    {
+        name: "Nigella Seeds (Kalonji)",
+        image: "/products/spices/kalonji.jpg",
+        description: "Black seeds with onion-like flavor.",
+        info: "Nigella sativa is used in pickles, naan, and spice blends. Believed to have medicinal and antioxidant properties."
+    },
+    {
+        name: "Dill Seeds (Sowa)",
+        image: "/products/spices/dill_seeds.jpg",
+        description: "Aromatic seeds with citrusy overtones.",
+        info: "Anethum graveolens is used in pickles and spice blends. Known for its digestive and anti-gas properties."
+    },
+    {
+        name: "Cloves",
+        image: "/products/spices/cloves.jpg",
+        description: "Strong and aromatic dried flower buds.",
+        info: "Clove (Syzygium aromaticum) adds intense flavor to biryanis and masalas. Also used in herbal teas and dental care."
+    },
+    {
+        name: "Bay Leaves",
+        image: "/products/spices/bay_leaves.jpg",
+        description: "Fragrant dried leaves used in rice and curries.",
+        info: "Bay leaves impart subtle earthy and woody flavors. Used in tempering, curries, and soups."
+    },
+    {
+        name: "Cinnamon Sticks",
+        image: "/products/spices/cinnamon.jpg",
+        description: "Sweet and woody spice sticks for desserts and curries.",
+        info: "Cinnamomum verum adds warmth to biryanis, garam masalas, and sweets. Also known for blood sugar regulation."
+    },
+    {
+        name: "Star Anise",
+        image: "/products/spices/star_anise.jpg",
+        description: "Star-shaped spice with licorice flavor.",
+        info: "Illicium verum is used in masalas and chai for its sweet and pungent notes. A key ingredient in Chinese five-spice as well."
+    },
+    {
+        name: "Mace",
+        image: "/products/spices/mace.jpg",
+        description: "Lacy, red aril of nutmeg seed with intense aroma.",
+        info: "Myristica fragrans (mace) is used in garam masala and biryanis. Lends a warm, peppery flavor."
+    },
+    {
+        name: "Nutmeg",
+        image: "/products/spices/nutmeg.jpg",
+        description: "Hard seed with warm, nutty flavor.",
+        info: "Used in desserts, spice blends, and Ayurvedic remedies. Best used grated fresh for maximum flavor."
+    },
+    {
+        name: "Dry Ginger",
+        image: "/products/spices/dry_ginger.jpg",
+        description: "Powdered or whole form of dried ginger root.",
+        info: "Used in masalas, teas, and health tonics. Helps fight cold, nausea, and digestive issues."
+    },
+    {
+        name: "Long Pepper (Pippali)",
+        image: "/products/spices/long_pepper.jpg",
+        description: "Spicy, elongated pepper used in Ayurveda.",
+        info: "Piper longum offers a distinct flavor and is used in herbal formulations and masalas. Stimulates appetite and digestion."
     }
 ];
 
