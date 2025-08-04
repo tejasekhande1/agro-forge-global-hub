@@ -25,7 +25,6 @@ const OurGroup = () => {
             <section className="py-16 bg-white">
                 <div className="max-w-5xl mx-auto space-y-8">
                     <div className="text-aligned">
-                        <h2 className="text-2xl sm:text-3xl font-semibold text-primary mb-4">About ENJO-CHEM Group</h2>
                         <p className="text-muted-foreground leading-relaxed text-sm md:text-base text-justify">
                             The ENJO-CHEM Group has been a pioneer in the agrochemical and agri-input industry for over
                             15 years. With a focus on innovation, quality, and sustainable agriculture, the group has
