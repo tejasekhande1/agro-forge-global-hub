@@ -74,6 +74,14 @@ const Footer = () => {
                                   )}
                               </li>
                           ))}
+                          <li>
+                              <a href="https://www.enjochemagro.com/"
+                                 className="text-gray-300 hover:text-primary transition-colors duration-300 flex items-center space-x-2 group">
+                                  <ArrowRight
+                                      className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
+                                  <span>Visit Our Parent Company</span>
+                              </a>
+                          </li>
                       </ul>
                   </div>
 
