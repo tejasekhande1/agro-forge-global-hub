@@ -19,6 +19,7 @@ import Contact from "@/pages/Contact.tsx";
 import EngineeringSolutions from "@/pages/EngineeringSolutions.tsx";
 import DehydratedFoods from "@/pages/DehydratedFoods.tsx";
 import DryFruitsPage from "@/pages/DryFruitsPage.tsx";
+import OurGroup from "@/pages/About/OurGroup.tsx";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/about/leadership" element={<Leadership/>}/>
           <Route path="/about/awards-certifications" element={<Certifications/>}/>
           <Route path="/about/company-overview" element={<CompanyOverview/>}/>
+          <Route path="/about/our-group" element={<OurGroup/>}/>
           <Route path="/products/:category" element={<ProductCategoryPage/>} />
           <Route path="/gallery" element={<Gallery/>} />
           <Route path="/contact" element={<Contact/>} />

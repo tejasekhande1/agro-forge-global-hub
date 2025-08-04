@@ -72,6 +72,13 @@ const Navbar = () => {
                                         Company Overview
                                     </Link>
                                     <Link
+                                        to="/about/our-group"
+                                        className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted/30 hover:text-primary"
+                                        onClick={() => setAboutOpen(false)}
+                                    >
+                                        Our Group
+                                    </Link>
+                                    <Link
                                         to="/about/vision-mission"
                                         className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted/30 hover:text-primary"
                                         onClick={() => setAboutOpen(false)}
@@ -241,6 +248,13 @@ const Navbar = () => {
                                     className="block text-muted-foreground hover:text-primary text-sm"
                                 >
                                     Company Overview
+                                </Link>
+                                <Link
+                                    to="/about/our-group"
+                                    className="block text-muted-foreground hover:text-primary text-sm"
+                                    onClick={() => setOpen(false)}
+                                >
+                                    Our Group
                                 </Link>
                                 <Link
                                     to="/about/vision-mission"
