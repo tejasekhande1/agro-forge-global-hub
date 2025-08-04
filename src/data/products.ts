@@ -85,7 +85,7 @@ export const vegetables = [
     },
     {
         name: "Drumsticks (Moringa)",
-        image: "/products/moringa.webp",
+        image: "/products/moringa.jpg",
         description: "Fresh moringa leaves and pods full of nutrition.",
         info: "Moringa oleifera leaves and drumsticks are widely used in South Indian sambar and curries. Known as a superfood for its high nutritional profile."
     },
