@@ -39,7 +39,7 @@ const OurGroup = () => {
                     </div>
 
                     {/* Group Companies */}
-                    <h2 className="text-2xl sm:text-3xl font-semibold text-primary mb-4">🌿 Group Companies:</h2>
+                    <h2 className="text-2xl sm:text-3xl font-semibold text-primary mb-4">🌿 Group Companies</h2>
                     <div className="grid sm:grid-cols-3 gap-6">
                         <Card className="border border-green-200 hover:shadow-md transition duration-200">
                             <CardHeader className="flex flex-row items-center gap-3">
