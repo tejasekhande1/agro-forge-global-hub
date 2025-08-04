@@ -306,6 +306,93 @@ export const spices = [
 
 export const spicesList = [...spices];
 
+export const pulses = [
+    {
+        name: "Kabuli Chana",
+        image: "/products/kabuli-chana.jpg",
+        description: "Large white chickpeas used in curries and salads.",
+        info: "Kabuli Chana (Cicer arietinum) is a premium variety of chickpeas known for its large size and smooth texture. Used in dishes like chole, hummus, and soups. High in protein and dietary fiber."
+    },
+    {
+        name: "Desi Chana",
+        image: "/products/desi-chana.jpg",
+        description: "Smaller, darker chickpeas rich in nutrients.",
+        info: "Desi Chana is a smaller, brown variety of chickpeas with a rough coat. Popular in Indian households for boiling or sprouting. Rich in iron, fiber, and complex carbohydrates."
+    },
+    {
+        name: "Toor Dal / Arhar Dal",
+        image: "/products/toor-dal.jpg",
+        description: "Staple yellow split pigeon peas for Indian dals.",
+        info: "Toor Dal (Cajanus cajan) is widely used in Indian cooking, especially in South India. Rich in protein, potassium, and folic acid. Used in sambar, dal fry, and khichdi."
+    },
+    {
+        name: "Moong Dal",
+        image: "/products/moong-dal.jpg",
+        description: "Light and easy-to-digest split green gram.",
+        info: "Moong Dal (Vigna radiata) is consumed in both whole and split forms. A staple in light Indian dishes and ideal for detox diets. High in protein and low in carbs."
+    },
+    {
+        name: "Urad Dal",
+        image: "/products/urad-dal.jpg",
+        description: "Black gram used in South Indian cuisines.",
+        info: "Urad Dal (Vigna mungo) is used to make idli, dosa batter, and Punjabi dals. Rich in protein and calcium. Comes in whole and split forms, with or without skin."
+    },
+    {
+        name: "Masoor Dal",
+        image: "/products/masoor-dal.jpg",
+        description: "Red lentils that cook quickly and easily.",
+        info: "Masoor Dal (Lens culinaris) is a fast-cooking lentil used for soups, curries, and stews. Loaded with iron and folate, suitable for vegetarians."
+    },
+    {
+        name: "Yellow Peas",
+        image: "/products/yellow-peas.jpg",
+        description: "Mild-flavored dry peas used in curries and snacks.",
+        info: "Yellow Peas (Pisum sativum) are split or whole dry peas. Used in Indian street food and snacks like matar chaat and ragda. Rich in plant-based protein and fiber."
+    },
+    {
+        name: "Green Peas",
+        image: "/products/green-peas.jpg",
+        description: "Sweet dry peas commonly used in Indian dishes.",
+        info: "Green Peas are dried and used throughout the year in curries, rice dishes, and snacks. High in vitamins A, C, and B-complex, along with antioxidants."
+    },
+    {
+        name: "Rajma",
+        image: "/products/rajma.jpg",
+        description: "Red kidney beans popular in North Indian cuisine.",
+        info: "Rajma (Phaseolus vulgaris) is boiled and cooked into thick gravies served with rice. A rich source of plant protein and complex carbs. Key dish: Rajma-Chawal."
+    },
+    {
+        name: "Chana Dal",
+        image: "/products/chana-dal.jpg",
+        description: "Split Bengal gram used in Indian dals and sweets.",
+        info: "Chana Dal is made by splitting Desi Chana. Used in tempering, curries, and even sweets like besan ladoos. High in protein, iron, and fiber."
+    },
+    {
+        name: "Kulthi",
+        image: "/products/kulthi.jpg",
+        description: "Horse gram valued for its medicinal benefits.",
+        info: "Kulthi (Macrotyloma uniflorum) is known for aiding digestion and kidney health. Commonly consumed as soup or curry in South and Central India. High in calcium and iron."
+    },
+    {
+        name: "Lobhia",
+        image: "/products/lobhia.jpg",
+        description: "Black-eyed peas used in nutritious Indian curries.",
+        info: "Lobhia (Vigna unguiculata) is a legume rich in iron and protein. Known for its creamy texture and earthy flavor. Used in lobhia curry, salads, and stews."
+    },
+    {
+        name: "Matki",
+        image: "/products/matki.jpg",
+        description: "Moth beans popular in Maharashtrian dishes.",
+        info: "Matki (Vigna aconitifolia) is often sprouted and used in misal and salads. High in protein, magnesium, and dietary fiber. Grows well in arid conditions."
+    },
+    {
+        name: "Val Dal",
+        image: "/products/val-dal.jpg",
+        description: "Split field beans with unique taste and aroma.",
+        info: "Val Dal (Dolichos lablab) is used in Maharashtrian and Gujarati cooking. Has a strong flavor, used in curries and lentil rice dishes. High in protein and dietary fiber."
+    }
+];
+
 export const categorizedProducts = [
     {
         category: "Vegetables",
@@ -321,6 +408,11 @@ export const categorizedProducts = [
         category: "Millets & Cereals",
         slug: "grains",
         items: grains,
+    },
+    {
+        category: "Pulses",
+        slug: "pulses",
+        items: pulses,
     },
     {
         category: "Dry Fruits & Nuts",
